@@ -1,13 +1,14 @@
 'use strict';
+const fs = require('fs');
 
 const httpsRateLimit = require('https-rate-limit');
 const index = require('./index.js');
 
 const run = async () => {
   console.log('banano-distribution-stats');
-  if (process.argv.length < 2) {
+  if (process.argv.length < 3) {
     console.log('#usage:');
-    console.log('npm start <url>');
+    console.log('npm start <outfile> <url>');
   } else {
     const historyChunkSize = 1000;
     // chunk into days
@@ -51,8 +52,7 @@ const run = async () => {
     // for (const [account, type] of knownAccountTypeMap) {
     //   console.log('known account type', account, type);
     // }
-
-    const url = process.argv[2];
+    const url = process.argv[3];
     // console.log('url', url);
     httpsRateLimit.setUrl(url);
 
@@ -73,7 +73,11 @@ const run = async () => {
       }
       console.log('distribution calculation FINISHED', account, distribution.length, 'of', knownAccountTypeList.length);
     }
-    console.log('distribution', distribution);
+    // console.log('distribution', distribution);
+    const outFileNm = process.argv[2];
+    const outFilePtr = fs.openSync(outFileNm, 'w');
+    fs.writeSync(outFilePtr, JSON.stringify(distribution));
+    fs.closeSync(outFilePtr);
   }
 };
 
