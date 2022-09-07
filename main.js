@@ -63,6 +63,7 @@ const run = async () => {
       knownAccountTypeList.push({account: account, type: type});
     }
 
+    console.log('distribution calculation STARTING');
     for (const knownAccountType of knownAccountTypeList) {
       const account = knownAccountType.account;
       const type = knownAccountType.type;
@@ -73,6 +74,7 @@ const run = async () => {
       }
       console.log('distribution calculation FINISHED', account, distribution.length, 'of', knownAccountTypeList.length);
     }
+    console.log('distribution calculation FINISHED');
     // console.log('distribution', distribution);
     const outFileNm = process.argv[2];
     const outFilePtr = fs.openSync(outFileNm, 'w');
