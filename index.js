@@ -27,7 +27,7 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
         account: sourceAccount,
         count: historyChunkSize,
         reverse: 'true',
-        raw: 'true',
+        // raw: 'true',
       };
       if (next) {
         req.head = next;
