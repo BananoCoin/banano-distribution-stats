@@ -63,22 +63,27 @@ const run = async () => {
       knownAccountTypeList.push({account: account, type: type});
     }
 
+    // knownAccountTypeList.length = 3;
+
     console.log('distribution calculation STARTING');
+    let knownAccountTypeNbr = 1;
     for (const knownAccountType of knownAccountTypeList) {
       const account = knownAccountType.account;
       const type = knownAccountType.type;
-      console.log('distribution calculation STARTING', account, distribution.length, 'of', knownAccountTypeList.length);
+      console.log('distribution calculation STARTING', account, knownAccountTypeNbr, 'of', knownAccountTypeList.length);
       if (type != 'gray') {
         const distributionOverTime = await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, account);
         distribution.push(distributionOverTime);
+        // console.log('distributionOverTime', distributionOverTime);
       }
-      console.log('distribution calculation FINISHED', account, distribution.length, 'of', knownAccountTypeList.length);
+      console.log('distribution calculation FINISHED', account, knownAccountTypeNbr, 'of', knownAccountTypeList.length);
+      knownAccountTypeNbr++;
     }
     console.log('distribution calculation FINISHED');
     // console.log('distribution', distribution);
     const outFileNm = process.argv[2];
     const outFilePtr = fs.openSync(outFileNm, 'w');
-    fs.writeSync(outFilePtr, JSON.stringify(distribution));
+    fs.writeSync(outFilePtr, JSON.stringify(distribution, null, 2));
     fs.closeSync(outFilePtr);
   }
 };
