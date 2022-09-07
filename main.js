@@ -11,7 +11,8 @@ const run = async () => {
   } else {
     const genesis = 'ban_1bananobh5rat99qfgt1ptpieie5swmoth87thi74qgbfrij7dcgjiij94xr';
     const historyChunkSize = 1000;
-    const timeChunkSizeMs = 1000;
+    // chunk into days
+    const timeChunkSizeMs = 1000 * 60 * 60 * 24 * 365;
 
     const url = process.argv[2];
     console.log('url', url);

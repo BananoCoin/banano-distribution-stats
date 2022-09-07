@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@bananocoin/bananojs": "^2.6.7",
-    "https-rate-limit": "^1.0.2",
+    "https-rate-limit": "^1.0.3",
     "levelup": "^5.1.1",
     "rocksdb": "^5.2.1"
   },
