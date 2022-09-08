@@ -61,7 +61,7 @@ const run = async () => {
       knownAccountTypeList.push({account: account, type: type});
     }
 
-    knownAccountTypeList.length = 2;
+    // knownAccountTypeList.length = 2;
 
     const amountByTimeChunkAndSrcDestTypeMap = new Map();
 
