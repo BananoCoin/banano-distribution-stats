@@ -9,14 +9,13 @@
 
 // functions
 
-const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, sourceAccount) => {
+const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, sourceAccount, amountByTimeChunkAndTypeMap) => {
   let next;
   let stop = false;
 
 
   // console.log('knownAccountTypeMap', knownAccountTypeMap);
 
-  const amountByTimeChunkAndTypeMap = new Map();
   const processedBlockHashSet = new Set();
   while (!stop) {
     // by default stop.
@@ -62,11 +61,11 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
                   amountByTimeChunkAndTypeMap.set(localTimeChunk, amountByTypeMap);
                 }
 
-                let type = 'unknown';
+                let type = 'distributed-to-unknown';
                 if (knownAccountTypeMap.has(destAccount)) {
                   type = knownAccountTypeMap.get(destAccount);
                 }
-                if (type == 'unknown') {
+                if (type == 'distributed-to-unknown') {
                   const accountInfoReq = {
                     action: 'account_info',
                     account: destAccount,
@@ -77,17 +76,17 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
                   const accountInfoResp = await httpsRateLimit.sendRequest(accountInfoReq);
                   // console.log('accountInfoResp', accountInfoResp);
                   if (accountInfoResp.representative == 'ban_1tipbotgges3ss8pso6xf76gsyqnb69uwcxcyhouym67z7ofefy1jz7kepoy') {
-                    type = 'tipbot';
+                    type = 'distributed-to-known';
                     // save type so we dont ahve to redo API call.
                     knownAccountTypeMap.set(destAccount, type);
                   }
                 }
 
-                if (type == 'unknown') {
+                if (type == 'distributed-to-unknown') {
                   // const senderType = knownAccountTypeMap.get(sourceAccount);
                   // console.log('unknown account', senderType, '=>', destAccount, amount, localTimeChunk, historyElt);
                   // throw Error('unknown account');
-                  knownAccountTypeMap.set(destAccount, 'gray');
+                  knownAccountTypeMap.set(destAccount, 'distributed-to-unknown');
                 }
 
                 let oldAmount = 0.0;
@@ -111,21 +110,6 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
     };
     await addHistoryFn();
   }
-  const histogram = [];
-  for (const [timeChunk, amountByTypeMap] of amountByTimeChunkAndTypeMap) {
-    for (const [accountType, amount] of amountByTypeMap) {
-      histogram.push({
-        timeChunk: timeChunk,
-        accountType: accountType,
-        amount: amount.toFixed(2),
-      });
-    }
-  }
-
-  // loggingUtil.log(dateUtil.getDate(), 'histogramMap', histogramMap);
-  // loggingUtil.log(dateUtil.getDate(), 'histogram', JSON.stringify(histogram));
-
-  return {account: sourceAccount, histogram: histogram};
 };
 
 exports.getDistributionOverTime = getDistributionOverTime;

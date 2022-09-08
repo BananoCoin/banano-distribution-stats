@@ -43,7 +43,7 @@ const run = async () => {
           break;
         case 'representative':
         case 'team-member':
-          knownAccountTypeMap.set(account, 'gray');
+          knownAccountTypeMap.set(account, 'distributed-to-known');
           break;
         default:
           console.log('unknown account type', type, knownAccountElt);
@@ -65,27 +65,49 @@ const run = async () => {
 
     // knownAccountTypeList.length = 3;
 
+    const amountByTimeChunkAndTypeMap = new Map();
+
     console.log('distribution calculation STARTING');
     let knownAccountTypeNbr = 1;
     for (const knownAccountType of knownAccountTypeList) {
       const account = knownAccountType.account;
       const type = knownAccountType.type;
       console.log('distribution calculation STARTING', account, knownAccountTypeNbr, 'of', knownAccountTypeList.length);
-      if (type != 'gray') {
-        const distributionOverTime = await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, account);
-        distribution.push(distributionOverTime);
+      if (type != 'distributed-to-known') {
+        await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, account, amountByTimeChunkAndTypeMap);
         // console.log('distributionOverTime', distributionOverTime);
       }
       console.log('distribution calculation FINISHED', account, knownAccountTypeNbr, 'of', knownAccountTypeList.length);
       knownAccountTypeNbr++;
     }
     console.log('distribution calculation FINISHED');
+    // console.log('amountByTimeChunkAndTypeMap', amountByTimeChunkAndTypeMap);
+
+    const histogram = [];
+    for (const [timeChunk, amountByTypeMap] of amountByTimeChunkAndTypeMap) {
+      for (const [accountType, amount] of amountByTypeMap) {
+        histogram.push({
+          timeChunk: timeChunk,
+          accountType: accountType,
+          amount: amount.toFixed(2),
+        });
+      }
+    }
+
     // console.log('distribution', distribution);
     const outFileNm = process.argv[2];
     const outFilePtr = fs.openSync(outFileNm, 'w');
-    fs.writeSync(outFilePtr, JSON.stringify(distribution, null, 2));
+    fs.writeSync(outFilePtr, JSON.stringify(histogram, null, 2));
     fs.closeSync(outFilePtr);
   }
 };
 
-run();
+const runOrError = async () => {
+  try {
+    await run();
+  } catch(error) {
+    console.trace(error);
+  }
+}
+
+runOrError();
