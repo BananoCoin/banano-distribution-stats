@@ -13,7 +13,7 @@ const loadBananoDistributionStats = async () => {
   window.bananoDistributionStats = responseJson;
 
   var layout = d3.sankey()
-                .extent([[100, 10], [840, 580]]);
+                .extent([[100, 10], [1000, 1000]]);
 
   var diagram = d3.sankeyDiagram()
                   .linkTitle(d3.sankeyLinkTitle(function (d) { return d.title; },
@@ -25,81 +25,79 @@ const loadBananoDistributionStats = async () => {
 
   sankey.links = [];
 
+  const timeChunkSet = new Set();
   window.bananoDistributionStats.forEach((stat) => {
-    if(stat.timeChunk.startsWith("2019-03"))
-    {
+    timeChunkSet.add(stat.timeChunk);
+  });
+  window.bananoDistributionStats.forEach((stat) => {
+    // if(stat.timeChunk.startsWith("2019-03"))
+    // {
       sankey.links.push({
         source:stat.timeChunk + '-' + stat.srcType,
         target:stat.timeChunk + '-' + stat.destType,
         value:stat.amount,
       })
-    }
+    // }
   })
 
   sankey.groups = [
   {
     "title": "Source",
     "id": "source",
-    "nodes": ["2019-03-source"]
+    "nodes": []
   },
   {
     "title": "Distributed",
     "id": "distributed",
-    "nodes": ["2019-03-distributed-to-known", "2019-03-distributed-to-unknown"]
+    "nodes": []
   },
   {
     "title": "Sink",
     "id": "sink",
-    "nodes": ["2019-03-sink"]
+    "nodes": []
   }];
-  sankey.nodes = [
-  {
-    "title": "Known Source",
-    "id": "2019-03-source",
-    "direction": "r"
-  },
-  {
-    "title": "Known Sink",
-    "id": "2019-03-sink",
-    "direction": "r"
-  },
-  {
-    "title": "Known Distribution",
-    "id": "2019-03-distributed-to-known",
-    "direction": "r"
-  },
-  {
-    "title": "Unknown Distribution",
-    "id": "2019-03-distributed-to-unknown",
-    "direction": "r"
-  }];
+
+  sankey.nodes = [];
   sankey.order = [
-    [
-      ["2019-03-source"]
-    ],
-    [
-      ["2019-03-distributed-to-known", "2019-03-distributed-to-unknown"]
-    ],
-    [
-      ["2019-03-sink"]
-    ],
+    [      [      ]],
+    [      [      ]    ],
+    [      [    ]    ],
   ]
+  for (const timeChunk of timeChunkSet) {
+    sankey.groups[0].nodes.push(`${timeChunk}-source`)
+    sankey.groups[1].nodes.push(`${timeChunk}-distributed-to-known`)
+    sankey.groups[1].nodes.push(`${timeChunk}-distributed-to-unknown`)
+    sankey.groups[2].nodes.push(`${timeChunk}-sink`)
+
+    sankey.order[0][0].push(`${timeChunk}-source`)
+    sankey.order[1][0].push(`${timeChunk}-distributed-to-known`)
+    sankey.order[1][0].push(`${timeChunk}-distributed-to-unknown`)
+    sankey.order[2][0].push(`${timeChunk}-sink`)
+
+    sankey.nodes.push({
+      title:`${timeChunk} Known Source`,
+      direction:'r',
+      id:`${timeChunk}-source`
+    });
+    sankey.nodes.push({
+      title:`${timeChunk} Known Distribution`,
+      direction:'r',
+      id:`${timeChunk}-distributed-to-known`
+    });
+    sankey.nodes.push({
+      title:`${timeChunk} Unknown Distribution`,
+      direction:'r',
+      id:`${timeChunk}-distributed-to-unknown`
+    });
+    sankey.nodes.push({
+      title:`${timeChunk} Known Sink`,
+      direction:'r',
+      id:`${timeChunk}-sink`
+    });
+  }
 
   layout.ordering(sankey.order);
   var el = d3.select('#sankey svg')
             .datum(layout(sankey))
             .call(diagram.groups(sankey.groups));
-
-
-  // const energyResponse = await fetch('uk_energy.json', {
-  //   method: 'GET',
-  //   headers: {
-  //     'content-type': 'application/json',
-  //   },
-  // });
-  // const energyResponseJson = await energyResponse.json();
-  // layout.ordering(energyResponseJson.order);
-  // var el = d3.select('#sankey svg')
-  //           .datum(layout(energyResponseJson))
-  //           .call(diagram.groups(energyResponseJson.groups));
 };
