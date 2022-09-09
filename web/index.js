@@ -15,14 +15,14 @@ const loadBananoDistributionStats = async () => {
   window.bananoDistributionStats = [];
   responseJson.forEach((stat) => {
     // if(stat.destType !== 'distributed-to-burn') {
-        // if(stat.timeChunk !== '1970-01') {
-          if(stat.srcType == 'source-folding') {
-            console.log('stat.timeChunk', stat.timeChunk)
-            window.bananoDistributionStats.push(stat);
-          }
-        // }
-      // }
-    });
+    // if(stat.timeChunk !== '1970-01') {
+    if (stat.srcType == 'source-folding') {
+      console.log('stat.timeChunk', stat.timeChunk);
+      window.bananoDistributionStats.push(stat);
+    }
+    // }
+    // }
+  });
 
   const sankeySvgElt = document.getElementById('sankeySvg');
   const w = 1900;
@@ -35,9 +35,9 @@ const loadBananoDistributionStats = async () => {
   const sankey = {};
 
   const accountTypeNames = [
-    ['source-distribution','source-faucet','source-folding','source-event','source-boompow'],
-    ['distributed-to-team-member', 'distributed-to-tipbot', 'distributed-to-unknown', ,'distributed-to-exchange-mid'],
-    ['distributed-to-exchange','distributed-to-burn'],
+    ['source-distribution', 'source-faucet', 'source-folding', 'source-event', 'source-boompow'],
+    ['distributed-to-team-member', 'distributed-to-tipbot', 'distributed-to-unknown', , 'distributed-to-exchange-mid'],
+    ['distributed-to-exchange', 'distributed-to-burn'],
   ];
 
   sankey.links = [];
@@ -77,11 +77,11 @@ const loadBananoDistributionStats = async () => {
       //   });
       // // } else if (srcGroup != destGroup) {
       // } else {
-        sankey.links.push({
-          source: srcNode,
-          target: destNode,
-          value: stat.amount,
-        });
+      sankey.links.push({
+        source: srcNode,
+        target: destNode,
+        value: stat.amount,
+      });
       // }
     }
   });
@@ -117,8 +117,8 @@ const loadBananoDistributionStats = async () => {
     }
   }
 
-  console.log('timeChunkSet', timeChunkSet)
-  console.log('sankey', sankey)
+  console.log('timeChunkSet', timeChunkSet);
+  console.log('sankey', sankey);
 
   const layout = d3.sankey();
   layout.extent([[150, 10], [w-200, h+50]]);

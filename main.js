@@ -34,11 +34,13 @@ const run = async () => {
         case 'distribution':
         case 'faucet':
         case 'event':
-          knownAccountTypeMap.set(account, `source-${type}`);
+          knownAccountTypeMap.set(account, 'source');
           break;
         case 'exchange':
           knownAccountTypeMap.set(account, 'exchange');
+          break;
         case 'burn':
+          knownAccountTypeMap.set(account, 'burn');
         case 'team-member':
           knownAccountTypeMap.set(account, `distributed-to-${type}`);
           break;
