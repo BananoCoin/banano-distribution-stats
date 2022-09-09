@@ -5,6 +5,7 @@ const httpsRateLimit = require('https-rate-limit');
 const index = require('./index.js');
 
 const DEBUG = false;
+const VERBOSE = true;
 
 const run = async () => {
   console.log('banano-distribution-stats');
@@ -83,7 +84,7 @@ const run = async () => {
       const type = knownAccountType.type;
       console.log('distribution calculation STARTING', account, knownAccountTypeNbr, 'of', knownAccountTypeList.length);
       if (type != 'distributed-to-known') {
-        await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, account, amountByTimeChunkAndSrcDestTypeMap, DEBUG);
+        await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, account, amountByTimeChunkAndSrcDestTypeMap, DEBUG, VERBOSE);
         // console.log('distributionOverTime', distributionOverTime);
       }
       console.log('distribution calculation FINISHED', account, knownAccountTypeNbr, 'of', knownAccountTypeList.length);

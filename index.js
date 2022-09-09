@@ -9,7 +9,7 @@
 
 // functions
 
-const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, sourceAccount, amountByTimeChunkAndSrcDestTypeMap, debug) => {
+const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, sourceAccount, amountByTimeChunkAndSrcDestTypeMap, debug, verbose) => {
   let next;
   let stop = false;
 
@@ -145,7 +145,10 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
         stop = true;
       }
     }
-    console.log('distribution calculation CONTINUE', processedBlockHashSet.size, 'blocks', 'stop', stop, 'next', accountHistoryResp.next);
+    /* istanbul ignore if */
+    if (verbose) {
+      console.log('distribution calculation CONTINUE', processedBlockHashSet.size, 'blocks', 'stop', stop, 'next', accountHistoryResp.next);
+    }
   }
 };
 
