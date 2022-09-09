@@ -27,33 +27,33 @@ const run = async () => {
     httpsRateLimit.setUrl(knownAccountsUrl);
     const knownAccountsResponse = await httpsRateLimit.sendRequest({includeType: true});
     // console.log('knownAccountsResponse', knownAccountsResponse);
-    // knownAccountsResponse.forEach((knownAccountElt) => {
-    //   const account = knownAccountElt.address;
-    //   const type = knownAccountElt.type;
-    //   switch (type) {
-    //     case 'distribution':
-    //     case 'faucet':
-    //     case 'event':
-    //       knownAccountTypeMap.set(account, 'source');
-    //       break;
-    //     case 'exchange':
-    //       knownAccountTypeMap.set(account, 'exchange');
-    //       break;
-    //     case 'burn':
-    //       knownAccountTypeMap.set(account, 'burn');
-    //     case 'team-member':
-    //       knownAccountTypeMap.set(account, `distributed-to-${type}`);
-    //       break;
-    //     case 'representative':
-    //     case 'service':
-    //     case 'donation':
-    //     case 'gambling':
-    //       knownAccountTypeMap.set(account, 'distributed-to-unknown');
-    //       break;
-    //     default:
-    //       console.log('unknown account type', type, knownAccountElt);
-    //   }
-    // });
+    knownAccountsResponse.forEach((knownAccountElt) => {
+      const account = knownAccountElt.address;
+      const type = knownAccountElt.type;
+      switch (type) {
+        case 'distribution':
+        case 'faucet':
+        case 'event':
+          knownAccountTypeMap.set(account, 'source');
+          break;
+        case 'exchange':
+          knownAccountTypeMap.set(account, 'exchange');
+          break;
+        case 'burn':
+          knownAccountTypeMap.set(account, 'burn');
+        case 'team-member':
+          knownAccountTypeMap.set(account, `distributed-to-${type}`);
+          break;
+        case 'representative':
+        case 'service':
+        case 'donation':
+        case 'gambling':
+          knownAccountTypeMap.set(account, 'distributed-to-unknown');
+          break;
+        default:
+          console.log('unknown account type', type, knownAccountElt);
+      }
+    });
 
     knownAccountTypeMap.set('ban_1boompow14irck1yauquqypt7afqrh8b6bbu5r93pc6hgbqs7z6o99frcuym', 'source-boompow'); knownAccountTypeMap.set('ban_3fo1d1ng6mfqumfoojqby13nahaugqbe5n6n3trof4q8kg5amo9mribg4muo', 'source-folding');
 
