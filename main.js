@@ -75,11 +75,12 @@ const run = async () => {
     }
 
     if (DEBUG) {
-      knownAccountTypeList.length = 10;
-      historyChunkSize = 10;
+      knownAccountTypeList.length = 3;
+      historyChunkSize = 1000;
     }
 
     const amountByTimeChunkAndSrcDestTypeMap = new Map();
+    const whalewatch = [];
 
     console.log('distribution calculation STARTING');
     let knownAccountTypeNbr = 1;
@@ -88,7 +89,7 @@ const run = async () => {
       const type = knownAccountType.type;
       console.log('distribution calculation STARTING', account, knownAccountTypeNbr, 'of', knownAccountTypeList.length);
       if (type != 'distributed-to-known') {
-        await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, account, amountByTimeChunkAndSrcDestTypeMap, DEBUG, VERBOSE);
+        await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, account, amountByTimeChunkAndSrcDestTypeMap, whalewatch, DEBUG, VERBOSE);
         // console.log('distributionOverTime', distributionOverTime);
       }
       console.log('distribution calculation FINISHED', account, knownAccountTypeNbr, 'of', knownAccountTypeList.length);
@@ -112,9 +113,13 @@ const run = async () => {
     }
 
     // console.log('distribution', distribution);
+    const out = {
+      histogram: histogram,
+      whalewatch: whalewatch,
+    };
     const outFileNm = process.argv[2];
     const outFilePtr = fs.openSync(outFileNm, 'w');
-    fs.writeSync(outFilePtr, JSON.stringify(histogram, null, 2));
+    fs.writeSync(outFilePtr, JSON.stringify(out, null, 2));
     fs.closeSync(outFilePtr);
   }
 };

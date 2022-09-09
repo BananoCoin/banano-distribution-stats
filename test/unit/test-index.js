@@ -129,16 +129,17 @@ describe('index', () => {
         return ts;
       };
       const amountByTimeChunkAndSrcDestTypeMap = new Map();
+      const whalewatch = [];
       const knownAccountTypeMap = new Map();
       knownAccountTypeMap.set('a', 'exchange');
       knownAccountTypeMap.set('b', 'exchange');
       const debug = false;
-      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'a', amountByTimeChunkAndSrcDestTypeMap, debug, false);
-      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'b', amountByTimeChunkAndSrcDestTypeMap, debug, false);
-      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'c', amountByTimeChunkAndSrcDestTypeMap, debug, false);
-      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'd', amountByTimeChunkAndSrcDestTypeMap, debug, false);
-      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'a', amountByTimeChunkAndSrcDestTypeMap, true, false);
-      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'd', amountByTimeChunkAndSrcDestTypeMap, true, false);
+      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'a', amountByTimeChunkAndSrcDestTypeMap, whalewatch, debug, false);
+      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'b', amountByTimeChunkAndSrcDestTypeMap, whalewatch, debug, false);
+      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'c', amountByTimeChunkAndSrcDestTypeMap, whalewatch, debug, false);
+      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'd', amountByTimeChunkAndSrcDestTypeMap, whalewatch, debug, false);
+      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'a', amountByTimeChunkAndSrcDestTypeMap, whalewatch, true, false);
+      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'd', amountByTimeChunkAndSrcDestTypeMap, whalewatch, true, false);
       expect(amountByTimeChunkAndSrcDestTypeMap.size).to.equal(1);
     } catch (error) {
       console.trace(error);

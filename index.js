@@ -9,7 +9,7 @@
 
 // functions
 
-const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, sourceAccount, amountByTimeChunkAndSrcDestTypeMap, debug, verbose) => {
+const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, sourceAccount, amountByTimeChunkAndSrcDestTypeMap, whalewatch, debug, verbose) => {
   let next;
   let stop = false;
 
@@ -100,18 +100,23 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
             if (addAmountToMap) {
               const amount = parseFloat(historyElt.amount_decimal);
               const timeMs = historyElt.local_timestamp * 1000;
-
-              /* istanbul ignore if */
-              if (verbose) {
-                if (amount > 1000000) {
-                  console.log('distribution calculation CONTINUE', 'whalewatch', amount, 'hash', historyElt.hash);
-                }
-              }
-
               // console.log('local_timestamp', getDate(timeMs));
               const localTimeChunk = timeChunkFn(timeMs);
               // console.log('historyElt.hash', historyElt.hash, localTimeChunk);
               // console.log('localTimeChunk', localTimeChunk);
+              /* istanbul ignore if */
+              if (verbose) {
+                if (amount > 1000000) {
+                  console.log('distribution calculation CONTINUE', 'whalewatch', localTimeChunk, amount, 'hash', historyElt.hash);
+                  whalewatch.push({
+                    amount: amount,
+                    hash: historyElt.hash,
+                    timeChunk: localTimeChunk,
+                  });
+                }
+              }
+
+
               let amountBySrcDestTypeMap;
               if (amountByTimeChunkAndSrcDestTypeMap.has(localTimeChunk)) {
                 amountBySrcDestTypeMap = amountByTimeChunkAndSrcDestTypeMap.get(localTimeChunk);
