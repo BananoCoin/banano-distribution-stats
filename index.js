@@ -129,17 +129,15 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
               amountByDestTypeMap.set(destType, newAmount);
             }
           }
-
-          // console.log('historyElt.next', historyElt.next);
-          if (historyElt.hash != undefined) {
-            next = historyElt.hash;
-          }
         };
-
-        if (next !== undefined) {
-          stop = false;
-        }
       }
+    }
+    // console.log('accountHistoryResp.next', accountHistoryResp.next, accountHistoryResp.history.length);
+    if (accountHistoryResp.next != undefined) {
+      next = accountHistoryResp.next;
+    }
+    if (next !== undefined) {
+      stop = false;
     }
     if (debug) {
       // console.log('processedBlockHashSet.size', processedBlockHashSet.size, 'of', historyChunkSize);
@@ -147,7 +145,7 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
         stop = true;
       }
     }
-    console.log('distribution calculation CONTINUE', processedBlockHashSet.size, 'blocks', 'stop', stop);
+    console.log('distribution calculation CONTINUE', processedBlockHashSet.size, 'blocks', 'stop', stop, 'next', accountHistoryResp.next);
   }
 };
 
