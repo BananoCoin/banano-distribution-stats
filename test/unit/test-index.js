@@ -9,69 +9,69 @@ testModuleRef.request = (options, response) => {
   const retvalJson1 = {
     history: [
       {
-        type:'state',
-        subtype:'send',
-        hash:'1',
-        account:'a',
-        next:'2',
+        type: 'state',
+        subtype: 'send',
+        hash: '1',
+        account: 'a',
+        next: '2',
       },
       {
-        type:'state',
-        subtype:'send',
-        hash:'2',
-        account:'b',
-        next:'3',
+        type: 'state',
+        subtype: 'send',
+        hash: '2',
+        account: 'b',
+        next: '3',
       },
       {
-        type:'state',
-        subtype:'receive',
-        hash:'3',
-        account:'c',
+        type: 'state',
+        subtype: 'receive',
+        hash: '3',
+        account: 'c',
         // next:'',
       },
       {
-        type:'state',
-        subtype:'receive',
-        hash:'3',
-        account:'c',
+        type: 'state',
+        subtype: 'receive',
+        hash: '3',
+        account: 'c',
         // next:'',
       },
       {
-        type:'state',
-        subtype:'receive',
-        hash:'4',
-        account:'e',
+        type: 'state',
+        subtype: 'receive',
+        hash: '4',
+        account: 'e',
         // next:'',
-      }
-    ]
+      },
+    ],
   };
   const retvalJson2 = {
     history: [
-    ]
-  }
+    ],
+  };
   const retvalJson3 = {
-    representative :'ban_1tipbotgges3ss8pso6xf76gsyqnb69uwcxcyhouym67z7ofefy1jz7kepoy',
-  }
+    representative: 'ban_1tipbotgges3ss8pso6xf76gsyqnb69uwcxcyhouym67z7ofefy1jz7kepoy',
+  };
   const retvalJson4 = {
     history: [
       {
-        type:'state',
-        subtype:'receive',
-        hash:'5',
-        account:'a'
-      }
-    ]
+        type: 'state',
+        subtype: 'receive',
+        hash: '5',
+        account: 'a',
+      },
+    ],
   };
   const retvalJson5 = {
     history: [
       {
-        type:'state',
-        subtype:'receive',
-        hash:'5',
-        account:'b',
+        type: 'state',
+        subtype: 'receive',
+        hash: '5',
+        account: 'b',
         // next:'',
-      }
-    ]
+      },
+    ],
   };
   const req = {};
   req.headers = {};
@@ -86,15 +86,15 @@ testModuleRef.request = (options, response) => {
     const fn = onFns['data'];
     if (fn) {
       let retvalJson = {};
-      if(bodyJson.action = 'account_history') {
-        if(bodyJson.account == 'd') {
+      if (bodyJson.action = 'account_history') {
+        if (bodyJson.account == 'd') {
         } else {
-          if(bodyJson.head) {
+          if (bodyJson.head) {
             retvalJson = retvalJson2;
           } else {
-            if(bodyJson.account == 'c') {
+            if (bodyJson.account == 'c') {
               retvalJson = retvalJson4;
-            } else if(bodyJson.account == 'b') {
+            } else if (bodyJson.account == 'b') {
               retvalJson = retvalJson5;
             } else {
               retvalJson = retvalJson1;
@@ -102,8 +102,8 @@ testModuleRef.request = (options, response) => {
           }
         }
       }
-      if(bodyJson.action = 'account_info') {
-        if(bodyJson.account == 'c') {
+      if (bodyJson.action = 'account_info') {
+        if (bodyJson.account == 'c') {
           retvalJson = retvalJson3;
         }
       }
@@ -133,11 +133,10 @@ describe('index', () => {
       const timeChunkFn = (ts) => {
         return ts;
       };
-      const sourceAccount = 'a';
       const amountByTimeChunkAndSrcDestTypeMap = new Map();
       const knownAccountTypeMap = new Map();
-      knownAccountTypeMap.set('a','exchange')
-      knownAccountTypeMap.set('b','exchange')
+      knownAccountTypeMap.set('a', 'exchange');
+      knownAccountTypeMap.set('b', 'exchange');
       const debug = false;
       await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'a', amountByTimeChunkAndSrcDestTypeMap, debug);
       await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'b', amountByTimeChunkAndSrcDestTypeMap, debug);

@@ -130,7 +130,7 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
           }
 
           // console.log('historyElt.next', historyElt.next);
-          if(historyElt.next != undefined) {
+          if (historyElt.next != undefined) {
             next = historyElt.next;
           }
         };
