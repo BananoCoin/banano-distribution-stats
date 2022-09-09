@@ -13,14 +13,14 @@ testModuleRef.request = (options, response) => {
         subtype: 'send',
         hash: '1',
         account: 'a',
-        previous: '2',
+        next: '2',
       },
       {
         type: 'state',
         subtype: 'send',
         hash: '2',
         account: 'b',
-        previous: '3',
+        next: '3',
       },
       {
         type: 'state',
