@@ -31,6 +31,7 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
       reverse: 'true',
       raw: 'true',
     };
+    // console.log('accountHistoryReq', accountHistoryReq);
     if (next) {
       accountHistoryReq.head = next;
     }
@@ -45,7 +46,7 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
         for (const historyElt of accountHistoryResp.history) {
         // for (let historyIx = 0; historyIx < accountHistoryResp.history.length; historyIx++) {
           // const historyElt = accountHistoryResp.history[historyIx];
-          console.log('historyElt', historyElt);
+          // console.log('historyElt', historyElt);
           if (!processedBlockHashSet.has(historyElt.hash)) {
             processedBlockHashSet.add(historyElt.hash);
 
@@ -130,8 +131,8 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
           }
 
           // console.log('historyElt.next', historyElt.next);
-          if (historyElt.next != undefined) {
-            next = historyElt.next;
+          if (historyElt.hash != undefined) {
+            next = historyElt.hash;
           }
         };
 
