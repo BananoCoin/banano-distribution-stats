@@ -39,7 +39,7 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
     next = undefined;
 
     const accountHistoryResp = await httpsRateLimit.sendRequest(accountHistoryReq);
-    console.log('accountHistoryResp', accountHistoryResp);
+    // console.log('accountHistoryResp', accountHistoryResp);
     if (accountHistoryResp.history) {
       if (accountHistoryResp.history.length > 0) {
         for (const historyElt of accountHistoryResp.history) {
@@ -76,6 +76,7 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
 
             if (historyElt.type == 'state' && historyElt.subtype == 'receive') {
               if (srcType == 'exchange') {
+                console.log('srcType', srcType, 'destType', destType);
                 if (destType.startsWith('distributed-to-')) {
                   // if we are recieving at an exchange from a distributed account
                   // record it as a send with swapped types.

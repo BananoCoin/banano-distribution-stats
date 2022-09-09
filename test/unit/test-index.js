@@ -28,6 +28,27 @@ testModuleRef.request = (options, response) => {
         hash:'3',
         account:'c',
         // next:'',
+      },
+      {
+        type:'state',
+        subtype:'receive',
+        hash:'3',
+        account:'c',
+        // next:'',
+      },
+      {
+        type:'state',
+        subtype:'receive',
+        hash:'4',
+        account:'e',
+        // next:'',
+      },
+      {
+        type:'state',
+        subtype:'receive',
+        hash:'4',
+        account:'e',
+        // next:'',
       }
     ]
   };
@@ -38,6 +59,16 @@ testModuleRef.request = (options, response) => {
   const retvalJson3 = {
     representative :'ban_1tipbotgges3ss8pso6xf76gsyqnb69uwcxcyhouym67z7ofefy1jz7kepoy',
   }
+    const retvalJson4 = {
+      history: [
+        {
+          type:'state',
+          subtype:'receive',
+          hash:'5',
+          account:'a'
+        }
+      ]
+    };
   const req = {};
   req.headers = {};
   req.statusCode = 200;
@@ -47,15 +78,22 @@ testModuleRef.request = (options, response) => {
   };
   req.write = (body) => {
     const bodyJson = JSON.parse(body);
-    console.log('write', 'body', body);
+    // console.log('write', 'body', body);
     const fn = onFns['data'];
     if (fn) {
       let retvalJson = {};
       if(bodyJson.action = 'account_history') {
-        if(bodyJson.head) {
-          retvalJson = retvalJson2;
+        if(bodyJson.account == 'd') {
         } else {
-          retvalJson = retvalJson1;
+          if(bodyJson.head) {
+            retvalJson = retvalJson2;
+          } else {
+            if(bodyJson.account == 'c') {
+              retvalJson = retvalJson4;
+            } else {
+              retvalJson = retvalJson1;
+            }
+          }
         }
       }
       if(bodyJson.action = 'account_info') {
@@ -64,7 +102,7 @@ testModuleRef.request = (options, response) => {
         }
       }
 
-      console.log('write', 'retvalJson', retvalJson);
+      // console.log('write', 'retvalJson', retvalJson);
       fn(JSON.stringify(retvalJson));
     }
   };
@@ -95,9 +133,10 @@ describe('index', () => {
       knownAccountTypeMap.set('a','exchange')
       knownAccountTypeMap.set('b','exchange')
       const debug = false;
-      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, sourceAccount, amountByTimeChunkAndSrcDestTypeMap, debug);
-      const expectedResponse = new Map();
-      expect(knownAccountTypeMap.size).to.equal(3);
+      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'a', amountByTimeChunkAndSrcDestTypeMap, debug);
+      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'c', amountByTimeChunkAndSrcDestTypeMap, debug);
+      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'd', amountByTimeChunkAndSrcDestTypeMap, debug);
+      expect(amountByTimeChunkAndSrcDestTypeMap.size).to.equal(1);
     } catch (error) {
       console.trace(error);
     }
