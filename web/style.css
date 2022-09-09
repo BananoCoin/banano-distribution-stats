@@ -1,10 +1,10 @@
 html,
 body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  position: fixed;
-  overscroll-behavior-y: contain;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  overflow-y: scroll;
+  text-align: center;
+  touch-action: manipulation;
 }
 
 .not_selectable {
@@ -64,34 +64,37 @@ body {
   flex: 0 1 0;
 }
 
+.w100pct {
+  width: 100%;
+}
 
-  svg .link {
-    opacity: 0.8;
-    fill: steelblue;
-  }
+svg .link {
+  opacity: 0.8;
+  fill: steelblue;
+}
 
-  svg .link:hover {
-    opacity: 1;
-  }
+svg .link:hover {
+  opacity: 1;
+}
 
-  svg g.sankey {
-    font-size: 10pt;
-  }
-  svg .node line {
-    stroke-width: 1px;
-    stroke: #000;
-  }
-  svg .node-type-process line {
-    stroke-width: 4px;
-    stroke: #888;
-  }
+svg g.sankey {
+  font-size: 10pt;
+}
+svg .node line {
+  stroke-width: 1px;
+  stroke: #000;
+}
+svg .node-type-process line {
+  stroke-width: 4px;
+  stroke: #888;
+}
 
-  svg .group rect {
-    fill: #eee;
-    stroke: #bbb;
-    stroke-width: 0.5px;
-  }
+svg .group rect {
+  fill: #eee;
+  stroke: #bbb;
+  stroke-width: 0.5px;
+}
 
-  svg .group text {
-    fill: #999;
-  }
+svg .group text {
+  fill: #999;
+}

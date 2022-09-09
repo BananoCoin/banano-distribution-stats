@@ -1,3 +1,4 @@
+/* eslint-disable */
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('d3-array'), require('d3-collection'), require('d3-interpolate'), require('d3-selection'), require('d3-transition'), require('d3-dispatch'), require('d3-format')) :
 	typeof define === 'function' && define.amd ? define(['exports', 'd3-array', 'd3-collection', 'd3-interpolate', 'd3-selection', 'd3-transition', 'd3-dispatch', 'd3-format'], factory) :

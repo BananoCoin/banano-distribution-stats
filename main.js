@@ -4,13 +4,15 @@ const fs = require('fs');
 const httpsRateLimit = require('https-rate-limit');
 const index = require('./index.js');
 
+const DEBUG = false;
+
 const run = async () => {
   console.log('banano-distribution-stats');
   if (process.argv.length < 3) {
     console.log('#usage:');
     console.log('npm start <outfile> <url>');
   } else {
-    const historyChunkSize = 1000;
+    let historyChunkSize = 1000;
     // chunk into days
     const timeChunkFn = (ts) => {
       const isoStr = new Date(ts)
@@ -32,23 +34,27 @@ const run = async () => {
         case 'distribution':
         case 'faucet':
         case 'event':
-          knownAccountTypeMap.set(account, 'source');
+          knownAccountTypeMap.set(account, `source-${type}`);
           break;
         case 'exchange':
+          knownAccountTypeMap.set(account, 'exchange');
         case 'burn':
-        case 'donation':
-        case 'gambling':
-        case 'service':
-          knownAccountTypeMap.set(account, 'sink');
+        case 'team-member':
+          knownAccountTypeMap.set(account, `distributed-to-${type}`);
           break;
         case 'representative':
-        case 'team-member':
-          knownAccountTypeMap.set(account, 'distributed-to-known');
+        case 'service':
+        case 'donation':
+        case 'gambling':
+          knownAccountTypeMap.set(account, 'distributed-to-unknown');
           break;
         default:
           console.log('unknown account type', type, knownAccountElt);
       }
     });
+
+    knownAccountTypeMap.set('ban_1boompow14irck1yauquqypt7afqrh8b6bbu5r93pc6hgbqs7z6o99frcuym', 'source-boompow'); knownAccountTypeMap.set('ban_3fo1d1ng6mfqumfoojqby13nahaugqbe5n6n3trof4q8kg5amo9mribg4muo', 'source-folding');
+
     // for (const [account, type] of knownAccountTypeMap) {
     //   console.log('known account type', account, type);
     // }
@@ -61,7 +67,10 @@ const run = async () => {
       knownAccountTypeList.push({account: account, type: type});
     }
 
-    // knownAccountTypeList.length = 2;
+    if (DEBUG) {
+      knownAccountTypeList.length = 10;
+      historyChunkSize = 10;
+    }
 
     const amountByTimeChunkAndSrcDestTypeMap = new Map();
 
@@ -72,7 +81,7 @@ const run = async () => {
       const type = knownAccountType.type;
       console.log('distribution calculation STARTING', account, knownAccountTypeNbr, 'of', knownAccountTypeList.length);
       if (type != 'distributed-to-known') {
-        await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, account, amountByTimeChunkAndSrcDestTypeMap);
+        await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, account, amountByTimeChunkAndSrcDestTypeMap, DEBUG);
         // console.log('distributionOverTime', distributionOverTime);
       }
       console.log('distribution calculation FINISHED', account, knownAccountTypeNbr, 'of', knownAccountTypeList.length);

@@ -9,7 +9,7 @@
 
 // functions
 
-const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, sourceAccount, amountByTimeChunkAndSrcDestTypeMap) => {
+const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, sourceAccount, amountByTimeChunkAndSrcDestTypeMap, debug) => {
   let next;
   let stop = false;
 
@@ -28,18 +28,18 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
       action: 'account_history',
       account: sourceAccount,
       count: historyChunkSize,
-      reverse: 'true',
-      // raw: 'true',
+      reverse: true,
+      raw: true,
     };
     if (next) {
-      req.head = next;
+      accountHistoryReq.head = next;
     }
 
     // do not reuse next hash
     next = undefined;
 
     const accountHistoryResp = await httpsRateLimit.sendRequest(accountHistoryReq);
-    // console.log('accountHistoryResp', accountHistoryResp);
+    console.log('accountHistoryResp', accountHistoryResp);
     if (accountHistoryResp.history) {
       if (accountHistoryResp.history.length > 0) {
         for (const historyElt of accountHistoryResp.history) {
@@ -48,8 +48,54 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
           // console.log('historyElt', historyElt);
           if (!processedBlockHashSet.has(historyElt.hash)) {
             processedBlockHashSet.add(historyElt.hash);
-            if (historyElt.type == 'send') {
-              const destAccount = historyElt.account;
+
+            const destAccount = historyElt.account;
+            let destType = 'distributed-to-unknown';
+            if (knownAccountTypeMap.has(destAccount)) {
+              destType = knownAccountTypeMap.get(destAccount);
+            } else {
+              const accountInfoReq = {
+                action: 'account_info',
+                account: destAccount,
+                representative: true,
+                weight: true,
+                pending: true,
+              };
+              const accountInfoResp = await httpsRateLimit.sendRequest(accountInfoReq);
+              // console.log('accountInfoResp', accountInfoResp);
+              if (accountInfoResp.representative == 'ban_1tipbotgges3ss8pso6xf76gsyqnb69uwcxcyhouym67z7ofefy1jz7kepoy') {
+                destType = 'distributed-to-tipbot';
+                // console.log('tipbot', 'historyElt', historyElt);
+                // console.log('tipbot', 'accountInfoResp', historyElt);
+                // save type so we dont ahve to redo API call.
+              }
+              knownAccountTypeMap.set(destAccount, destType);
+            }
+
+            let addAmountToMap = false;
+
+            if (historyElt.type == 'state' && historyElt.subtype == 'receive') {
+              if (srcType == 'exchange') {
+                if (destType.startsWith('distributed-to-')) {
+                  // if we are recieving at an exchange from a distributed account
+                  // record it as a send with swapped types.
+                  const reverseSrcType = destType;
+                  const reverseDestType = srcType;
+
+                  destType = reverseDestType;
+                  srcType = reverseSrcType;
+
+                  addAmountToMap = true;
+                }
+              }
+            }
+            if ((historyElt.type == 'state') && (historyElt.subtype == 'send')) {
+              addAmountToMap = true;
+            }
+
+            // console.log('addAmountToMap', historyElt.type , historyElt.subtype, addAmountToMap);
+
+            if (addAmountToMap) {
               const amount = parseFloat(historyElt.amount_decimal);
               const timeMs = historyElt.local_timestamp * 1000;
               // console.log('local_timestamp', getDate(timeMs));
@@ -72,34 +118,6 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
                 amountBySrcDestTypeMap.set(srcType, amountByDestTypeMap);
               }
 
-              let destType = 'distributed-to-unknown';
-              if (knownAccountTypeMap.has(destAccount)) {
-                destType = knownAccountTypeMap.get(destAccount);
-              }
-              if (destType == 'distributed-to-unknown') {
-                const accountInfoReq = {
-                  action: 'account_info',
-                  account: destAccount,
-                  representative: true,
-                  weight: true,
-                  pending: true,
-                };
-                const accountInfoResp = await httpsRateLimit.sendRequest(accountInfoReq);
-                // console.log('accountInfoResp', accountInfoResp);
-                if (accountInfoResp.representative == 'ban_1tipbotgges3ss8pso6xf76gsyqnb69uwcxcyhouym67z7ofefy1jz7kepoy') {
-                  destType = 'distributed-to-known';
-                  // save type so we dont ahve to redo API call.
-                  knownAccountTypeMap.set(destAccount, destType);
-                }
-              }
-
-              if (destType == 'distributed-to-unknown') {
-                // const senderType = knownAccountTypeMap.get(sourceAccount);
-                // console.log('unknown account', senderType, '=>', destAccount, amount, localTimeChunk, historyElt);
-                // throw Error('unknown account');
-                knownAccountTypeMap.set(destAccount, 'distributed-to-unknown');
-              }
-
               let oldAmount = 0.0;
               if (amountByDestTypeMap.has(destType)) {
                 oldAmount = amountByDestTypeMap.get(destType);
@@ -110,12 +128,17 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
             }
           }
 
-          next = historyElt.next;
+          // console.log('historyElt.next', historyElt.next);
+          if(historyElt.next != undefined) {
+            next = historyElt.next;
+          }
         };
 
         // if there's more history, get it.
-        if (next !== undefined) {
-          stop = false;
+        if (!debug) {
+          if (next !== undefined) {
+            stop = false;
+          }
         }
       }
     }

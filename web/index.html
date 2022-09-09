@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Banano Distribution Stats</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <meta charset="utf-8" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <title>Banano Distribution Stats</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-
-<body class="not_selectable" onload="onLoad()" oncontextmenu="return false;" style="touch-action: none">
-  <div class="box">
-    <div class="row content">
-      <div id="sankey" class="sankey">
-        <svg width="2000" height="8000"></svg>
+  <body
+    class="not_selectable"
+    onload="onLoad()"
+    oncontextmenu="return false;"
+    style="touch-action: none"
+  >
+    <div class="box">
+      <div class="row content">
+        <div id="sankey" class="sankey w100pct">
+          <svg id="sankeySvg"></svg>
+        </div>
       </div>
+      <div class="row footer"></div>
     </div>
-    <div class="row footer"></div>
-  </div>
-  <script src="d3.v4.js" charset="utf-8"></script>
-  <script src="d3-sankey-diagram.js" charset="utf-8"></script>
-  <script src="index.js"></script>
-</script>
-</body>
-
+    <script src="d3.v4.js" charset="utf-8"></script>
+    <script src="d3-sankey-diagram.js" charset="utf-8"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
