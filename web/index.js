@@ -11,21 +11,33 @@ const loadBananoDistributionStats = async () => {
     },
   });
   const responseJson = await response.json();
-  window.bananoDistributionStats = responseJson;
+
+  window.bananoDistributionStats = [];
+  responseJson.forEach((stat) => {
+    // if(stat.destType !== 'distributed-to-burn') {
+        // if(stat.timeChunk !== '1970-01') {
+          if(stat.srcType == 'source-folding') {
+            console.log('stat.timeChunk', stat.timeChunk)
+            window.bananoDistributionStats.push(stat);
+          }
+        // }
+      // }
+    });
 
   const sankeySvgElt = document.getElementById('sankeySvg');
-  const w = 2000;
-  const h = 2000;
-  const y = 100;
+  const w = 1900;
+  const h = 5000;
+  const y = 300;
+  const x = -50;
   sankeySvgElt.setAttribute('width', '100%');
-  sankeySvgElt.setAttribute('viewBox', `0 ${y} ${w} ${h-y}`);
+  sankeySvgElt.setAttribute('viewBox', `${x} ${y} ${w} ${h-y}`);
 
   const sankey = {};
 
   const accountTypeNames = [
-    ['source'],
-    ['distributed-to-team-member', 'distributed-to-tipbot', 'distributed-to-unknown', 'distributed-to-exchange'],
-    ['exchange'],
+    ['source-distribution','source-faucet','source-folding','source-event','source-boompow'],
+    ['distributed-to-team-member', 'distributed-to-tipbot', 'distributed-to-unknown', ,'distributed-to-exchange-mid'],
+    ['distributed-to-exchange','distributed-to-burn'],
   ];
 
   sankey.links = [];
@@ -35,36 +47,42 @@ const loadBananoDistributionStats = async () => {
 
   const timeChunkSet = new Set();
   window.bananoDistributionStats.forEach((stat) => {
-    // if(stat.timeChunk.startsWith("2018")) {
+    // if(stat.timeChunk.startsWith("2022")) {
     timeChunkSet.add(stat.timeChunk);
     // }
   });
   window.bananoDistributionStats.forEach((stat) => {
     if (timeChunkSet.has(stat.timeChunk)) {
+      // const srcGroup = stat.srcType.split('-')[0];
+      // const destGroup = stat.destType.split('-')[0];
       const srcNode = stat.timeChunk + '-' + stat.srcType;
       const destNode = stat.timeChunk + '-' + stat.destType;
       // const srcNode = stat.srcType + '-' + stat.timeChunk;
       // const destNode = stat.destType + '-' + stat.timeChunk;
-      if (stat.srcType == 'distributed-to-exchange') {
-      } else if ((stat.srcType == 'source') && (stat.destType == 'distributed-to-exchange')) {
-        const midNode = stat.timeChunk + '-distributed-to-exchange-mid';
+      // if (stat.srcType == 'distributed-to-exchange') {
+      //   // dont show things sent from exchanges.
+      // } else if (stat.destType.startsWith('source')) {
+      //   // dont show things sent to sources.
+      // } else if ((stat.srcType.startsWith('source')) && (stat.destType == 'distributed-to-exchange')) {
+      //   const midNode = stat.timeChunk + '-distributed-to-exchange-mid';
+      //   sankey.links.push({
+      //     source: srcNode,
+      //     target: midNode,
+      //     value: stat.amount,
+      //   });
+      //   sankey.links.push({
+      //     source: midNode,
+      //     target: destNode,
+      //     value: stat.amount,
+      //   });
+      // // } else if (srcGroup != destGroup) {
+      // } else {
         sankey.links.push({
           source: srcNode,
-          target: midNode,
-          value: stat.amount,
-        });
-        sankey.links.push({
-          source: midNode,
           target: destNode,
           value: stat.amount,
         });
-      } else if (srcNode != destNode) {
-        sankey.links.push({
-          source: srcNode,
-          target: destNode,
-          value: stat.amount,
-        });
-      }
+      // }
     }
   });
   sankey.order = [];
@@ -99,6 +117,9 @@ const loadBananoDistributionStats = async () => {
     }
   }
 
+  console.log('timeChunkSet', timeChunkSet)
+  console.log('sankey', sankey)
+
   const layout = d3.sankey();
   layout.extent([[150, 10], [w-200, h+50]]);
 
@@ -114,20 +135,7 @@ const loadBananoDistributionStats = async () => {
         return d.color;
       });
 
-  // function alignLinkTypes(layout, align) {
-  //   return layout
-  //     .sourceId(function(d) { return { id: typeof d.source === "object" ? d.source.id : d.source,
-  //                                      port: align ? d.type : null }; })
-  //     .targetId(function(d) { return { id: typeof d.target === "object" ? d.target.id : d.target,
-  //                                      port: align ? d.type : null }; });
-  // }
-
   layout.ordering(sankey.order);
-
-  // const align = false;
-  // d3.select('#sankey svg')
-  //   .datum(alignLinkTypes(layout, align)(sankey))
-  //   .call(diagram.groups(sankey.groups));
 
   d3.select('#sankey svg')
       .datum(layout(sankey))

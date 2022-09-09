@@ -10,7 +10,7 @@
 // functions
 
 const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, sourceAccount, amountByTimeChunkAndSrcDestTypeMap, debug) => {
-  let next;
+  let previous;
   let stop = false;
 
   let srcType = 'distributed-to-unknown';
@@ -31,12 +31,12 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
       reverse: true,
       raw: true,
     };
-    if (next) {
-      accountHistoryReq.head = next;
+    if (previous) {
+      accountHistoryReq.head = previous;
     }
 
-    // do not reuse next hash
-    next = undefined;
+    // do not reuse previous hash
+    previous = undefined;
 
     const accountHistoryResp = await httpsRateLimit.sendRequest(accountHistoryReq);
     // console.log('accountHistoryResp', accountHistoryResp);
@@ -129,15 +129,15 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
             }
           }
 
-          // console.log('historyElt.next', historyElt.next);
-          if (historyElt.next != undefined) {
-            next = historyElt.next;
+          // console.log('historyElt.previous', historyElt.previous);
+          if (historyElt.previous != undefined) {
+            previous = historyElt.previous;
           }
         };
 
         // if there's more history, get it.
         if (!debug) {
-          if (next !== undefined) {
+          if (previous !== undefined) {
             stop = false;
           }
         }
