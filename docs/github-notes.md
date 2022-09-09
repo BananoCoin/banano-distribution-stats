@@ -24,5 +24,3 @@
     git reset --hard origin/main;
     npm i;   
     npm audit fix;
-    rm screenlog.0;
-    npm run screenrestart;
