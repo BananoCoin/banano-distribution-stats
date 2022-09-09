@@ -45,7 +45,7 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
         for (const historyElt of accountHistoryResp.history) {
         // for (let historyIx = 0; historyIx < accountHistoryResp.history.length; historyIx++) {
           // const historyElt = accountHistoryResp.history[historyIx];
-          // console.log('historyElt', historyElt);
+          console.log('historyElt', historyElt);
           if (!processedBlockHashSet.has(historyElt.hash)) {
             processedBlockHashSet.add(historyElt.hash);
 
