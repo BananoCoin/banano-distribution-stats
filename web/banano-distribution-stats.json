@@ -1,0 +1,6326 @@
+[
+  {
+    "timeChunk": "2019-04",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "2549066.99"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "71635216.05"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "3050008.00"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "300000000.10"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "41544998.80"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "23100000.00"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "51529961.01"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "1208786.46"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "3785964.10"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "206792.39"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "distributed-to-team-member",
+    "destType": "source",
+    "amount": "642.32"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "622152.00"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "281500.00"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "distributed-to-team-member",
+    "destType": "source-folding",
+    "amount": "5.00"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "41731268.00"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "22657681.93"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "265384.37"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "3086.55"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "source-folding",
+    "destType": "source-folding",
+    "amount": "3015.52"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "40556621.76"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "158089.77"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "distributed-to-tipbot",
+    "destType": "source-folding",
+    "amount": "2756.99"
+  },
+  {
+    "timeChunk": "2019-04",
+    "srcType": "exchange",
+    "destType": "distributed-to-unknown",
+    "amount": "0.12"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "25702152.39"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "2482427.90"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "21484819.46"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "950004.72"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "38000000.48"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "1.89"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "40011198.22"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "2214156.73"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "27534.00"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "2400195.13"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "178240.00"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "596400.00"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "41930706.00"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "34839849.25"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "321548.12"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "1735.74"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "40382779.39"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "1694441.89"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "distributed-to-tipbot",
+    "destType": "source",
+    "amount": "4.00"
+  },
+  {
+    "timeChunk": "2019-05",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "1.99"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "3072979.51"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "36283484.46"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "27000052.63"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "32877687.57"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "450227.99"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "62353463.55"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "1107440.77"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "source-folding",
+    "amount": "1000000.00"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "200.00"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "50500.00"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "407600.00"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "48312811.00"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "22582470.73"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "195897.98"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "357.98"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "47070888.97"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "819683.95"
+  },
+  {
+    "timeChunk": "2019-06",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "23.00"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "3706600.75"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "39018983.11"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "23500238.92"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "70967886.41"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "572035.70"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "59181966.56"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "1306340.66"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "12.00"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "50.14"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "381306.00"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-team-member",
+    "amount": "5.00"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "distributed-to-team-member",
+    "destType": "source",
+    "amount": "10.00"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "5033.00"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "54883417.00"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "17617668.50"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "164887.99"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "759.59"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "source-folding",
+    "destType": "source-folding",
+    "amount": "38.31"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "53888321.83"
+  },
+  {
+    "timeChunk": "2019-07",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "1211620.81"
+  },
+  {
+    "timeChunk": "2019-08",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "4280827.50"
+  },
+  {
+    "timeChunk": "2019-08",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "45913660.53"
+  },
+  {
+    "timeChunk": "2019-08",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "37900748.59"
+  },
+  {
+    "timeChunk": "2019-08",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "1024792.84"
+  },
+  {
+    "timeChunk": "2019-08",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "85596644.97"
+  },
+  {
+    "timeChunk": "2019-08",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "1553650.48"
+  },
+  {
+    "timeChunk": "2019-08",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "10331.33"
+  },
+  {
+    "timeChunk": "2019-08",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "75901.00"
+  },
+  {
+    "timeChunk": "2019-08",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "1000000.00"
+  },
+  {
+    "timeChunk": "2019-08",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "50591321.00"
+  },
+  {
+    "timeChunk": "2019-08",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "13750355.97"
+  },
+  {
+    "timeChunk": "2019-08",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "111230.92"
+  },
+  {
+    "timeChunk": "2019-08",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "48818624.58"
+  },
+  {
+    "timeChunk": "2019-08",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "2258015.95"
+  },
+  {
+    "timeChunk": "2019-08",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-team-member",
+    "amount": "159502.70"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "2329357.05"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "7677400.24"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "11000008.99"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "1161000.00"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "1075193.82"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "44475055.31"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "2642389.16"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "10000.00"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "591314.49"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "3648.70"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "30843.35"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-team-member",
+    "amount": "286.20"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "source-boompow",
+    "destType": "source-boompow",
+    "amount": "4.40"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "175261.00"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "15000.00"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-team-member",
+    "amount": "20.00"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "23684524.00"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "3888825.81"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "40282.05"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "22245938.19"
+  },
+  {
+    "timeChunk": "2019-09",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "533296.11"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "2297767.69"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "6093289.76"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "750000.00"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "source",
+    "destType": "source-boompow",
+    "amount": "1000000.00"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "14.22"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "7.32"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "63196553.78"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "1415444.25"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "234480.38"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "12593.46"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-team-member",
+    "amount": "702.60"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "source-boompow",
+    "destType": "source-boompow",
+    "amount": "1483.60"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "7.66"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "27808864.00"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "5826396.58"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "30219.12"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "135.36"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "26883143.56"
+  },
+  {
+    "timeChunk": "2019-10",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "382998.81"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "4236785.52"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "36822833.57"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "877001.00"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "62500113.72"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "source",
+    "destType": "source-boompow",
+    "amount": "44.00"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "10000000.00"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "0.21"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "35724095.68"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "906004.98"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-burn",
+    "amount": "50000.00"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "568.83"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "201909.32"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "9205.35"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-team-member",
+    "amount": "26.77"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "source-boompow",
+    "destType": "source-boompow",
+    "amount": "97.66"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "120000.00"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "110760.00"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "38398006.00"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "5869874.92"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "28339.35"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "834515.81"
+  },
+  {
+    "timeChunk": "2019-11",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "39352897.18"
+  },
+  {
+    "timeChunk": "2019-12",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "4414260.55"
+  },
+  {
+    "timeChunk": "2019-12",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "16481303.78"
+  },
+  {
+    "timeChunk": "2019-12",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "21000037.67"
+  },
+  {
+    "timeChunk": "2019-12",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "925000.00"
+  },
+  {
+    "timeChunk": "2019-12",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "88899806.86"
+  },
+  {
+    "timeChunk": "2019-12",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "2327224.60"
+  },
+  {
+    "timeChunk": "2019-12",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "1.12"
+  },
+  {
+    "timeChunk": "2019-12",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "240224.98"
+  },
+  {
+    "timeChunk": "2019-12",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "7772.25"
+  },
+  {
+    "timeChunk": "2019-12",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "301047.19"
+  },
+  {
+    "timeChunk": "2019-12",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "20052.00"
+  },
+  {
+    "timeChunk": "2019-12",
+    "srcType": "distributed-to-team-member",
+    "destType": "source",
+    "amount": "25.54"
+  },
+  {
+    "timeChunk": "2019-12",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "32339286.00"
+  },
+  {
+    "timeChunk": "2019-12",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "4469782.58"
+  },
+  {
+    "timeChunk": "2019-12",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "21426.74"
+  },
+  {
+    "timeChunk": "2019-12",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "30669930.99"
+  },
+  {
+    "timeChunk": "2019-12",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "821354.26"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "2918567.03"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "18868472.77"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "877000.00"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "8000000.00"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "1.07"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "66380629.07"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "4137240.36"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "5.20"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "242084.71"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "5913.18"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "source-boompow",
+    "destType": "source-boompow",
+    "amount": "0.33"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "50187.00"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "260003.00"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "31362548.00"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "4197227.14"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "6118.51"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "29438344.65"
+  },
+  {
+    "timeChunk": "2020-01",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "946638.94"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "3206510.80"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "23419708.29"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "42000321.65"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "780315.00"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "source",
+    "destType": "source-boompow",
+    "amount": "1000000.00"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "41000.00"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "80359714.87"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "1910275.97"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "24627.68"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "218798.35"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "5556.21"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "source-boompow",
+    "destType": "source-boompow",
+    "amount": "2.03"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "2538351.12"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "3798.02"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "63010.00"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "100010.00"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "32019531.00"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "33666353.40"
+  },
+  {
+    "timeChunk": "2020-02",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "71782.14"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "3371456.44"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "16683295.41"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "155.41"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "879000.00"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "0.15"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "12964978.78"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "693930.55"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "161873.89"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "9019.00"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "24127796.64"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "723767.39"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-team-member",
+    "amount": "100000.00"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "243262.42"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "4735.31"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "326000.00"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "26758119.00"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "2003634.65"
+  },
+  {
+    "timeChunk": "2020-03",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "7272.50"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "2567392.70"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "13645511.69"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "35000010.36"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "726000.00"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "191919191.14"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "5000000.00"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "20349814.41"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "714476.82"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "20187735.78"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "156233.91"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "229396.93"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "4310.64"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "source-boompow",
+    "destType": "source-boompow",
+    "amount": "238.41"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "162502.00"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "2615.00"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "18097512.00"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "2197335.89"
+  },
+  {
+    "timeChunk": "2020-04",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "2778.54"
+  },
+  {
+    "timeChunk": "2020-05",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "1875962.22"
+  },
+  {
+    "timeChunk": "2020-05",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "10363475.54"
+  },
+  {
+    "timeChunk": "2020-05",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "638000.00"
+  },
+  {
+    "timeChunk": "2020-05",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "3.81"
+  },
+  {
+    "timeChunk": "2020-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "20795478.37"
+  },
+  {
+    "timeChunk": "2020-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "3782831.60"
+  },
+  {
+    "timeChunk": "2020-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "1528.57"
+  },
+  {
+    "timeChunk": "2020-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "261645.20"
+  },
+  {
+    "timeChunk": "2020-05",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "40911725.35"
+  },
+  {
+    "timeChunk": "2020-05",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "276164.77"
+  },
+  {
+    "timeChunk": "2020-05",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "303193.50"
+  },
+  {
+    "timeChunk": "2020-05",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "6804.88"
+  },
+  {
+    "timeChunk": "2020-05",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "347000.00"
+  },
+  {
+    "timeChunk": "2020-05",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "4251000.00"
+  },
+  {
+    "timeChunk": "2020-05",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "42599463.00"
+  },
+  {
+    "timeChunk": "2020-05",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "2963495.74"
+  },
+  {
+    "timeChunk": "2020-05",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "2961.52"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "1988057.92"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "12232422.50"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "3253.18"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "638000.00"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "5000000.00"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "source",
+    "destType": "source-boompow",
+    "amount": "1000000.00"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "0.13"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "40874028.68"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "1029743.31"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "201845.69"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "49649917.17"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "129612.25"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-team-member",
+    "amount": "2999980.00"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "997721.92"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "278343.37"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "5955.59"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "1884938.00"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "52910797.00"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "4408334.18"
+  },
+  {
+    "timeChunk": "2020-06",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "5536.67"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "1944127.46"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "5789123.12"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "638000.00"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "5000000.88"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "26000001.51"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "26183268.54"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "406439.65"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "10769.43"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "0.00"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "36986622.29"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "31425.00"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "21649879.86"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-team-member",
+    "amount": "772085.92"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "305975.64"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "3584.15"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "source-boompow",
+    "destType": "source-boompow",
+    "amount": "22.75"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "571000.00"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "660119.00"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "57936103.00"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "3607945.03"
+  },
+  {
+    "timeChunk": "2020-07",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "10641.15"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "1957137.79"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "7267351.17"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "638000.00"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "5000000.07"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "1.31"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "24011845.67"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "531060.37"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "53789668.46"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "46503.11"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "distributed-to-tipbot",
+    "destType": "source",
+    "amount": "312813.00"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-team-member",
+    "amount": "299990.00"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "1427237.81"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "308517.06"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "1480.75"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "62358.00"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "1250019.00"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "58885852.00"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "4140022.36"
+  },
+  {
+    "timeChunk": "2020-08",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "13110.74"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "2021047.43"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "9308360.17"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "2.76"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "825000.00"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "5000000.00"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "source",
+    "destType": "source-boompow",
+    "amount": "2000000.00"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "26816211.21"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "1592590.63"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "21703129.70"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "1229629.26"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "299242.00"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "distributed-to-tipbot",
+    "destType": "source",
+    "amount": "227980.00"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-team-member",
+    "amount": "694040.63"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "1370400.38"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "26.60"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-team-member",
+    "amount": "16.63"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "40001.00"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "51267.00"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "21213752.00"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "4437943.02"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "12720.05"
+  },
+  {
+    "timeChunk": "2020-09",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "9.94"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "3180435.15"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "5618036.57"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "720000.00"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "16000000.80"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "5000000.00"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "61428784.59"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "118705.60"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "1398604.32"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "26090207.07"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "1968984.15"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "100.00"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "465717.32"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "308952.04"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "862537.14"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-burn",
+    "amount": "0.01"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "67056004.00"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "3001170.30"
+  },
+  {
+    "timeChunk": "2020-10",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "13345.17"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "2238096.03"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "9838139.82"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "804000.00"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "181.04"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "source",
+    "destType": "source-boompow",
+    "amount": "0.06"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "22.00"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "2724405.57"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "49.99"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "23437002.17"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "27459072.29"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "920226.22"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "distributed-to-tipbot",
+    "destType": "source",
+    "amount": "120923.00"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "299998.97"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "3072196.95"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "13772.15"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "79019.00"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "100050.00"
+  },
+  {
+    "timeChunk": "2020-11",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "29460380.00"
+  },
+  {
+    "timeChunk": "2020-12",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "6295198.31"
+  },
+  {
+    "timeChunk": "2020-12",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "9950754.81"
+  },
+  {
+    "timeChunk": "2020-12",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "43350816.87"
+  },
+  {
+    "timeChunk": "2020-12",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "1060001.00"
+  },
+  {
+    "timeChunk": "2020-12",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "5000000.09"
+  },
+  {
+    "timeChunk": "2020-12",
+    "srcType": "source",
+    "destType": "source-boompow",
+    "amount": "1000000.00"
+  },
+  {
+    "timeChunk": "2020-12",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "22186298.29"
+  },
+  {
+    "timeChunk": "2020-12",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "1962652.64"
+  },
+  {
+    "timeChunk": "2020-12",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "27805478.72"
+  },
+  {
+    "timeChunk": "2020-12",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "784268.90"
+  },
+  {
+    "timeChunk": "2020-12",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-team-member",
+    "amount": "19990.00"
+  },
+  {
+    "timeChunk": "2020-12",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "309998.56"
+  },
+  {
+    "timeChunk": "2020-12",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "1055000.00"
+  },
+  {
+    "timeChunk": "2020-12",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "31026920.00"
+  },
+  {
+    "timeChunk": "2020-12",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "3591007.34"
+  },
+  {
+    "timeChunk": "2020-12",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "22845.95"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "3767474.69"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "8212069.31"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "1060000.00"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "5000000.08"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "61.07"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "34440306.54"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "763849.14"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "distributed-to-unknown",
+    "destType": "source-folding",
+    "amount": "0.02"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "5.29"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "44521737.87"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "2948697.28"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "309998.75"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "0.43"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "274992.00"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "273800.00"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "44584898.57"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "4230090.97"
+  },
+  {
+    "timeChunk": "2021-01",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "15887.92"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "823062.10"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "6778655.09"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "72.56"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "144000.00"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "5000000.45"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "0.16"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "49531069.96"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "439931.60"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "distributed-to-unknown",
+    "destType": "source-folding",
+    "amount": "35240.23"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "609071.94"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "70.74"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-burn",
+    "amount": "0.06"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "78371646.12"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "92785.76"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "279937.98"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "3.36"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "source-boompow",
+    "destType": "source",
+    "amount": "1.65"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-team-member",
+    "amount": "55.68"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "468081.00"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-team-member",
+    "amount": "1.00"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "83792790.00"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "6844143.57"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "37457.31"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "source-folding",
+    "destType": "source-folding",
+    "amount": "19.65"
+  },
+  {
+    "timeChunk": "2021-02",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "313.76"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "824407.76"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "2392948.16"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "182030.00"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "85.66"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "12500001.22"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "source",
+    "destType": "source-boompow",
+    "amount": "1000000.08"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "11000.07"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "140709082.55"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "236336.60"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "583652.00"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "731.64"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "121189402.75"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "233086.15"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "distributed-to-tipbot",
+    "destType": "source",
+    "amount": "7136.00"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "72994.64"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-team-member",
+    "amount": "23525.88"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "exchange",
+    "destType": "distributed-to-unknown",
+    "amount": "226.04"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "309435.80"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "source-boompow",
+    "destType": "source-folding",
+    "amount": "10.90"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "source-boompow",
+    "destType": "source-boompow",
+    "amount": "4.80"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "546.06"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "2328201.00"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "30000.00"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "110195766.00"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "9033037.40"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "42038.84"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "source-folding",
+    "destType": "source-folding",
+    "amount": "212.39"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "1492.89"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "source-folding",
+    "destType": "exchange",
+    "amount": "204.35"
+  },
+  {
+    "timeChunk": "2021-03",
+    "srcType": "distributed-to-burn",
+    "destType": "distributed-to-burn",
+    "amount": "2800.81"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "1130312.01"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "14632320.67"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "15500020.44"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "585019.01"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "19.00"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "140084.94"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "0.16"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "142385695.16"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "404373.00"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "6982.84"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-burn",
+    "amount": "540.21"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "250.10"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "source-folding",
+    "amount": "5356.10"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "3795.67"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "56613312.40"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "21766.90"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "distributed-to-tipbot",
+    "destType": "source",
+    "amount": "90186.00"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "12100.66"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "309912.03"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "80.81"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "source-boompow",
+    "destType": "source-boompow",
+    "amount": "3.84"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "2147506.90"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "60455.22"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "60000000.00"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "16657948.75"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "69296.94"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "source-folding",
+    "destType": "source-folding",
+    "amount": "110.78"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "218.04"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "source-folding",
+    "destType": "exchange",
+    "amount": "301.37"
+  },
+  {
+    "timeChunk": "2021-05",
+    "srcType": "distributed-to-burn",
+    "destType": "distributed-to-burn",
+    "amount": "497.00"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "742404.21"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "1954748.71"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "361523.10"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "0.95"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "21000014.23"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "1500000.32"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "493000.00"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "172881763.96"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "294973.23"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "source-folding",
+    "amount": "0.17"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "78896991.22"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-burn",
+    "amount": "390.00"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "930082.64"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "10.46"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "exchange",
+    "destType": "distributed-to-unknown",
+    "amount": "97016.95"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "3200181.74"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "exchange",
+    "destType": "distributed-to-tipbot",
+    "amount": "2771.47"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "exchange",
+    "destType": "source",
+    "amount": "45.43"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "exchange",
+    "destType": "source-folding",
+    "amount": "45.43"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "exchange",
+    "destType": "distributed-to-team-member",
+    "amount": "45.43"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "299899.37"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "95.81"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "1074075.80"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "4000006.03"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-team-member",
+    "amount": "400003.00"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "16578597.92"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "65771.52"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "source-folding",
+    "destType": "source-folding",
+    "amount": "100.70"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "3.91"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "7164498.32"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "6758.95"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "distributed-to-tipbot",
+    "destType": "source",
+    "amount": "69291.00"
+  },
+  {
+    "timeChunk": "2021-06",
+    "srcType": "distributed-to-burn",
+    "destType": "distributed-to-burn",
+    "amount": "549.00"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "755087.26"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "2227254.75"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "80045.92"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "22.00"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "9500014.99"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "356008.44"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "30000000.00"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "source",
+    "destType": "source-boompow",
+    "amount": "800000.00"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "93474427.75"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "272628.78"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "3079.29"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "32078837.26"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "1.00"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "90701.80"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "20.02"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "5701720.00"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "309959.58"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "38.74"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "3750000.00"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "exchange",
+    "destType": "distributed-to-unknown",
+    "amount": "20.70"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "10997808.43"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "49202.27"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "source-folding",
+    "destType": "source-folding",
+    "amount": "169.05"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "17.29"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "3908709.95"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "distributed-to-tipbot",
+    "destType": "source",
+    "amount": "59214.00"
+  },
+  {
+    "timeChunk": "2021-07",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "6839.00"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "750405.70"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "2116836.96"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "416090.74"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "98.00"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "7500000.17"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "0.04"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "296000.00"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "82498362.52"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "466791.46"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "29145106.23"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "distributed-to-unknown",
+    "destType": "source-folding",
+    "amount": "0.30"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "105.00"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "3654315.37"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "27987.00"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "309129.80"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "77930.00"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "6740926.00"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "750000.00"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "7770647.16"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "36194.27"
+  },
+  {
+    "timeChunk": "2021-08",
+    "srcType": "source-folding",
+    "destType": "source-folding",
+    "amount": "62.83"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "790138.82"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "1253420.88"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "78567.67"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "5000015.04"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "63.00"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "331034.28"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "0.07"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "121832203.30"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "3700464.50"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "128.38"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "49332092.48"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "299997.79"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "74107.01"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "distributed-to-team-member",
+    "destType": "source",
+    "amount": "500.00"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "4238000.00"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "6161391.02"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "26605.97"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "source-folding",
+    "destType": "source-folding",
+    "amount": "44.12"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "source-folding",
+    "destType": "exchange",
+    "amount": "0.99"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "4071030.62"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "1056.65"
+  },
+  {
+    "timeChunk": "2021-09",
+    "srcType": "distributed-to-burn",
+    "destType": "distributed-to-burn",
+    "amount": "184.00"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "719555.03"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "2135129.78"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "140103.72"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "5000002.24"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "38.00"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "0.94"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "299000.68"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "source",
+    "destType": "source-boompow",
+    "amount": "800000.00"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "174400868.14"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "2496579.05"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "27950099.22"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "26.68"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "309980.54"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "16.97"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "source-boompow",
+    "destType": "source-boompow",
+    "amount": "0.35"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-team-member",
+    "amount": "9.00"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "1073533.76"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "10286423.00"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "5000.00"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "9520000.00"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "4622006.23"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "19895.97"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "source-folding",
+    "destType": "source-folding",
+    "amount": "24.65"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "source-folding",
+    "destType": "exchange",
+    "amount": "1.96"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "8040277.84"
+  },
+  {
+    "timeChunk": "2021-10",
+    "srcType": "distributed-to-burn",
+    "destType": "distributed-to-burn",
+    "amount": "337.00"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "698287.30"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "1364732.42"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "510047017.80"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "1.03"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "105.72"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "334000.28"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "4000000.10"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "126701675.23"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "59667.02"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "26578484.83"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "2033.90"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-burn",
+    "amount": "0.05"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "distributed-to-unknown",
+    "destType": "source-folding",
+    "amount": "0.11"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "299997.71"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "62605.30"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-team-member",
+    "amount": "1.00"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "25750.00"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "2306713.00"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "6506178.06"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "3966631.37"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "24805.20"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "source-folding",
+    "destType": "source-folding",
+    "amount": "17.32"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "22.05"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "source-folding",
+    "destType": "exchange",
+    "amount": "5.55"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "source-folding",
+    "destType": "distributed-to-team-member",
+    "amount": "17.43"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "4982751.09"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "1728.00"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "4302765.39"
+  },
+  {
+    "timeChunk": "2021-11",
+    "srcType": "distributed-to-burn",
+    "destType": "distributed-to-burn",
+    "amount": "276.00"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "2379255.50"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "5473340.47"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "236999.01"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "2.31"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "1000005.08"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "75.40"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "330000.03"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "source",
+    "destType": "source-boompow",
+    "amount": "400000.00"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "71540023.42"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "69661.00"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "10559573.59"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "5.00"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "distributed-to-unknown",
+    "destType": "source-folding",
+    "amount": "43.97"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "309817.96"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "source-boompow",
+    "destType": "source-boompow",
+    "amount": "175.05"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "5.05"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "133769.00"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "100061.19"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "4000000.00"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-team-member",
+    "amount": "21.00"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "1700000.00"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "4052823.77"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "23046.75"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "source-folding",
+    "destType": "source-folding",
+    "amount": "29.62"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "3.96"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "source-folding",
+    "destType": "exchange",
+    "amount": "43.97"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "2344398.71"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "1683.90"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "2700000.00"
+  },
+  {
+    "timeChunk": "2021-12",
+    "srcType": "distributed-to-burn",
+    "destType": "distributed-to-burn",
+    "amount": "164.00"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "1034477.01"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "1959170.63"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "115005.93"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "6100000.16"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "61.91"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "391000.00"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "0.19"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "source",
+    "destType": "source-boompow",
+    "amount": "400000.00"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "54065641.29"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "98069.29"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "9374832.65"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "0.25"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "distributed-to-unknown",
+    "destType": "source-folding",
+    "amount": "0.45"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "299998.04"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "42100.00"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "200020.00"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "1531303.00"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-team-member",
+    "amount": "2.00"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "700000.00"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "4735029.18"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "26723.58"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "source-folding",
+    "destType": "source-folding",
+    "amount": "23.62"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "source-folding",
+    "destType": "exchange",
+    "amount": "2.00"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "source-folding",
+    "destType": "distributed-to-team-member",
+    "amount": "3.57"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "2.63"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "2703088.35"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "1042.00"
+  },
+  {
+    "timeChunk": "2022-01",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "2750000.00"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "1061998.24"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "1483044.42"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "5100701.93"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "60.09"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "364000.00"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "1.21"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "4700000.09"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "32676556.39"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "40902.72"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "264.10"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "distributed-to-unknown",
+    "destType": "source-folding",
+    "amount": "0.02"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "8323214.74"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "279998.09"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "700000.00"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "4853224.82"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "27405.92"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "source-folding",
+    "destType": "source-folding",
+    "amount": "0.95"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "3.76"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "source-folding",
+    "destType": "distributed-to-team-member",
+    "amount": "3.82"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "367161.98"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "2000.00"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "1111733.10"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "2157367.57"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "9757970.33"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "132.93"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "92.21"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "300019.00"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "6500072.00"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "source",
+    "destType": "source-boompow",
+    "amount": "500000.00"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "49298000.45"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "48928.81"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "19.41"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "9065546.03"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "18490.90"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "425200.00"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-team-member",
+    "amount": "3.00"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "309986.48"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "11.51"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "3621433.00"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "4960700.69"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "25881.65"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "source-folding",
+    "destType": "exchange",
+    "amount": "3.03"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "7.83"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "537063.76"
+  },
+  {
+    "timeChunk": "2022-03",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "9500000.00"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "1196709.88"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "3331041.18"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "202385.31"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "3000008.00"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "300000.01"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "43.94"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "source",
+    "destType": "source-boompow",
+    "amount": "500000.00"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "0.07"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "57611237.26"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "184980.01"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "0.48"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "4784350.98"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "1887.00"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "420.72"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-team-member",
+    "amount": "69.00"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "1377096.00"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "299996.32"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "source-boompow",
+    "destType": "source-boompow",
+    "amount": "0.35"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "1.39"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "4180000.00"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "5326523.34"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "19936.63"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "6.28"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "source-folding",
+    "destType": "distributed-to-team-member",
+    "amount": "13.25"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "source-folding",
+    "destType": "exchange",
+    "amount": "1.76"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "source-folding",
+    "destType": "source-boompow",
+    "amount": "28.63"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "1999213.48"
+  },
+  {
+    "timeChunk": "2022-04",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "2765.00"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "1229533.35"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "1974766.43"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "374000.00"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "614989.51"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "3.00"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "5500042.00"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "9.79"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "52721724.85"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "109897.22"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "41.17"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "2356215.16"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "2193070.30"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "distributed-to-team-member",
+    "destType": "source",
+    "amount": "50.00"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "2000000.00"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "2140.80"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "40001.00"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "309997.97"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "1980000.00"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "5120041.39"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "18457.58"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "source-folding",
+    "destType": "distributed-to-team-member",
+    "amount": "5.22"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "21.11"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "142420.16"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "1959615.46"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "3364884.84"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "90000.00"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "7000082.40"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "287491.27"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "source",
+    "destType": "source-boompow",
+    "amount": "220000.00"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "0.01"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "6.39"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "41579256.58"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "624104.00"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "3989.18"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "2402777.53"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "289998.01"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "1800000.00"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "4187537.42"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "11623.28"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "55.38"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "source-folding",
+    "destType": "distributed-to-team-member",
+    "amount": "2.61"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "477739.11"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "2175.00"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "10010.00"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "2005155.46"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "7876426.51"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "800000.00"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "1736177.25"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "8000001.26"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "source",
+    "destType": "source-boompow",
+    "amount": "1000000.00"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "0.02"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "1.64"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "195311.70"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "4104.22"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "0.11"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "1000028.03"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "287521.50"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "7460.18"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-team-member",
+    "amount": "16.46"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "3400000.00"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "1162704.29"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "6007.40"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "12.96"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "720244.06"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "188909.00"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "19.00"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "108548.64"
+  },
+  {
+    "timeChunk": "2022-08",
+    "srcType": "distributed-to-burn",
+    "destType": "distributed-to-burn",
+    "amount": "370.00"
+  },
+  {
+    "timeChunk": "2022-09",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "1540295.60"
+  },
+  {
+    "timeChunk": "2022-09",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "1246400.26"
+  },
+  {
+    "timeChunk": "2022-09",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "445000.00"
+  },
+  {
+    "timeChunk": "2022-09",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "6918751.70"
+  },
+  {
+    "timeChunk": "2022-09",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "199603.85"
+  },
+  {
+    "timeChunk": "2022-09",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "17.38"
+  },
+  {
+    "timeChunk": "2022-09",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "51141.58"
+  },
+  {
+    "timeChunk": "2022-09",
+    "srcType": "distributed-to-burn",
+    "destType": "distributed-to-burn",
+    "amount": "44.00"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "57689096.24"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "372652.59"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "source-folding",
+    "amount": "11.81"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "4999.00"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-burn",
+    "amount": "642771.00"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "127239.41"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "5224.41"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "67845568.02"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "153204.24"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "6515.79"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "distributed-to-tipbot",
+    "destType": "source",
+    "amount": "104727.00"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-team-member",
+    "amount": "847637.63"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "568212743.75"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "412924205.80"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "1025078.32"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "4211491.00"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "44.00"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "1350.06"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "source",
+    "destType": "source-folding",
+    "amount": "8500000.37"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "299929.31"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-tipbot",
+    "amount": "3.67"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "source-boompow",
+    "destType": "source-boompow",
+    "amount": "10.08"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-team-member",
+    "amount": "53.90"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "6000.00"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "1362759.10"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "62382512.00"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "11114252.93"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "41686.52"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "178.83"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "source-folding",
+    "destType": "source-folding",
+    "amount": "428.61"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "source-folding",
+    "destType": "exchange",
+    "amount": "17.47"
+  },
+  {
+    "timeChunk": "2021-04",
+    "srcType": "distributed-to-burn",
+    "destType": "distributed-to-burn",
+    "amount": "72370.00"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "1209694.35"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "94218.31"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "3627540.32"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "0.08"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "780000.00"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "source",
+    "destType": "source-boompow",
+    "amount": "350000.00"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "source",
+    "destType": "distributed-to-burn",
+    "amount": "8.92"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "24904864.14"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "488066.96"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "0.51"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "1324167.60"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "100.00"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "source-boompow",
+    "destType": "distributed-to-unknown",
+    "amount": "159999.31"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "1200000.00"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "source-folding",
+    "destType": "distributed-to-unknown",
+    "amount": "2161132.61"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "source-folding",
+    "destType": "distributed-to-tipbot",
+    "amount": "10577.44"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "source-folding",
+    "destType": "source",
+    "amount": "18.42"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "243429.37"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "650000.00"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "1248.00"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "360500.00"
+  },
+  {
+    "timeChunk": "1970-01",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "269905738.76"
+  },
+  {
+    "timeChunk": "1970-01",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "7552081.34"
+  },
+  {
+    "timeChunk": "1970-01",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "84528054.59"
+  },
+  {
+    "timeChunk": "1970-01",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "6280549.00"
+  },
+  {
+    "timeChunk": "1970-01",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "5016821.55"
+  },
+  {
+    "timeChunk": "1970-01",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "50975441.18"
+  },
+  {
+    "timeChunk": "1970-01",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "12.12"
+  },
+  {
+    "timeChunk": "1970-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "3876206.69"
+  },
+  {
+    "timeChunk": "1970-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "465400.00"
+  },
+  {
+    "timeChunk": "1970-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "source",
+    "amount": "5915.00"
+  },
+  {
+    "timeChunk": "1970-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "52590541.00"
+  },
+  {
+    "timeChunk": "1970-01",
+    "srcType": "exchange",
+    "destType": "distributed-to-unknown",
+    "amount": "21304254.04"
+  },
+  {
+    "timeChunk": "1970-01",
+    "srcType": "exchange",
+    "destType": "distributed-to-tipbot",
+    "amount": "1050921.90"
+  },
+  {
+    "timeChunk": "1970-01",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "11748748.97"
+  },
+  {
+    "timeChunk": "1970-01",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "426261.47"
+  },
+  {
+    "timeChunk": "2018-09",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "13145279.00"
+  },
+  {
+    "timeChunk": "2018-09",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "481007.00"
+  },
+  {
+    "timeChunk": "2018-09",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "1001011.00"
+  },
+  {
+    "timeChunk": "2018-09",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "24774377.88"
+  },
+  {
+    "timeChunk": "2018-09",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "4206065.86"
+  },
+  {
+    "timeChunk": "2018-09",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "5074045.00"
+  },
+  {
+    "timeChunk": "2018-09",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "115474.65"
+  },
+  {
+    "timeChunk": "2018-09",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "53440.00"
+  },
+  {
+    "timeChunk": "2018-09",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "10.10"
+  },
+  {
+    "timeChunk": "2018-09",
+    "srcType": "exchange",
+    "destType": "distributed-to-unknown",
+    "amount": "4283646.40"
+  },
+  {
+    "timeChunk": "2018-09",
+    "srcType": "exchange",
+    "destType": "distributed-to-tipbot",
+    "amount": "317671.99"
+  },
+  {
+    "timeChunk": "2018-09",
+    "srcType": "exchange",
+    "destType": "distributed-to-team-member",
+    "amount": "50000.00"
+  },
+  {
+    "timeChunk": "2018-04",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "28500025.00"
+  },
+  {
+    "timeChunk": "2018-04",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "50000.00"
+  },
+  {
+    "timeChunk": "2018-04",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "35000000.00"
+  },
+  {
+    "timeChunk": "2018-04",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "1.00"
+  },
+  {
+    "timeChunk": "2018-07",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "6406924.00"
+  },
+  {
+    "timeChunk": "2018-07",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "455637.00"
+  },
+  {
+    "timeChunk": "2018-07",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "1500000.00"
+  },
+  {
+    "timeChunk": "2018-07",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "3000000.00"
+  },
+  {
+    "timeChunk": "2018-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "11167847.60"
+  },
+  {
+    "timeChunk": "2018-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "1756026.73"
+  },
+  {
+    "timeChunk": "2018-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "10.00"
+  },
+  {
+    "timeChunk": "2018-07",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "15000.00"
+  },
+  {
+    "timeChunk": "2018-07",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "121000.00"
+  },
+  {
+    "timeChunk": "2018-08",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "26947283.00"
+  },
+  {
+    "timeChunk": "2018-08",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "259437.00"
+  },
+  {
+    "timeChunk": "2018-08",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "1000000.00"
+  },
+  {
+    "timeChunk": "2018-08",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "35058107.42"
+  },
+  {
+    "timeChunk": "2018-08",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "2884322.52"
+  },
+  {
+    "timeChunk": "2018-08",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "578679.20"
+  },
+  {
+    "timeChunk": "2018-08",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "2500.00"
+  },
+  {
+    "timeChunk": "2018-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "32498.00"
+  },
+  {
+    "timeChunk": "2018-06",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "17777.23"
+  },
+  {
+    "timeChunk": "2018-06",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "20309783.00"
+  },
+  {
+    "timeChunk": "2018-06",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "500018.00"
+  },
+  {
+    "timeChunk": "2018-06",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "258216.00"
+  },
+  {
+    "timeChunk": "2018-06",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "2000000.00"
+  },
+  {
+    "timeChunk": "2018-06",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "51000.00"
+  },
+  {
+    "timeChunk": "2018-06",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "7000.00"
+  },
+  {
+    "timeChunk": "2018-10",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "20234663.30"
+  },
+  {
+    "timeChunk": "2018-10",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "865687.71"
+  },
+  {
+    "timeChunk": "2018-10",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "250000.00"
+  },
+  {
+    "timeChunk": "2018-10",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "1915212.20"
+  },
+  {
+    "timeChunk": "2018-10",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "491364.00"
+  },
+  {
+    "timeChunk": "2018-10",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "82800.00"
+  },
+  {
+    "timeChunk": "2018-10",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "162801.01"
+  },
+  {
+    "timeChunk": "2018-10",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "13032406.00"
+  },
+  {
+    "timeChunk": "2018-10",
+    "srcType": "exchange",
+    "destType": "distributed-to-unknown",
+    "amount": "14389177.52"
+  },
+  {
+    "timeChunk": "2018-10",
+    "srcType": "exchange",
+    "destType": "distributed-to-tipbot",
+    "amount": "2805737.42"
+  },
+  {
+    "timeChunk": "2018-10",
+    "srcType": "exchange",
+    "destType": "distributed-to-team-member",
+    "amount": "24999.99"
+  },
+  {
+    "timeChunk": "2018-11",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "4322654.04"
+  },
+  {
+    "timeChunk": "2018-11",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "242486.57"
+  },
+  {
+    "timeChunk": "2018-11",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "4584640.00"
+  },
+  {
+    "timeChunk": "2018-11",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "380166.60"
+  },
+  {
+    "timeChunk": "2018-11",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "1000120.50"
+  },
+  {
+    "timeChunk": "2018-11",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "20721615.30"
+  },
+  {
+    "timeChunk": "2018-11",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "1716693.43"
+  },
+  {
+    "timeChunk": "2018-11",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "192470.00"
+  },
+  {
+    "timeChunk": "2018-11",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "16642150.00"
+  },
+  {
+    "timeChunk": "2018-11",
+    "srcType": "exchange",
+    "destType": "distributed-to-unknown",
+    "amount": "18031354.88"
+  },
+  {
+    "timeChunk": "2018-11",
+    "srcType": "exchange",
+    "destType": "distributed-to-tipbot",
+    "amount": "441795.12"
+  },
+  {
+    "timeChunk": "2018-12",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "8122849.34"
+  },
+  {
+    "timeChunk": "2018-12",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "587733.96"
+  },
+  {
+    "timeChunk": "2018-12",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "10268449.00"
+  },
+  {
+    "timeChunk": "2018-12",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "52854.00"
+  },
+  {
+    "timeChunk": "2018-12",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "1000000.00"
+  },
+  {
+    "timeChunk": "2018-12",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "225366.95"
+  },
+  {
+    "timeChunk": "2018-12",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "80001.00"
+  },
+  {
+    "timeChunk": "2018-12",
+    "srcType": "distributed-to-team-member",
+    "destType": "source",
+    "amount": "5.00"
+  },
+  {
+    "timeChunk": "2018-12",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "17546734.00"
+  },
+  {
+    "timeChunk": "2018-12",
+    "srcType": "exchange",
+    "destType": "distributed-to-unknown",
+    "amount": "19352237.40"
+  },
+  {
+    "timeChunk": "2018-12",
+    "srcType": "exchange",
+    "destType": "distributed-to-tipbot",
+    "amount": "1240132.80"
+  },
+  {
+    "timeChunk": "2018-12",
+    "srcType": "exchange",
+    "destType": "distributed-to-team-member",
+    "amount": "3244.95"
+  },
+  {
+    "timeChunk": "2019-01",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "7919635.02"
+  },
+  {
+    "timeChunk": "2019-01",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "203798.40"
+  },
+  {
+    "timeChunk": "2019-01",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "12535940.00"
+  },
+  {
+    "timeChunk": "2019-01",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "256762.00"
+  },
+  {
+    "timeChunk": "2019-01",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "512561.00"
+  },
+  {
+    "timeChunk": "2019-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "340890.00"
+  },
+  {
+    "timeChunk": "2019-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "657796.58"
+  },
+  {
+    "timeChunk": "2019-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "14872157.00"
+  },
+  {
+    "timeChunk": "2019-01",
+    "srcType": "exchange",
+    "destType": "distributed-to-unknown",
+    "amount": "10539985.00"
+  },
+  {
+    "timeChunk": "2019-01",
+    "srcType": "exchange",
+    "destType": "distributed-to-tipbot",
+    "amount": "140168.76"
+  },
+  {
+    "timeChunk": "2019-01",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "3527.00"
+  },
+  {
+    "timeChunk": "2019-01",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "6361450.14"
+  },
+  {
+    "timeChunk": "2019-01",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "97930.07"
+  },
+  {
+    "timeChunk": "2019-02",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "555058.40"
+  },
+  {
+    "timeChunk": "2019-02",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "10657134.56"
+  },
+  {
+    "timeChunk": "2019-02",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "2331367.15"
+  },
+  {
+    "timeChunk": "2019-02",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "4201745.90"
+  },
+  {
+    "timeChunk": "2019-02",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "24100222.00"
+  },
+  {
+    "timeChunk": "2019-02",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "784000.00"
+  },
+  {
+    "timeChunk": "2019-02",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "315602.00"
+  },
+  {
+    "timeChunk": "2019-02",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "43720.00"
+  },
+  {
+    "timeChunk": "2019-02",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "12581251.00"
+  },
+  {
+    "timeChunk": "2019-02",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "10561789.99"
+  },
+  {
+    "timeChunk": "2019-02",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "166989.14"
+  },
+  {
+    "timeChunk": "2019-02",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-team-member",
+    "amount": "1400000.00"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-unknown",
+    "amount": "38808113.24"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-tipbot",
+    "amount": "1804077.58"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "distributed-to-unknown",
+    "destType": "source",
+    "amount": "5.00"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "distributed-to-unknown",
+    "destType": "exchange",
+    "amount": "14.10"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "distributed-to-unknown",
+    "destType": "distributed-to-team-member",
+    "amount": "11401.32"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "source",
+    "destType": "distributed-to-tipbot",
+    "amount": "715636.65"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "source",
+    "destType": "distributed-to-unknown",
+    "amount": "25643598.69"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "31223763.66"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "source",
+    "destType": "exchange",
+    "amount": "9.00"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "1264343.59"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "478037.22"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "236565.00"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "distributed-to-team-member",
+    "destType": "source",
+    "amount": "10661.00"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "distributed-to-team-member",
+    "destType": "exchange",
+    "amount": "27401008.00"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-unknown",
+    "amount": "34279932.40"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "distributed-to-tipbot",
+    "destType": "distributed-to-tipbot",
+    "amount": "688509.50"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "distributed-to-tipbot",
+    "destType": "exchange",
+    "amount": "22119.98"
+  },
+  {
+    "timeChunk": "2019-03",
+    "srcType": "exchange",
+    "destType": "distributed-to-unknown",
+    "amount": "1.00"
+  },
+  {
+    "timeChunk": "2018-05",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown",
+    "amount": "1.00"
+  },
+  {
+    "timeChunk": "2018-05",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-tipbot",
+    "amount": "25500.00"
+  }
+]

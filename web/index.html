@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Banano Distribution Stats</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body
+    class="not_selectable"
+    onload="onLoad()"
+    oncontextmenu="return false;"
+    style="touch-action: none"
+  >
+    <div class="box">
+      <div class="row content">
+        Gray: Bots.<br>
+        Yellow: Bought off exchanges.<br>
+        Green: Team Members sold to exchanges.<br>
+        Pink: Distributed directly to exchange.<br>
+        Blue: Distributed to unknown accounts or tipbot.<br>
+        <div id="sankey" class="sankey w100pct">
+          <svg id="sankeySvg"></svg>
+        </div>
+      </div>
+      <div class="row footer"></div>
+    </div>
+    <script src="d3.v4.js" charset="utf-8"></script>
+    <script src="d3-sankey-diagram.js" charset="utf-8"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

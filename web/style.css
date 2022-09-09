@@ -1,0 +1,100 @@
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  overflow-y: scroll;
+  text-align: center;
+  touch-action: manipulation;
+}
+
+.not_selectable {
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.selectable {
+  cursor: text;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.bordered {
+  border-radius: 0.4vmin;
+  border: solid;
+  border-width: 0.1vmin;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.box .row {
+  border: 0.1vmin dotted blue;
+}
+
+.box .row.header {
+  flex: 0 1 auto;
+}
+
+.box .row.content {
+  flex: 1 1 auto;
+}
+
+.box .row.footer {
+  flex: 0 1 0;
+}
+
+.w100pct {
+  width: 100%;
+}
+
+svg .link {
+  opacity: 0.8;
+  fill: steelblue;
+}
+
+svg .link:hover {
+  opacity: 1;
+}
+
+svg g.sankey {
+  font-size: 10pt;
+}
+svg .node line {
+  stroke-width: 1px;
+  stroke: #000;
+}
+svg .node-type-process line {
+  stroke-width: 4px;
+  stroke: #888;
+}
+
+svg .group rect {
+  fill: #eee;
+  stroke: #bbb;
+  stroke-width: 0.5px;
+}
+
+svg .group text {
+  fill: #999;
+}
