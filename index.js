@@ -76,7 +76,7 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
 
             if (historyElt.type == 'state' && historyElt.subtype == 'receive') {
               if (srcType == 'exchange') {
-                console.log('srcType', srcType, 'destType', destType);
+                // console.log('srcType', srcType, 'destType', destType, historyElt);
                 if (destType.startsWith('distributed-to-')) {
                   // if we are recieving at an exchange from a distributed account
                   // record it as a send with swapped types.
