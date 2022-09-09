@@ -135,14 +135,18 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
           }
         };
 
-        // if there's more history, get it.
-        if (!debug) {
-          if (previous !== undefined) {
-            stop = false;
-          }
+        if (previous !== undefined) {
+          stop = false;
         }
       }
     }
+    if (debug) {
+      // console.log('processedBlockHashSet.size', processedBlockHashSet.size, 'of', historyChunkSize);
+      if (processedBlockHashSet.size > historyChunkSize) {
+        stop = true;
+      }
+    }
+    console.log('distribution calculation CONTINUE', processedBlockHashSet.size, 'blocks', 'stop', stop);
   }
 };
 

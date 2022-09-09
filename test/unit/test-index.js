@@ -139,6 +139,7 @@ describe('index', () => {
       await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'c', amountByTimeChunkAndSrcDestTypeMap, debug);
       await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'd', amountByTimeChunkAndSrcDestTypeMap, debug);
       await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'a', amountByTimeChunkAndSrcDestTypeMap, true);
+      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, 'd', amountByTimeChunkAndSrcDestTypeMap, true);
       expect(amountByTimeChunkAndSrcDestTypeMap.size).to.equal(1);
     } catch (error) {
       console.trace(error);
