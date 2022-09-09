@@ -101,9 +101,9 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
               const amount = parseFloat(historyElt.amount_decimal);
               const timeMs = historyElt.local_timestamp * 1000;
 
-
+              /* istanbul ignore if */
               if (verbose) {
-                if(amount > 1000000) {
+                if (amount > 1000000) {
                   console.log('distribution calculation CONTINUE', 'whalewatch', amount, 'hash', historyElt.hash);
                 }
               }

@@ -117,14 +117,14 @@ const loadBananoDistributionStats = async () => {
           target: stat.destNode,
           value: stat.amount,
           color: stat.color,
-        }
-        if(stat.srcType == 'source-folding') {
+        };
+        if (stat.srcType == 'source-folding') {
           elt.color = 'gray';
         }
-        if(stat.srcType == 'source-boompow') {
+        if (stat.srcType == 'source-boompow') {
           elt.color = 'gray';
         }
-        if((stat.srcType == 'distributed-to-team-member') || (stat.destType == 'distributed-to-team-member')) {
+        if ((stat.srcType == 'distributed-to-team-member') || (stat.destType == 'distributed-to-team-member')) {
           elt.color = 'green';
         }
         sankey.links.push(elt);
