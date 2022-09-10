@@ -13,7 +13,7 @@ const loadBananoDistributionStats = async () => {
   const responseJson = await response.json();
 
   window.bananoDistributionStats = [];
-  responseJson.forEach((stat) => {
+  responseJson.histogram.forEach((stat) => {
     stat.amount = parseFloat(stat.amount);
     stat.srcNode = stat.timeChunk + '-' + stat.srcType;
     stat.destNode = stat.timeChunk + '-' + stat.destType;
