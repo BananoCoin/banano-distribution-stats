@@ -41,7 +41,7 @@ const loadBananoDistributionStats = async () => {
   const sankey = {};
 
   const accountTypeNames = [
-    ['source', 'source-folding', 'source-boompow'],
+    ['source', 'source-folding', 'source-boompow', 'source-cfc', 'source-bananochan'],
     ['distributed-to-team-member', 'distributed-to-tipbot', 'distributed-to-unknown', 'distributed-to-exchange-mid', 'source-distributed-to-exchange', 'source-folding-distributed-to-exchange'],
     ['exchange'],
   ];

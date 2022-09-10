@@ -59,6 +59,7 @@ const run = async () => {
     knownAccountTypeMap.set('ban_1boompow14irck1yauquqypt7afqrh8b6bbu5r93pc6hgbqs7z6o99frcuym', 'source-boompow');
     knownAccountTypeMap.set('ban_3fo1d1ng6mfqumfoojqby13nahaugqbe5n6n3trof4q8kg5amo9mribg4muo', 'source-folding');
     knownAccountTypeMap.set('ban_1d59mzcc7yyuixyzc7femupc76yjsuoko79mm7y8td461opcpgiphjxjcje7', 'source-cfc');
+    knownAccountTypeMap.set('ban_1bun4a6xbrawe1ugqspyx9zf7wy7kurrmsgr9sodmyatp74xdx6qwki4fwx8', 'source-cfc');
     knownAccountTypeMap.set('ban_3eg7hsqtt84sr6fyfgpemazhqdj5gnir7q7gxrmt4mozndehnt6un73y51u9', 'source-bananochan');
 
 

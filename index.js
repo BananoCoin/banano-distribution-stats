@@ -112,6 +112,8 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
                     amount: amount,
                     hash: historyElt.hash,
                     timeChunk: localTimeChunk,
+                    srcType: srcType,
+                    destType: destType,
                   });
                 }
               }
