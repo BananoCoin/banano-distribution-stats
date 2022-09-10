@@ -35,7 +35,7 @@ const loadBananoDistributionStats = async () => {
   const h = 5000;
   const y = 300;
   const x = -50;
-  sankeySvgElt.setAttribute('width', '100%');
+  sankeySvgElt.setAttribute('width', '90vw');
   sankeySvgElt.setAttribute('viewBox', `${x} ${y} ${w} ${h-y}`);
 
   const sankey = {};

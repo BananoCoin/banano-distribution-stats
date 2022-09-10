@@ -9,9 +9,9 @@ const VERBOSE = true;
 
 const run = async () => {
   console.log('banano-distribution-stats');
-  if (process.argv.length < 3) {
+  if (process.argv.length < 4) {
     console.log('#usage:');
-    console.log('npm start <outfile> <url>');
+    console.log('npm start <histogram-outfile> <whalewatch-outfile> <url>');
   } else {
     let historyChunkSize = 1000;
     // chunk into days
@@ -66,7 +66,9 @@ const run = async () => {
     // for (const [account, type] of knownAccountTypeMap) {
     //   console.log('known account type', account, type);
     // }
-    const url = process.argv[3];
+    const histogramOutFileNm = process.argv[2];
+    const whalewatchOutFileNm = process.argv[3];
+    const url = process.argv[4];
     // console.log('url', url);
     httpsRateLimit.setUrl(url);
 
@@ -114,14 +116,13 @@ const run = async () => {
     }
 
     // console.log('distribution', distribution);
-    const out = {
-      histogram: histogram,
-      whalewatch: whalewatch,
-    };
-    const outFileNm = process.argv[2];
-    const outFilePtr = fs.openSync(outFileNm, 'w');
-    fs.writeSync(outFilePtr, JSON.stringify(out, null, 2));
-    fs.closeSync(outFilePtr);
+    const histogramOutFilePtr = fs.openSync(histogramOutFileNm, 'w');
+    fs.writeSync(histogramOutFilePtr, JSON.stringify(histogram, null, 2));
+    fs.closeSync(histogramOutFilePtr);
+
+    const whalewatchOutFilePtr = fs.openSync(whalewatchOutFileNm, 'w');
+    fs.writeSync(whalewatchOutFilePtr, JSON.stringify(whalewatch, null, 2));
+    fs.closeSync(whalewatchOutFilePtr);
   }
 };
 

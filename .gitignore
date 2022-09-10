@@ -3,4 +3,5 @@
 .nyc_output
 /data/
 /config.json
-/output.json
+/histogram.json
+/whalewatch.json
