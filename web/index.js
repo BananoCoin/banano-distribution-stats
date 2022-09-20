@@ -16,7 +16,7 @@ const loadBananoDistributionStats = async () => {
   const swimLaneSet = new Set();
   const timeChunkSet = new Set();
   responseJson.forEach((stat) => {
-    if(stat.direction == undefined) {
+    if (stat.direction == undefined) {
       stat.direction = 'sent';
     }
     timeChunkSet.add(stat.timeChunk);
@@ -75,7 +75,7 @@ const loadBananoDistributionStats = async () => {
     stat.amount = parseFloat(stat.amount);
     if (stat.timeChunk !== '1970-01') {
       if (stat.amount > 0) {
-        if(stat.direction == 'received') {
+        if (stat.direction == 'received') {
           const prevTimeChunk = prev(stat.timeChunk);
           if (prevTimeChunk !== undefined) {
             if (swimLanes.includes(stat.srcType) && swimLanes.includes(stat.destType)) {
@@ -87,7 +87,7 @@ const loadBananoDistributionStats = async () => {
             }
           }
         }
-        if(stat.direction == 'sent') {
+        if (stat.direction == 'sent') {
           const nextTimeChunk = next(stat.timeChunk);
           if (nextTimeChunk !== undefined) {
             if (swimLanes.includes(stat.srcType) && swimLanes.includes(stat.destType)) {
@@ -126,7 +126,7 @@ const loadBananoDistributionStats = async () => {
     group.nodes = [];
 
     for (const swimLane of swimLanes) {
-      for(const direction of directions) {
+      for (const direction of directions) {
         const nodeName = `${timeChunk}-${swimLane}(${direction})`;
         nodeNameSet.add(nodeName);
         group.nodes.push(nodeName);
@@ -179,12 +179,12 @@ const loadBananoDistributionStats = async () => {
         target: stat.destNode,
         value: stat.amount,
       };
-      if(stat.direction == 'received') {
+      if (stat.direction == 'received') {
         if (stat.srcType == 'source') {
           link.color = 'orange';
         }
       }
-      if(stat.direction == 'sent') {
+      if (stat.direction == 'sent') {
         if (stat.srcType == 'source') {
           link.color = '#CCCC00';
         }
@@ -194,7 +194,7 @@ const loadBananoDistributionStats = async () => {
 
         add(stat.nextTimeChunk, stat.destType, stat.amount);
       }
-      if(nodeNameSet.has(link.source) && nodeNameSet.has(link.target)) {
+      if (nodeNameSet.has(link.source) && nodeNameSet.has(link.target)) {
         sankey.links.push(link);
       }
     }
@@ -242,7 +242,7 @@ const loadBananoDistributionStats = async () => {
           if (swimLane == 'distributed-to-burn') {
             link.color = 'pink';
           }
-          if(nodeNameSet.has(link.source) && nodeNameSet.has(link.target)) {
+          if (nodeNameSet.has(link.source) && nodeNameSet.has(link.target)) {
             sankey.links.push(link);
           }
         }
