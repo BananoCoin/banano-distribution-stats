@@ -31,13 +31,12 @@ const loadBananoDistributionStats = async () => {
     'source',
     'distributed-to-team-member',
     'distributed-to-unknown',
-    'distributed-to-known',
-    ,
+    'distributed-to-known',,
   ];
 
-  for(swimLane of swimLaneArray) {
-    if(swimLane != 'exchange') {
-      if(!swimLanes.includes(swimLane)) {
+  for (swimLane of swimLaneArray) {
+    if (swimLane != 'exchange') {
+      if (!swimLanes.includes(swimLane)) {
         swimLanes.push(swimLane);
       }
     }
