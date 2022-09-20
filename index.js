@@ -9,7 +9,11 @@
 
 // functions
 
-const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap, sourceAccount, amountByTimeChunkAndSrcDestTypeMap, whalewatch, debug, verbose, nbr, max) => {
+const getDistributionOverTime = async (httpsRateLimit, historyChunkSize,
+    timeChunkFn, knownAccountTypeMap, sourceAccount,
+    amountSentByTimeChunkAndSrcDestTypeMap,
+    amountReceivedByTimeChunkAndSrcDestTypeMap,
+    whalewatch, debug, verbose, nbr, max) => {
   let next;
   let stop = false;
 
@@ -28,8 +32,8 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
       action: 'account_history',
       account: sourceAccount,
       count: historyChunkSize,
-      reverse: 'true',
-      raw: 'true',
+      reverse: true,
+      raw: true,
     };
     // console.log('accountHistoryReq', accountHistoryReq);
     if (next) {
@@ -73,21 +77,40 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
               knownAccountTypeMap.set(destAccount, destType);
             }
 
-            let addAmountToMap = false;
+            const amount = parseFloat(historyElt.amount_decimal);
+            const timeMs = historyElt.local_timestamp * 1000;
+            // console.log('local_timestamp', getDate(timeMs));
+            const localTimeChunk = timeChunkFn(timeMs);
+            // console.log('historyElt.hash', historyElt.hash, localTimeChunk);
+            // console.log('localTimeChunk', localTimeChunk);
+
+            const amountBySrcDestTypeToMap = (map) => {
+              let amountBySrcDestTypeMap;
+              if (map.has(localTimeChunk)) {
+                amountBySrcDestTypeMap = map.get(localTimeChunk);
+              } else {
+                amountBySrcDestTypeMap = new Map();
+                map.set(localTimeChunk, amountBySrcDestTypeMap);
+              }
+
+              let amountByDestTypeMap;
+              if (amountBySrcDestTypeMap.has(srcType)) {
+                amountByDestTypeMap = amountBySrcDestTypeMap.get(srcType);
+              } else {
+                amountByDestTypeMap = new Map();
+                amountBySrcDestTypeMap.set(srcType, amountByDestTypeMap);
+              }
+
+              let oldAmount = 0.0;
+              if (amountByDestTypeMap.has(destType)) {
+                oldAmount = amountByDestTypeMap.get(destType);
+              }
+              const newAmount = oldAmount + amount;
+
+              amountByDestTypeMap.set(destType, newAmount);
+            };
 
             if ((historyElt.type == 'state') && (historyElt.subtype == 'send')) {
-              addAmountToMap = true;
-            }
-
-            // console.log('addAmountToMap', historyElt.type , historyElt.subtype, addAmountToMap);
-
-            if (addAmountToMap) {
-              const amount = parseFloat(historyElt.amount_decimal);
-              const timeMs = historyElt.local_timestamp * 1000;
-              // console.log('local_timestamp', getDate(timeMs));
-              const localTimeChunk = timeChunkFn(timeMs);
-              // console.log('historyElt.hash', historyElt.hash, localTimeChunk);
-              // console.log('localTimeChunk', localTimeChunk);
               /* istanbul ignore if */
               if (amount > 1000000) {
                 if (verbose) {
@@ -107,29 +130,10 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize, timeChu
                 });
               }
 
-              let amountBySrcDestTypeMap;
-              if (amountByTimeChunkAndSrcDestTypeMap.has(localTimeChunk)) {
-                amountBySrcDestTypeMap = amountByTimeChunkAndSrcDestTypeMap.get(localTimeChunk);
-              } else {
-                amountBySrcDestTypeMap = new Map();
-                amountByTimeChunkAndSrcDestTypeMap.set(localTimeChunk, amountBySrcDestTypeMap);
-              }
-
-              let amountByDestTypeMap;
-              if (amountBySrcDestTypeMap.has(srcType)) {
-                amountByDestTypeMap = amountBySrcDestTypeMap.get(srcType);
-              } else {
-                amountByDestTypeMap = new Map();
-                amountBySrcDestTypeMap.set(srcType, amountByDestTypeMap);
-              }
-
-              let oldAmount = 0.0;
-              if (amountByDestTypeMap.has(destType)) {
-                oldAmount = amountByDestTypeMap.get(destType);
-              }
-              const newAmount = oldAmount + amount;
-
-              amountByDestTypeMap.set(destType, newAmount);
+              amountBySrcDestTypeToMap(amountSentByTimeChunkAndSrcDestTypeMap);
+            }
+            if ((historyElt.type == 'state') && (historyElt.subtype == 'receive')) {
+              amountBySrcDestTypeToMap(amountReceivedByTimeChunkAndSrcDestTypeMap);
             }
           }
         };

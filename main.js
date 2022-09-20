@@ -90,7 +90,8 @@ const run = async () => {
       historyChunkSize = 1000;
     }
 
-    const amountByTimeChunkAndSrcDestTypeMap = new Map();
+    const amountSentByTimeChunkAndSrcDestTypeMap = new Map();
+    const amountReceivedByTimeChunkAndSrcDestTypeMap = new Map();
     const whalewatch = [];
 
     console.log('distribution calculation STARTING');
@@ -100,19 +101,23 @@ const run = async () => {
       const type = knownAccountType.type;
       console.log('distribution calculation STARTING', knownAccountTypeNbr, 'of', knownAccountTypeList.length, type, account);
       if (type != 'distributed-to-known') {
-        await index.getDistributionOverTime(httpsRateLimit, historyChunkSize, timeChunkFn, knownAccountTypeMap,
-            account, amountByTimeChunkAndSrcDestTypeMap, whalewatch,
-            DEBUG, VERBOSE, knownAccountTypeNbr, knownAccountTypeList.length);
+        await index.getDistributionOverTime(httpsRateLimit, historyChunkSize,
+            timeChunkFn, knownAccountTypeMap, account,
+            amountSentByTimeChunkAndSrcDestTypeMap,
+            amountReceivedByTimeChunkAndSrcDestTypeMap,
+            whalewatch, DEBUG, VERBOSE,
+            knownAccountTypeNbr, knownAccountTypeList.length);
         // console.log('distributionOverTime', distributionOverTime);
       }
       console.log('distribution calculation FINISHED', knownAccountTypeNbr, 'of', knownAccountTypeList.length, type, account);
       knownAccountTypeNbr++;
     }
     console.log('distribution calculation FINISHED');
-    // console.log('amountByTimeChunkAndSrcDestTypeMap', amountByTimeChunkAndSrcDestTypeMap);
+    // console.log('amountSentByTimeChunkAndSrcDestTypeMap', amountSentByTimeChunkAndSrcDestTypeMap);
 
     const histogram = [];
-    for (const [timeChunk, amountBySrcDestTypeMap] of amountByTimeChunkAndSrcDestTypeMap) {
+
+    for (const [timeChunk, amountBySrcDestTypeMap] of amountSentByTimeChunkAndSrcDestTypeMap) {
       for (const [srcType, amountByDestTypeMap] of amountBySrcDestTypeMap) {
         for (const [destType, amount] of amountByDestTypeMap) {
           histogram.push({
@@ -120,6 +125,21 @@ const run = async () => {
             srcType: srcType,
             destType: destType,
             amount: amount.toFixed(2),
+            direction: 'sent',
+          });
+        }
+      }
+    }
+
+    for (const [timeChunk, amountBySrcDestTypeMap] of amountReceivedByTimeChunkAndSrcDestTypeMap) {
+      for (const [srcType, amountByDestTypeMap] of amountBySrcDestTypeMap) {
+        for (const [destType, amount] of amountByDestTypeMap) {
+          histogram.push({
+            timeChunk: timeChunk,
+            srcType: srcType,
+            destType: destType,
+            amount: amount.toFixed(2),
+            direction: 'received',
           });
         }
       }
