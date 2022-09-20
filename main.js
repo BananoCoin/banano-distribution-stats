@@ -37,13 +37,13 @@ const run = async () => {
       }
       switch (type) {
         case 'distribution':
-        case 'faucet':
-        case 'event':
           knownAccountTypeMap.set(account, 'source');
           break;
         case 'exchange':
           knownAccountTypeMap.set(account, 'exchange');
           break;
+        case 'faucet':
+        case 'event':
         case 'burn':
         case 'team-member':
           knownAccountTypeMap.set(account, `distributed-to-${type}`);
