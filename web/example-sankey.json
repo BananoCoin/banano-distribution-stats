@@ -1,0 +1,110 @@
+{
+  "links": [
+    {
+      "source": "2018-04-source",
+      "target": "2018-04-distributed-to-known",
+      "value": 1,
+      "color": "gray"
+    },
+    {
+      "source": "2018-04-distributed-to-known",
+      "target": "2018-05-distributed-to-known",
+      "value": 1,
+      "color": "gray"
+    }
+  ],
+  "groups": [
+    {
+      "title": "2018-04",
+      "nodes": [
+        "2018-04-source",
+        "2018-04-distributed-to-team-member",
+        "2018-04-distributed-to-unknown",
+        "2018-04-distributed-to-known",
+        "2018-04-exchange"
+      ]
+    },
+    {
+      "title": "2018-05",
+      "nodes": [
+        "2018-05-source",
+        "2018-05-distributed-to-team-member",
+        "2018-05-distributed-to-unknown",
+        "2018-05-distributed-to-known",
+        "2018-05-exchange"
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "title": "2018-04-source",
+      "direction": "r",
+      "id": "2018-04-source"
+    },
+    {
+      "title": "2018-04-distributed-to-team-member",
+      "direction": "r",
+      "id": "2018-04-distributed-to-team-member"
+    },
+    {
+      "title": "2018-04-distributed-to-unknown",
+      "direction": "r",
+      "id": "2018-04-distributed-to-unknown"
+    },
+    {
+      "title": "2018-04-distributed-to-known",
+      "direction": "r",
+      "id": "2018-04-distributed-to-known"
+    },
+    {
+      "title": "2018-04-exchange",
+      "direction": "r",
+      "id": "2018-04-exchange"
+    },
+    {
+      "title": "2018-05-source",
+      "direction": "r",
+      "id": "2018-05-source"
+    },
+    {
+      "title": "2018-05-distributed-to-team-member",
+      "direction": "r",
+      "id": "2018-05-distributed-to-team-member"
+    },
+    {
+      "title": "2018-05-distributed-to-unknown",
+      "direction": "r",
+      "id": "2018-05-distributed-to-unknown"
+    },
+    {
+      "title": "2018-05-distributed-to-known",
+      "direction": "r",
+      "id": "2018-05-distributed-to-known"
+    },
+    {
+      "title": "2018-05-exchange",
+      "direction": "r",
+      "id": "2018-05-exchange"
+    }
+  ],
+  "order": [
+    [
+      [
+        "2018-04-source",
+        "2018-04-distributed-to-team-member",
+        "2018-04-distributed-to-unknown",
+        "2018-04-distributed-to-known",
+        "2018-04-exchange"
+      ]
+    ],
+    [
+      [
+        "2018-05-source",
+        "2018-05-distributed-to-team-member",
+        "2018-05-distributed-to-unknown",
+        "2018-05-distributed-to-known",
+        "2018-05-exchange"
+      ]
+    ]
+  ]
+}

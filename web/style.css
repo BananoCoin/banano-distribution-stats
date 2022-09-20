@@ -1,0 +1,47 @@
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+.bordered {
+  border-radius: 0.4vmin;
+  border: solid;
+  border-width: 0.1vmin;
+}
+
+.w100pct {
+  width: 100%;
+}
+
+svg .link {
+  opacity: 0.8;
+  fill: steelblue;
+}
+
+svg .link:hover {
+  opacity: 1;
+}
+
+svg g.sankey {
+  font-size: 10pt;
+}
+svg .node line {
+  stroke-width: 1px;
+  stroke: #000;
+}
+svg .node-type-process line {
+  stroke-width: 4px;
+  stroke: #888;
+}
+
+svg .group rect {
+  fill: #eee;
+  stroke: #bbb;
+  stroke-width: 0.5px;
+}
+
+svg .group text {
+  fill: #999;
+}

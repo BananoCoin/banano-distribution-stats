@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Banano Distribution Stats</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body onload="onLoad()">
+    Yellow: Distribution.<br />
+    Green: Distributed to Team Members.<br />
+    Brown: Distributed to Unknown Parties.<br />
+    Blue: Distributed to Known Parties.<br />
+    <div id="sankey" class="sankey w100pct">
+      <svg id="sankeySvg"></svg>
+    </div>
+    <script src="d3.v4.js" charset="utf-8"></script>
+    <script src="d3-sankey-diagram.js" charset="utf-8"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
