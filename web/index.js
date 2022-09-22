@@ -2,6 +2,8 @@ window.onLoad = async () => {
   await loadBananoDistributionStats();
 };
 
+const MAXIMUM_SUPPLY = 3400000000;
+
 // https://github.com/ricklupton/d3-sankey-diagram
 const loadBananoDistributionStats = async () => {
   const response = await fetch('banano-distribution-stats.json', {
@@ -37,23 +39,26 @@ const loadBananoDistributionStats = async () => {
   directions.sort();
 
 
-  // source and team members at the top
+  // burn, source, known, and team members at the top
   const swimLanes = [
     'source',
+    'distributed-to-burn',
     'distributed-to-team-member',
-    'distributed-to-unknown',
-    'distributed-to-known',,
+    'distributed-to-known',
   ];
 
   for (swimLane of swimLaneArray) {
     if (swimLane != 'exchange') {
-      if (!swimLanes.includes(swimLane)) {
-        swimLanes.push(swimLane);
+      if (swimLane != 'distributed-to-unknown') {
+        if (!swimLanes.includes(swimLane)) {
+          swimLanes.push(swimLane);
+        }
       }
     }
   }
 
-  // exchange at the bottom
+  // distributed-to-unknown, exchange at the bottom
+  swimLanes.push('distributed-to-unknown');
   swimLanes.push('exchange');
 
   const next = (timeChunk) => {
@@ -75,10 +80,10 @@ const loadBananoDistributionStats = async () => {
     stat.amount = parseFloat(stat.amount);
     if (stat.timeChunk !== '1970-01') {
       if (stat.amount > 0) {
-        if (stat.direction == 'received') {
-          const prevTimeChunk = prev(stat.timeChunk);
-          if (prevTimeChunk !== undefined) {
-            if (swimLanes.includes(stat.srcType) && swimLanes.includes(stat.destType)) {
+        if (swimLanes.includes(stat.srcType) && swimLanes.includes(stat.destType)) {
+          if (stat.direction == 'received') {
+            const prevTimeChunk = prev(stat.timeChunk);
+            if (prevTimeChunk !== undefined) {
               stat.prevTimeChunk = prevTimeChunk;
               stat.srcNode = `${stat.prevTimeChunk}-${stat.destType}(${stat.direction})`;
               stat.destNode = `${stat.timeChunk}-${stat.srcType}(${stat.direction})`;
@@ -86,11 +91,9 @@ const loadBananoDistributionStats = async () => {
               window.bananoDistributionStats.push(stat);
             }
           }
-        }
-        if (stat.direction == 'sent') {
-          const nextTimeChunk = next(stat.timeChunk);
-          if (nextTimeChunk !== undefined) {
-            if (swimLanes.includes(stat.srcType) && swimLanes.includes(stat.destType)) {
+          if (stat.direction == 'sent') {
+            const nextTimeChunk = next(stat.timeChunk);
+            if (nextTimeChunk !== undefined) {
               stat.nextTimeChunk = nextTimeChunk;
               stat.srcNode = `${stat.timeChunk}-${stat.srcType}(${stat.direction})`;
               stat.destNode = `${stat.nextTimeChunk}-${stat.destType}(${stat.direction})`;
@@ -171,6 +174,12 @@ const loadBananoDistributionStats = async () => {
     // console.log('stat', stat);
     if (stat.srcType.startsWith('source') &&
         stat.destType.startsWith('source')) {
+    } else if (stat.direction.startsWith('received') &&
+        stat.srcType.startsWith('source')) {
+    } else if (stat.direction.startsWith('received') &&
+        stat.destType.startsWith('source')) {
+    } else if (stat.srcType.startsWith('distributed') &&
+        stat.destType.startsWith('source')) {
     } else if (stat.srcType.startsWith('distributed') &&
         stat.destType.startsWith('distributed')) {
     } else {
@@ -180,7 +189,7 @@ const loadBananoDistributionStats = async () => {
         value: stat.amount,
       };
       if (stat.direction == 'received') {
-        if (stat.srcType == 'source') {
+        if (stat.srcType == 'exchange') {
           link.color = 'orange';
         }
       }
@@ -213,10 +222,27 @@ const loadBananoDistributionStats = async () => {
   };
   sumRight();
 
-  for (const timeChunk of timeChunks) {
-    const nextTimeChunk = next(timeChunk);
-    if (nextTimeChunk !== undefined) {
-      for (const swimLane of swimLanes) {
+  const addSupply = () => {
+    for (const timeChunk of timeChunks) {
+      const nextTimeChunk = next(timeChunk);
+      if (nextTimeChunk !== undefined) {
+        let currentSupply = MAXIMUM_SUPPLY;
+        for (const swimLane of swimLanes) {
+          const a0 = get(nextTimeChunk, swimLane);
+          currentSupply -= a0;
+        }
+
+        const a0 = get(timeChunk, 'source');
+        add(timeChunk, 'source', currentSupply-a0);
+      }
+    }
+  };
+  addSupply();
+
+  for (const swimLane of swimLanes) {
+    for (const timeChunk of timeChunks) {
+      const nextTimeChunk = next(timeChunk);
+      if (nextTimeChunk !== undefined) {
         const nn0 = `${timeChunk}-${swimLane}(sent)`;
         const nn1 = `${nextTimeChunk}-${swimLane}(sent)`;
         const a0 = get(timeChunk, swimLane);
@@ -241,6 +267,9 @@ const loadBananoDistributionStats = async () => {
           }
           if (swimLane == 'distributed-to-burn') {
             link.color = 'pink';
+          }
+          if (swimLane == 'source') {
+            link.color = 'yellow';
           }
           if (nodeNameSet.has(link.source) && nodeNameSet.has(link.target)) {
             sankey.links.push(link);
