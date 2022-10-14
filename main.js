@@ -4,15 +4,21 @@ const fs = require('fs');
 const httpsRateLimit = require('https-rate-limit');
 const index = require('./index.js');
 
-const DEBUG = false;
+const DEBUG = true;
 const VERBOSE = true;
 
 const run = async () => {
   console.log('banano-distribution-stats');
-  if (process.argv.length < 4) {
+  if (process.argv.length < 6) {
     console.log('#usage:');
-    console.log('npm start <histogram-outfile> <whalewatch-outfile> <url>');
+    console.log('npm start <known-account-url> <histogram-outfile> <whalewatch-outfile> <known-account-outfile> <url>');
   } else {
+    const knownAccountsUrl = process.argv[2];
+    const histogramOutFileNm = process.argv[3];
+    const whalewatchOutFileNm = process.argv[4];
+    const knownAccountOutFileNm = process.argv[5];
+    const url = process.argv[6];
+
     let historyChunkSize = 1000;
     // chunk into days
     const timeChunkFn = (ts) => {
@@ -23,7 +29,6 @@ const run = async () => {
     };
     const knownAccountTypeMap = new Map();
 
-    const knownAccountsUrl = 'https://api.creeper.banano.cc/banano/v1/known/accounts';
     // console.log('knownAccountsUrl', knownAccountsUrl);
     httpsRateLimit.setUrl(knownAccountsUrl);
     const knownAccountsResponse = await httpsRateLimit.sendRequest({includeType: true});
@@ -71,9 +76,6 @@ const run = async () => {
     // for (const [account, type] of knownAccountTypeMap) {
     //   console.log('known account type', account, type);
     // }
-    const histogramOutFileNm = process.argv[2];
-    const whalewatchOutFileNm = process.argv[3];
-    const url = process.argv[4];
     // console.log('url', url);
     httpsRateLimit.setUrl(url);
 
@@ -145,6 +147,14 @@ const run = async () => {
       }
     }
 
+    const knownAccount = [];
+    for (const [account, type] of knownAccountTypeMap) {
+      knownAccount.push({
+        account: account,
+        type: type,
+      });
+    }
+
     // console.log('distribution', distribution);
     const histogramOutFilePtr = fs.openSync(histogramOutFileNm, 'w');
     fs.writeSync(histogramOutFilePtr, JSON.stringify(histogram, null, 2));
@@ -153,6 +163,10 @@ const run = async () => {
     const whalewatchOutFilePtr = fs.openSync(whalewatchOutFileNm, 'w');
     fs.writeSync(whalewatchOutFilePtr, JSON.stringify(whalewatch, null, 2));
     fs.closeSync(whalewatchOutFilePtr);
+
+    const knownAccountOutFilePtr = fs.openSync(knownAccountOutFileNm, 'w');
+    fs.writeSync(knownAccountOutFilePtr, JSON.stringify(knownAccount, null, 2));
+    fs.closeSync(knownAccountOutFilePtr);
   }
 };
 
