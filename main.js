@@ -4,7 +4,7 @@ const fs = require('fs');
 const httpsRateLimit = require('https-rate-limit');
 const index = require('./index.js');
 
-const DEBUG = true;
+const DEBUG = false;
 const VERBOSE = true;
 
 const run = async () => {
