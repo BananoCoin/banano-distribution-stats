@@ -1,5 +1,6 @@
 'use strict';
 const fs = require('fs');
+const path = require('path');
 
 const httpsRateLimit = require('https-rate-limit');
 const index = require('./index.js');
@@ -11,13 +12,14 @@ const run = async () => {
   console.log('banano-distribution-stats');
   if (process.argv.length < 6) {
     console.log('#usage:');
-    console.log('npm start <known-account-url> <histogram-outfile> <whalewatch-outfile> <known-account-outfile> <url>');
+    console.log('npm start <known-account-url> <add-hardcoded-accounts> <histogram-outfile> <whalewatch-outfile> <known-account-outfile> <url>');
   } else {
-    const knownAccountsUrl = process.argv[2];
-    const histogramOutFileNm = process.argv[3];
-    const whalewatchOutFileNm = process.argv[4];
-    const knownAccountOutFileNm = process.argv[5];
-    const url = process.argv[6];
+    let knownAccountsUrl = process.argv[2];
+    const addHardcodedAccounts = process.argv[3];
+    const histogramOutFileNm = process.argv[4];
+    const whalewatchOutFileNm = process.argv[5];
+    const knownAccountOutFileNm = process.argv[6];
+    const url = process.argv[7];
 
     let historyChunkSize = 1000;
     // chunk into days
@@ -30,7 +32,41 @@ const run = async () => {
     const knownAccountTypeMap = new Map();
 
     // console.log('knownAccountsUrl', knownAccountsUrl);
+    if (!knownAccountsUrl.startsWith('http')) {
+      knownAccountsUrl=new URL(`file://${path.resolve(knownAccountsUrl)}`).href;
+    }
     httpsRateLimit.setUrl(knownAccountsUrl);
+    if (httpsRateLimit.getModuleRef() == undefined) {
+      const fileRequest = {};
+      fileRequest.request = (options, response) => {
+        // console.log('options', options);
+        const retval = fs.readFileSync(options.path, 'UTF8');
+        const req = {};
+        req.headers = {};
+        req.statusCode = 200;
+        const onFns = {};
+        req.on = (fnName, fn) => {
+          onFns[fnName] = fn;
+        };
+        req.write = (body) => {
+          // console.log('write', 'onFns', onFns);
+          const fn = onFns['data'];
+          if (fn) {
+            fn(retval);
+          }
+        };
+        req.end = () => {
+          // console.log('end', 'onFns', onFns);
+          const fn = onFns['end'];
+          if (fn) {
+            fn();
+          }
+        };
+        response(req);
+        return req;
+      };
+      httpsRateLimit.setModuleRef(fileRequest);
+    }
     const knownAccountsResponse = await httpsRateLimit.sendRequest({includeType: true});
     // console.log('knownAccountsResponse', knownAccountsResponse);
     knownAccountsResponse.forEach((knownAccountElt) => {
@@ -51,6 +87,7 @@ const run = async () => {
         case 'event':
         case 'burn':
         case 'team-member':
+        case 'intermediate':
           knownAccountTypeMap.set(account, `distributed-to-${type}`);
           break;
         case 'inactive-team-member':
@@ -65,12 +102,14 @@ const run = async () => {
       }
     });
 
-    knownAccountTypeMap.set('ban_1boompow14irck1yauquqypt7afqrh8b6bbu5r93pc6hgbqs7z6o99frcuym', 'distributed-to-boompow');
-    knownAccountTypeMap.set('ban_3fo1d1ng6mfqumfoojqby13nahaugqbe5n6n3trof4q8kg5amo9mribg4muo', 'distributed-to-fo1d1ng');
-    knownAccountTypeMap.set('ban_1d59mzcc7yyuixyzc7femupc76yjsuoko79mm7y8td461opcpgiphjxjcje7', 'source');
-    knownAccountTypeMap.set('ban_1bun4a6xbrawe1ugqspyx9zf7wy7kurrmsgr9sodmyatp74xdx6qwki4fwx8', 'source');
-    knownAccountTypeMap.set('ban_3eg7hsqtt84sr6fyfgpemazhqdj5gnir7q7gxrmt4mozndehnt6un73y51u9', 'source');
-    knownAccountTypeMap.set('ban_3bonus9fwjnwjoyawbdbokze51iucgqwtdyk6e4kqdu39rw8nyzmew5ptxoj', 'source');
+    if (addHardcodedAccounts == 'true') {
+      knownAccountTypeMap.set('ban_1boompow14irck1yauquqypt7afqrh8b6bbu5r93pc6hgbqs7z6o99frcuym', 'distributed-to-boompow');
+      knownAccountTypeMap.set('ban_3fo1d1ng6mfqumfoojqby13nahaugqbe5n6n3trof4q8kg5amo9mribg4muo', 'distributed-to-fo1d1ng');
+      knownAccountTypeMap.set('ban_1d59mzcc7yyuixyzc7femupc76yjsuoko79mm7y8td461opcpgiphjxjcje7', 'source');
+      knownAccountTypeMap.set('ban_1bun4a6xbrawe1ugqspyx9zf7wy7kurrmsgr9sodmyatp74xdx6qwki4fwx8', 'source');
+      knownAccountTypeMap.set('ban_3eg7hsqtt84sr6fyfgpemazhqdj5gnir7q7gxrmt4mozndehnt6un73y51u9', 'source');
+      knownAccountTypeMap.set('ban_3bonus9fwjnwjoyawbdbokze51iucgqwtdyk6e4kqdu39rw8nyzmew5ptxoj', 'source');
+    }
 
 
     // for (const [account, type] of knownAccountTypeMap) {
@@ -150,7 +189,7 @@ const run = async () => {
     const knownAccount = [];
     for (const [account, type] of knownAccountTypeMap) {
       knownAccount.push({
-        account: account,
+        address: account,
         type: type,
       });
     }
