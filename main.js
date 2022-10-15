@@ -8,6 +8,8 @@ const index = require('./index.js');
 const DEBUG = true;
 const VERBOSE = true;
 
+const NON_APHANUMERIC_REGEX = new RegExp('[^a-zA-Z0-9]+', 'g');
+
 const run = async () => {
   console.log('banano-distribution-stats');
   if (process.argv.length < 6) {
@@ -72,6 +74,9 @@ const run = async () => {
     knownAccountsResponse.forEach((knownAccountElt) => {
       const account = knownAccountElt.address;
       const type = knownAccountElt.type;
+      const alias = knownAccountElt.alias.replaceAll(NON_APHANUMERIC_REGEX, ' ').toLowerCase().trim().replaceAll(' ', '-');
+      // console.log('knownAccountElt', account, type, alias);
+      // console.log(`alias:'${alias}'`);
       if (knownAccountTypeMap.has(account)) {
         const oldType = knownAccountTypeMap.get(type);
         throw Error(`account '${account}' listed twice as '${type}' and '${oldType}'`);
@@ -84,6 +89,8 @@ const run = async () => {
           knownAccountTypeMap.set(account, 'exchange');
           break;
         case 'faucet':
+          knownAccountTypeMap.set(account, `distributed-to-${type}-${alias}`);
+          break;
         case 'event':
         case 'burn':
         case 'team-member':
@@ -141,18 +148,50 @@ const run = async () => {
       const account = knownAccountType.account;
       const type = knownAccountType.type;
       console.log('distribution calculation STARTING', knownAccountTypeNbr, 'of', knownAccountTypeList.length, type, account);
-      if (type != 'distributed-to-known') {
-        await index.getDistributionOverTime(httpsRateLimit, historyChunkSize,
-            timeChunkFn, knownAccountTypeMap, account,
-            amountSentByTimeChunkAndSrcDestTypeMap,
-            amountReceivedByTimeChunkAndSrcDestTypeMap,
-            whalewatch, DEBUG, VERBOSE,
-            knownAccountTypeNbr, knownAccountTypeList.length);
-        // console.log('distributionOverTime', distributionOverTime);
-      }
+      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize,
+          timeChunkFn, knownAccountTypeMap, account,
+          amountSentByTimeChunkAndSrcDestTypeMap,
+          amountReceivedByTimeChunkAndSrcDestTypeMap,
+          whalewatch, DEBUG, VERBOSE,
+          knownAccountTypeNbr, knownAccountTypeList.length, 'unknown-tier-01');
+      // console.log('distributionOverTime', distributionOverTime);
       console.log('distribution calculation FINISHED', knownAccountTypeNbr, 'of', knownAccountTypeList.length, type, account);
       knownAccountTypeNbr++;
     }
+
+    const unknownAccountTypeTierTwoList = [];
+
+    for (const [account, type] of knownAccountTypeMap) {
+      // console.log('knownAccountTypeMap', account, type);
+      if (type == 'distributed-to-unknown-tier-01') {
+        unknownAccountTypeTierTwoList.push({
+          account: account,
+          type: type,
+        });
+      }
+    }
+
+    if (DEBUG) {
+      unknownAccountTypeTierTwoList.length = 3;
+    }
+
+    let unknownAccountTypeTierTwoNbr = 1;
+    for (const unknownAccountTypeTierTwo of unknownAccountTypeTierTwoList) {
+      // console.log('unknownAccountTypeTierTwo', unknownAccountTypeTierTwo);
+      const account = unknownAccountTypeTierTwo.account;
+      const type = unknownAccountTypeTierTwo.type;
+      console.log('distribution calculation STARTING', unknownAccountTypeTierTwoNbr, 'of', unknownAccountTypeTierTwoList.length, type, account);
+      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize,
+          timeChunkFn, knownAccountTypeMap, account,
+          amountSentByTimeChunkAndSrcDestTypeMap,
+          amountReceivedByTimeChunkAndSrcDestTypeMap,
+          whalewatch, DEBUG, VERBOSE,
+          knownAccountTypeNbr, knownAccountTypeList.length, 'unknown-tier-02');
+      // console.log('distributionOverTime', distributionOverTime);
+      console.log('distribution calculation FINISHED', unknownAccountTypeTierTwoNbr, 'of', unknownAccountTypeTierTwoList.length, type, account);
+      unknownAccountTypeTierTwoNbr++;
+    }
+
     console.log('distribution calculation FINISHED');
     // console.log('amountSentByTimeChunkAndSrcDestTypeMap', amountSentByTimeChunkAndSrcDestTypeMap);
 

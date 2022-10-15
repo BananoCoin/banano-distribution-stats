@@ -13,11 +13,11 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize,
     timeChunkFn, knownAccountTypeMap, sourceAccount,
     amountSentByTimeChunkAndSrcDestTypeMap,
     amountReceivedByTimeChunkAndSrcDestTypeMap,
-    whalewatch, debug, verbose, nbr, max) => {
+    whalewatch, debug, verbose, nbr, max, tier) => {
   let next;
   let stop = false;
 
-  let srcType = 'distributed-to-unknown';
+  let srcType = 'distributed-to-' + tier;
 
   if (knownAccountTypeMap.has(sourceAccount)) {
     srcType = knownAccountTypeMap.get(sourceAccount);
@@ -55,7 +55,7 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize,
             processedBlockHashSet.add(historyElt.hash);
 
             const destAccount = historyElt.account;
-            let destType = 'distributed-to-unknown';
+            let destType = 'distributed-to-' + tier;
             if (knownAccountTypeMap.has(destAccount)) {
               destType = knownAccountTypeMap.get(destAccount);
             } else {
@@ -74,7 +74,11 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize,
                 // console.log('tipbot', 'accountInfoResp', historyElt);
                 // save type so we dont ahve to redo API call.
               }
-              knownAccountTypeMap.set(destAccount, destType);
+              if (destAccount !== undefined) {
+                knownAccountTypeMap.set(destAccount, destType);
+              // } else {
+                // console.log('historyElt', historyElt);
+              }
             }
 
             const amount = parseFloat(historyElt.amount_decimal);
