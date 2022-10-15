@@ -39,6 +39,11 @@ testModuleRef.request = (options, response) => {
         hash: '4',
         account: 'e',
       },
+      {
+        type: 'state',
+        subtype: 'change',
+        hash: '5',
+      },
     ],
   };
   const retvalJson2 = {
