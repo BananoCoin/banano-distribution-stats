@@ -2,6 +2,10 @@ window.onLoad = async () => {
   await loadBananoDistributionStats();
 };
 
+//  https://creeper.banano.cc/hash/F61A79F286ABC5CC01D3D09686F0567812B889A5C63ADE0E82DD30F3B2D96463
+// Balance
+// 3,402,823,669.21 BAN | 340282366920938463463374607431768211455 RAW
+
 const MAXIMUM_SUPPLY = 340282366921;
 
 // https://github.com/ricklupton/d3-sankey-diagram
