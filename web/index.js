@@ -2,7 +2,7 @@ window.onLoad = async () => {
   await loadBananoDistributionStats();
 };
 
-const MAXIMUM_SUPPLY = 3400000000;
+const MAXIMUM_SUPPLY = 340282366921;
 
 // https://github.com/ricklupton/d3-sankey-diagram
 const loadBananoDistributionStats = async () => {
