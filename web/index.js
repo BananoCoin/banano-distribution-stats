@@ -108,7 +108,7 @@ const loadBananoDistributionStats = async () => {
 
   const sankeySvgElt = document.getElementById('sankeySvg');
   const w = 9000;
-  const h = 3000;
+  const h = 9000;
   const y = 0;
   const x = 0;
   sankeySvgElt.setAttribute('width', '100rem');
@@ -188,8 +188,8 @@ const loadBananoDistributionStats = async () => {
         target: stat.destNode,
         value: stat.amount,
       };
-      if (stat.direction == 'received') {
-        if (stat.srcType == 'exchange') {
+      if (stat.direction == 'sent') {
+        if (stat.destType == 'exchange') {
           link.color = 'orange';
         }
       }
@@ -270,6 +270,9 @@ const loadBananoDistributionStats = async () => {
           }
           if (swimLane == 'source') {
             link.color = 'yellow';
+          }
+          if (swimLane == 'exchange') {
+            link.color = 'orange';
           }
           if (nodeNameSet.has(link.source) && nodeNameSet.has(link.target)) {
             sankey.links.push(link);
