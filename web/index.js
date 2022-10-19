@@ -6,7 +6,7 @@ window.onLoad = async () => {
 // Balance
 // 3,402,823,669.21 BAN | 340282366920938463463374607431768211455 RAW
 
-const MAXIMUM_SUPPLY = 340282366921;
+const MAXIMUM_SUPPLY = 3402823669.21;
 
 // https://github.com/ricklupton/d3-sankey-diagram
 const loadBananoDistributionStats = async () => {
