@@ -85,16 +85,16 @@ const loadBananoDistributionStats = async () => {
     if (stat.timeChunk !== '1970-01') {
       if (stat.amount > 0) {
         if (swimLanes.includes(stat.srcType) && swimLanes.includes(stat.destType)) {
-          if (stat.direction == 'received') {
-            const prevTimeChunk = prev(stat.timeChunk);
-            if (prevTimeChunk !== undefined) {
-              stat.prevTimeChunk = prevTimeChunk;
-              stat.srcNode = `${stat.prevTimeChunk}-${stat.destType}(${stat.direction})`;
-              stat.destNode = `${stat.timeChunk}-${stat.srcType}(${stat.direction})`;
-              stat.color = 'pink';
-              window.bananoDistributionStats.push(stat);
-            }
-          }
+          // if (stat.direction == 'received') {
+          //   const prevTimeChunk = prev(stat.timeChunk);
+          //   if (prevTimeChunk !== undefined) {
+          //     stat.prevTimeChunk = prevTimeChunk;
+          //     stat.srcNode = `${stat.prevTimeChunk}-${stat.destType}(${stat.direction})`;
+          //     stat.destNode = `${stat.timeChunk}-${stat.srcType}(${stat.direction})`;
+          //     stat.color = 'pink';
+          //     window.bananoDistributionStats.push(stat);
+          //   }
+          // }
           if (stat.direction == 'sent') {
             const nextTimeChunk = next(stat.timeChunk);
             if (nextTimeChunk !== undefined) {
@@ -186,6 +186,8 @@ const loadBananoDistributionStats = async () => {
         stat.destType.startsWith('source')) {
     } else if (stat.srcType.startsWith('distributed') &&
         stat.destType.startsWith('distributed')) {
+    } else if (stat.srcType.startsWith('exchange') &&
+        (!stat.destType.startsWith('exchanged'))) {
     } else {
       const link = {
         source: stat.srcNode,
