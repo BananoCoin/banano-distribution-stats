@@ -159,6 +159,7 @@ const run = async () => {
       knownAccountTypeNbr++;
     }
 
+    /*
     const unknownAccountTypeTierTwoList = [];
 
     for (const [account, type] of knownAccountTypeMap) {
@@ -191,6 +192,7 @@ const run = async () => {
       console.log('distribution calculation FINISHED', unknownAccountTypeTierTwoNbr, 'of', unknownAccountTypeTierTwoList.length, type, account);
       unknownAccountTypeTierTwoNbr++;
     }
+    */
 
     console.log('distribution calculation FINISHED');
     // console.log('amountSentByTimeChunkAndSrcDestTypeMap', amountSentByTimeChunkAndSrcDestTypeMap);

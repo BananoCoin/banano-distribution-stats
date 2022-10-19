@@ -56,9 +56,11 @@ const getDistributionOverTime = async (httpsRateLimit, historyChunkSize,
 
             const destAccount = historyElt.account;
             let destType = 'distributed-to-' + tier;
-            if(srcType == 'exchange') {
-              destType = 'exchanged-to-' + tier;
-            }
+            // start EXCHANGED
+            // if(srcType == 'exchange') {
+            //   destType = 'exchanged-to-' + tier;
+            // }
+            // stop EXCHANGED
             if (knownAccountTypeMap.has(destAccount)) {
               destType = knownAccountTypeMap.get(destAccount);
             } else {
