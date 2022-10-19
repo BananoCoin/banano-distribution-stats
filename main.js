@@ -129,7 +129,7 @@ const run = async () => {
     for (const [account, type] of knownAccountTypeMap) {
       // exchanges aren't distribution, so don't trace the transactions.
       // if (type != 'exchange') {
-        knownAccountTypeList.push({account: account, type: type});
+      knownAccountTypeList.push({account: account, type: type});
       // }
     }
 
