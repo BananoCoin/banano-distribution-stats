@@ -176,6 +176,9 @@ const loadBananoDistributionStats = async () => {
 
   window.bananoDistributionStats.forEach((stat) => {
     // console.log('stat', stat);
+    const srcTypeIx = swimLanes.indexOf(stat.srcType);
+    const destTypeIx = swimLanes.indexOf(stat.destType);
+
     if (stat.srcType.startsWith('source') &&
         stat.destType.startsWith('source')) {
     } else if (stat.direction.startsWith('received') &&
@@ -188,6 +191,7 @@ const loadBananoDistributionStats = async () => {
         stat.destType.startsWith('distributed')) {
     } else if (stat.srcType.startsWith('exchange') &&
         (!stat.destType.startsWith('exchanged'))) {
+    } else if (destTypeIx < srcTypeIx) {
     } else {
       const link = {
         source: stat.srcNode,
