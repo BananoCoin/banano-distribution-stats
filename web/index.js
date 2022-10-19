@@ -51,19 +51,23 @@ const loadBananoDistributionStats = async () => {
     'distributed-to-known',
   ];
 
+  const bottomSwimLanes = [
+    'distributed-to-unknown-tier-01',
+    'distributed-to-unknown-tier-02',
+    'exchange',
+  ];
+
   for (swimLane of swimLaneArray) {
-    if (swimLane != 'exchange') {
-      if (swimLane != 'distributed-to-unknown') {
-        if (!swimLanes.includes(swimLane)) {
-          swimLanes.push(swimLane);
-        }
+    if (!bottomSwimLanes.includes(swimLane)) {
+      if (!swimLanes.includes(swimLane)) {
+        swimLanes.push(swimLane);
       }
     }
   }
 
-  // distributed-to-unknown, exchange at the bottom
-  swimLanes.push('distributed-to-unknown');
-  swimLanes.push('exchange');
+  for (swimLane of bottomSwimLanes) {
+    swimLanes.push(swimLane);
+  }
 
   const next = (timeChunk) => {
     const ix = timeChunks.indexOf(timeChunk);
@@ -211,7 +215,9 @@ const loadBananoDistributionStats = async () => {
           link.color = 'pink';
         }
 
+        // if ((stat.srcType == 'source') || (stat.destType == 'exchange')) {
         add(stat.nextTimeChunk, stat.destType, stat.amount);
+        // }
       }
       if (nodeNameSet.has(link.source) && nodeNameSet.has(link.target)) {
         sankey.links.push(link);
@@ -239,7 +245,9 @@ const loadBananoDistributionStats = async () => {
         let currentSupply = MAXIMUM_SUPPLY;
         for (const swimLane of swimLanes) {
           const a0 = get(nextTimeChunk, swimLane);
-          currentSupply -= a0;
+          if (!bottomSwimLanes.includes(swimLane)) {
+            currentSupply -= a0;
+          }
         }
 
         const a0 = get(timeChunk, 'source');
