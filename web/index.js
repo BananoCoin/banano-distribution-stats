@@ -72,12 +72,12 @@ const loadBananoDistributionStats = async () => {
     }
   };
 
-  const prev = (timeChunk) => {
-    const ix = timeChunks.indexOf(timeChunk);
-    if (ix > 0) {
-      return timeChunks[ix-1];
-    }
-  };
+  // const prev = (timeChunk) => {
+  //   const ix = timeChunks.indexOf(timeChunk);
+  //   if (ix > 0) {
+  //     return timeChunks[ix-1];
+  //   }
+  // };
 
   window.bananoDistributionStats = [];
   responseJson.forEach((stat) => {
