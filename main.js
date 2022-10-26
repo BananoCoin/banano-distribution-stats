@@ -116,6 +116,42 @@ const run = async () => {
       knownAccountTypeMap.set('ban_1bun4a6xbrawe1ugqspyx9zf7wy7kurrmsgr9sodmyatp74xdx6qwki4fwx8', 'source');
       knownAccountTypeMap.set('ban_3eg7hsqtt84sr6fyfgpemazhqdj5gnir7q7gxrmt4mozndehnt6un73y51u9', 'source');
       knownAccountTypeMap.set('ban_3bonus9fwjnwjoyawbdbokze51iucgqwtdyk6e4kqdu39rw8nyzmew5ptxoj', 'source');
+
+      knownAccountTypeMap.set('ban_1emusk6m8hypb46dbp6eaiu3j6xjwwwaqw98y6hqyje53ncjciyqzj3skt9n', 'emusk-hold');
+      knownAccountTypeMap.set('ban_1xs6m9ty5m9j33nhkz4eurwgmq5fsccb75x7jdtj3kg9nq53mwocec3wtm66', 'emusk-hold');
+
+      knownAccountTypeMap.set('ban_1mip9qeexywkrdq956aanwyg3q5ey838mc1tdsrsyny7k4wg9b41qsd7hgeo', 'emusk-hold');
+      knownAccountTypeMap.set('ban_3bywdy6j4jutoqib5yi147ukzauis4azxe5g3bmbko9rm4jcwshm41wjp8re', 'emusk-hold');
+      knownAccountTypeMap.set('ban_1mfh3qoic3ifj4ctm7bp9ju7wacgm59gkd9ind1n4njrddsn353zepgcxp5s', 'emusk-hold');
+      knownAccountTypeMap.set('ban_1ug8k1n7udgjfuirezbss4sin3mjkh654sadbsy9bfxkkj4w7ugxmtfjhki5', 'emusk-hold');
+      knownAccountTypeMap.set('ban_1xk4y7hqbjf5sbd5s4ap99tc6861hq7bpo4y7xq4c5teayn9qdombhahbrac', 'emusk-hold');
+      knownAccountTypeMap.set('ban_17sfqgagbarnpabewmnuzufjyqmhxns45gbzsu3mg8r45n5xdrtoobbai64o', 'emusk-hold');
+      knownAccountTypeMap.set('ban_14bi5cgyx48ipuqt4gibj7b94pxm1z3gham64x59bipcrb4hbc549xhp9qfn', 'emusk-hold');
+      knownAccountTypeMap.set('ban_1iz1pd1fi3piqckc4whzp57eng1m8zq5bfmq57zry349r6xa83tm6mqfzow7', 'emusk-hold');
+      knownAccountTypeMap.set('ban_1a8tg5onfi5inqnt3ebk5foo1kqmh184573htd8mo7b4jxsjxmtwgkq498re', 'emusk-hold');
+      knownAccountTypeMap.set('ban_1nj7ioqdhfbtrni7ernd1trns913j353mroct8kwgfqpa9qxfnjamwmjxw8d', 'emusk-hold');
+      knownAccountTypeMap.set('ban_1r45wkw7ihb9essjph118sb9sb6hitp1uhqyjawxs1i4sp66hk5ia5gg1gjp', 'emusk-hold');
+      knownAccountTypeMap.set('ban_1tryxk8axw749jpiaqwsie5hfod44myacxoziq3e34kb3u1y5cpsu8x5owfz', 'emusk-hold');
+      knownAccountTypeMap.set('ban_15wetsxmdnbiodc88mtnnicitfq9q3phf6p9jzdtwg8jznsxzbyiqhpbgsa8', 'emusk-hold');
+      knownAccountTypeMap.set('ban_1xu9anz8ay4apq8rp4wfbp9z96ub66stior58izz6wtxjt8bbthm93t1eu95', 'emusk-hold');
+      knownAccountTypeMap.set('ban_1qozktkhq41jnyr5zkhcs96rmio3cdq7yta6a7jzpkaf84yc78ptknxyig3m', 'emusk-hold');
+      knownAccountTypeMap.set('ban_185mdymw76au8bo6n5nhuuey6oiy7eme4kurn1khsg97kq48efse5c4dr7sq', 'emusk-hold');
+      knownAccountTypeMap.set('ban_3qnz1d7r4qoegrz91yui7wcwcmjyncwiri93qm5yhpsjz3d93sdd49p1t4dr', 'emusk-hold');
+      knownAccountTypeMap.set('ban_3fbwoui6g4yo8xqpps1oeb7dgsebec6y7k6ydyu49gdug99iaxykrpfem3sc', 'emusk-hold');
+      knownAccountTypeMap.set('ban_1o3y9b47ajkprq5wqdcyab76a5fxcuhew8pz87cxrmafjtfwsemfk1n7qf91', 'emusk-hold');
+      knownAccountTypeMap.set('ban_14dy1jbhepmtswububy6wxs6ragsc8jc6f41q1y3c3qtfh53ksa3rugm1oko', 'emusk-hold');
+      knownAccountTypeMap.set('ban_1rmse8d3s481xd4rq1raikt6nhjwjm64cjhw1egsjzt1xnssky1hw5mtmmap', 'emusk-hold');
+      knownAccountTypeMap.set('ban_33qepew3f47hyob47axpyuqro7tc8wakebtpjodq19e431gn31t64mzhfeas', 'emusk-hold');
+      knownAccountTypeMap.set('ban_1759rj8snfk7wko4ypy8efff5owcafey4bqk3u8j5q4prm6ua7yxjqtnmooz', 'emusk-hold');
+      knownAccountTypeMap.set('ban_13g6jmb7kpw8r19is3hnuduh99ng7f16k7adaiidou5ak9kif8orqrd34tbs', 'emusk-hold');
+      knownAccountTypeMap.set('ban_1q4xzd4cxpyw54638r5wyefsdwojp4pdpi744rnyrrbi6rpdgy1adahhi3kn', 'emusk-hold');
+      knownAccountTypeMap.set('ban_3xitg1oghw96h59cujfzhg8mh87o9sxp46nznugmgnt3cemik4keq7q6zcrs', 'emusk-hold');
+
+      knownAccountTypeMap.set('ban_18n4kpex6ycb5xpodcgrsmup3p3zs1radx9xkma8944g63i3efts31hbkim7', 'emusk-sell');
+      knownAccountTypeMap.set('ban_1kt69s6h485uyj3c8xdjaaje1umyfxuaxu4fu7oi1y71iapc5thn37mb9ooa', 'emusk-sell');
+      knownAccountTypeMap.set('ban_19hgct77ireubpwmdqroe8k4hgg6x5wts7n1mgijrcgq77j5nedm5pafmhbx', 'emusk-sell');
+      knownAccountTypeMap.set('ban_3rm77ifof3bssaizn7dbg8t9tqh466r91aj4x57whohot49wxbb3dgye4myu', 'emusk-sell');
+      knownAccountTypeMap.set('ban_3abr3x3rnxaxt5wb8ia8qfyo1p31ghkmctp6k1sobe5rf7sw5trcyp8fnjcd', 'emusk-sell');
     }
 
 
