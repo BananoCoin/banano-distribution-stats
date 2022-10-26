@@ -29,12 +29,12 @@
   "preferGlobal": true,
   "devDependencies": {
     "chai": "^4.3.6",
-    "eslint": "^8.25.0",
+    "eslint": "^8.26.0",
     "eslint-config-google": "^0.14.0",
     "jsdoc-to-markdown": "^7.1.1",
     "memdown": "^6.1.1",
     "mocha": "^10.1.0",
-    "npm-check-updates": "^16.3.14",
+    "npm-check-updates": "^16.3.15",
     "nyc": "^15.1.0",
     "prettier": "^2.7.1"
   }
