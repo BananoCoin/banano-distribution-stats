@@ -5,7 +5,7 @@ const path = require('path');
 const httpsRateLimit = require('https-rate-limit');
 const index = require('./index.js');
 
-const DEBUG = false;
+const DEBUG = true;
 const VERBOSE = true;
 
 const NON_APHANUMERIC_REGEX = new RegExp('[^a-zA-Z0-9]+', 'g');
@@ -109,6 +109,9 @@ const run = async () => {
       }
     });
 
+
+    const postExchangeAccountTypeMap = new Map();
+
     if (addHardcodedAccounts == 'true') {
       knownAccountTypeMap.set('ban_1boompow14irck1yauquqypt7afqrh8b6bbu5r93pc6hgbqs7z6o99frcuym', 'distributed-to-boompow');
       knownAccountTypeMap.set('ban_3fo1d1ng6mfqumfoojqby13nahaugqbe5n6n3trof4q8kg5amo9mribg4muo', 'distributed-to-fo1d1ng');
@@ -117,28 +120,27 @@ const run = async () => {
       knownAccountTypeMap.set('ban_3eg7hsqtt84sr6fyfgpemazhqdj5gnir7q7gxrmt4mozndehnt6un73y51u9', 'source');
       knownAccountTypeMap.set('ban_3bonus9fwjnwjoyawbdbokze51iucgqwtdyk6e4kqdu39rw8nyzmew5ptxoj', 'source');
 
-      // knownAccountTypeMap.set('ban_1emusk6m8hypb46dbp6eaiu3j6xjwwwaqw98y6hqyje53ncjciyqzj3skt9n', 'exchanged-emusk-01');
-      // knownAccountTypeMap.set('ban_1xs6m9ty5m9j33nhkz4eurwgmq5fsccb75x7jdtj3kg9nq53mwocec3wtm66', 'exchanged-emusk-02');
-      // knownAccountTypeMap.set('ban_14bi5cgyx48ipuqt4gibj7b94pxm1z3gham64x59bipcrb4hbc549xhp9qfn', 'exchanged-emusk-03');
-      // knownAccountTypeMap.set('ban_1iz1pd1fi3piqckc4whzp57eng1m8zq5bfmq57zry349r6xa83tm6mqfzow7', 'exchanged-emusk-04');
-      // knownAccountTypeMap.set('ban_1a8tg5onfi5inqnt3ebk5foo1kqmh184573htd8mo7b4jxsjxmtwgkq498re', 'exchanged-emusk-05');
-      // knownAccountTypeMap.set('ban_1nj7ioqdhfbtrni7ernd1trns913j353mroct8kwgfqpa9qxfnjamwmjxw8d', 'exchanged-emusk-06');
-      // knownAccountTypeMap.set('ban_1r45wkw7ihb9essjph118sb9sb6hitp1uhqyjawxs1i4sp66hk5ia5gg1gjp', 'exchanged-emusk-07');
-      // knownAccountTypeMap.set('ban_1tryxk8axw749jpiaqwsie5hfod44myacxoziq3e34kb3u1y5cpsu8x5owfz', 'exchanged-emusk-08');
-      // knownAccountTypeMap.set('ban_15wetsxmdnbiodc88mtnnicitfq9q3phf6p9jzdtwg8jznsxzbyiqhpbgsa8', 'exchanged-emusk-09');
-      // knownAccountTypeMap.set('ban_1xu9anz8ay4apq8rp4wfbp9z96ub66stior58izz6wtxjt8bbthm93t1eu95', 'exchanged-emusk-10');
-      // knownAccountTypeMap.set('ban_1qozktkhq41jnyr5zkhcs96rmio3cdq7yta6a7jzpkaf84yc78ptknxyig3m', 'exchanged-emusk-11');
-      // knownAccountTypeMap.set('ban_185mdymw76au8bo6n5nhuuey6oiy7eme4kurn1khsg97kq48efse5c4dr7sq', 'exchanged-emusk-12');
-      // knownAccountTypeMap.set('ban_3qnz1d7r4qoegrz91yui7wcwcmjyncwiri93qm5yhpsjz3d93sdd49p1t4dr', 'exchanged-emusk-13');
-      // knownAccountTypeMap.set('ban_3fbwoui6g4yo8xqpps1oeb7dgsebec6y7k6ydyu49gdug99iaxykrpfem3sc', 'exchanged-emusk-14');
-      // knownAccountTypeMap.set('ban_1o3y9b47ajkprq5wqdcyab76a5fxcuhew8pz87cxrmafjtfwsemfk1n7qf91', 'exchanged-emusk-15');
-      // knownAccountTypeMap.set('ban_1rmse8d3s481xd4rq1raikt6nhjwjm64cjhw1egsjzt1xnssky1hw5mtmmap', 'exchanged-emusk-16');
-      // knownAccountTypeMap.set('ban_33qepew3f47hyob47axpyuqro7tc8wakebtpjodq19e431gn31t64mzhfeas', 'exchanged-emusk-17');
-      // knownAccountTypeMap.set('ban_1759rj8snfk7wko4ypy8efff5owcafey4bqk3u8j5q4prm6ua7yxjqtnmooz', 'exchanged-emusk-18');
-      // knownAccountTypeMap.set('ban_13g6jmb7kpw8r19is3hnuduh99ng7f16k7adaiidou5ak9kif8orqrd34tbs', 'exchanged-emusk-19');
-      // knownAccountTypeMap.set('ban_1q4xzd4cxpyw54638r5wyefsdwojp4pdpi744rnyrrbi6rpdgy1adahhi3kn', 'exchanged-emusk-20');
-      // knownAccountTypeMap.set('ban_3xitg1oghw96h59cujfzhg8mh87o9sxp46nznugmgnt3cemik4keq7q6zcrs', 'exchanged-emusk-21');
-
+      postExchangeAccountTypeMap.set('ban_1emusk6m8hypb46dbp6eaiu3j6xjwwwaqw98y6hqyje53ncjciyqzj3skt9n', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_1xs6m9ty5m9j33nhkz4eurwgmq5fsccb75x7jdtj3kg9nq53mwocec3wtm66', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_14bi5cgyx48ipuqt4gibj7b94pxm1z3gham64x59bipcrb4hbc549xhp9qfn', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_1iz1pd1fi3piqckc4whzp57eng1m8zq5bfmq57zry349r6xa83tm6mqfzow7', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_1a8tg5onfi5inqnt3ebk5foo1kqmh184573htd8mo7b4jxsjxmtwgkq498re', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_1nj7ioqdhfbtrni7ernd1trns913j353mroct8kwgfqpa9qxfnjamwmjxw8d', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_1r45wkw7ihb9essjph118sb9sb6hitp1uhqyjawxs1i4sp66hk5ia5gg1gjp', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_1tryxk8axw749jpiaqwsie5hfod44myacxoziq3e34kb3u1y5cpsu8x5owfz', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_15wetsxmdnbiodc88mtnnicitfq9q3phf6p9jzdtwg8jznsxzbyiqhpbgsa8', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_1xu9anz8ay4apq8rp4wfbp9z96ub66stior58izz6wtxjt8bbthm93t1eu95', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_1qozktkhq41jnyr5zkhcs96rmio3cdq7yta6a7jzpkaf84yc78ptknxyig3m', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_185mdymw76au8bo6n5nhuuey6oiy7eme4kurn1khsg97kq48efse5c4dr7sq', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_3qnz1d7r4qoegrz91yui7wcwcmjyncwiri93qm5yhpsjz3d93sdd49p1t4dr', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_3fbwoui6g4yo8xqpps1oeb7dgsebec6y7k6ydyu49gdug99iaxykrpfem3sc', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_1o3y9b47ajkprq5wqdcyab76a5fxcuhew8pz87cxrmafjtfwsemfk1n7qf91', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_1rmse8d3s481xd4rq1raikt6nhjwjm64cjhw1egsjzt1xnssky1hw5mtmmap', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_33qepew3f47hyob47axpyuqro7tc8wakebtpjodq19e431gn31t64mzhfeas', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_1759rj8snfk7wko4ypy8efff5owcafey4bqk3u8j5q4prm6ua7yxjqtnmooz', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_13g6jmb7kpw8r19is3hnuduh99ng7f16k7adaiidou5ak9kif8orqrd34tbs', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_1q4xzd4cxpyw54638r5wyefsdwojp4pdpi744rnyrrbi6rpdgy1adahhi3kn', 'exchanged-emusk');
+      postExchangeAccountTypeMap.set('ban_3xitg1oghw96h59cujfzhg8mh87o9sxp46nznugmgnt3cemik4keq7q6zcrs', 'exchanged-emusk');
     }
 
 
@@ -176,11 +178,37 @@ const run = async () => {
           amountSentByTimeChunkAndSrcDestTypeMap,
           amountReceivedByTimeChunkAndSrcDestTypeMap,
           whalewatch, DEBUG, VERBOSE,
-          knownAccountTypeNbr, knownAccountTypeList.length, 'unknown-tier-01');
+          knownAccountTypeNbr, knownAccountTypeList.length, 'post-exchange-tier-01');
       // console.log('distributionOverTime', distributionOverTime);
       console.log('distribution calculation FINISHED', knownAccountTypeNbr, 'of', knownAccountTypeList.length, type, account);
       knownAccountTypeNbr++;
     }
+
+    console.log('post-exchange calculation STARTING');
+    const postExchangeAccountTypeList = [];
+    for (const [account, type] of postExchangeAccountTypeMap) {
+      postExchangeAccountTypeList.push({account: account, type: type});
+    }
+
+    postExchangeAccountTypeList.length = 0;
+
+    let postExchangeAccountTypeNbr = 1;
+    for (const postExchangeAccountType of postExchangeAccountTypeList) {
+      const account = postExchangeAccountType.account;
+      const type = postExchangeAccountType.type;
+      console.log('post-exchange calculation STARTING', postExchangeAccountTypeNbr, 'of', postExchangeAccountTypeList.length, type, account);
+      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize,
+          timeChunkFn, postExchangeAccountTypeMap, account,
+          amountSentByTimeChunkAndSrcDestTypeMap,
+          amountReceivedByTimeChunkAndSrcDestTypeMap,
+          whalewatch, DEBUG, VERBOSE,
+          postExchangeAccountTypeNbr, postExchangeAccountTypeList.length, 'unknown-tier-01');
+      // console.log('distributionOverTime', distributionOverTime);
+      console.log('post-exchange calculation FINISHED', postExchangeAccountTypeNbr, 'of', postExchangeAccountTypeList.length, type, account);
+      postExchangeAccountTypeNbr++;
+    }
+
+
 
     /*
     const unknownAccountTypeTierTwoList = [];
@@ -249,6 +277,36 @@ const run = async () => {
         }
       }
     }
+
+    histogram.sort((a,b) => {
+      const timeChunkC = b.timeChunk.localeCompare(a.timeChunk);
+      /* istanbul ignore else */
+      if (timeChunkC != 0) {
+        return timeChunkC;
+      }
+      const srcTypeC = b.srcType.localeCompare(a.srcType);
+      /* istanbul ignore else */
+      if (srcTypeC != 0) {
+        return srcTypeC;
+      }
+      const destTypeC = b.destType.localeCompare(a.destType);
+      /* istanbul ignore else */
+      if (destTypeC != 0) {
+        return destTypeC;
+      }
+      const amountC = b.amount.localeCompare(a.amount);
+      /* istanbul ignore else */
+      if (amountC != 0) {
+        return amountC;
+      }
+      const directionC = b.direction.localeCompare(a.direction);
+      /* istanbul ignore else */
+      if (directionC != 0) {
+        return directionC;
+      }
+      /* istanbul ignore next */
+      return 0;
+    })
 
     const knownAccount = [];
     for (const [account, type] of knownAccountTypeMap) {
