@@ -55,6 +55,7 @@ const loadBananoDistributionStats = async () => {
     'distributed-to-unknown-tier-01',
     'distributed-to-unknown-tier-02',
     'exchange',
+    'emusk-hold',
   ];
 
   for (swimLane of swimLaneArray) {
@@ -195,6 +196,7 @@ const loadBananoDistributionStats = async () => {
         stat.destType.startsWith('distributed')) {
     } else if (stat.srcType.startsWith('exchange') &&
         (!stat.destType.startsWith('exchanged'))) {
+    } else if (stat.srcType.startsWith('exchanged')) {
     } else if (destTypeIx < srcTypeIx) {
     } else {
       const link = {
