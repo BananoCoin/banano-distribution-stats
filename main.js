@@ -5,7 +5,7 @@ const path = require('path');
 const httpsRateLimit = require('https-rate-limit');
 const index = require('./index.js');
 
-const DEBUG = true;
+const DEBUG = false;
 const VERBOSE = true;
 
 const NON_APHANUMERIC_REGEX = new RegExp('[^a-zA-Z0-9]+', 'g');
