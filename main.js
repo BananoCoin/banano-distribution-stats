@@ -184,13 +184,50 @@ const run = async () => {
       knownAccountTypeNbr++;
     }
 
+    console.log('tier 2 calculation STARTING');
+
+    const unknownAccountTypeTierTwoList = [];
+
+    for (const [account, type] of knownAccountTypeMap) {
+      // console.log('knownAccountTypeMap', account, type);
+      if (type == 'distributed-to-unknown-tier-01') {
+        unknownAccountTypeTierTwoList.push({
+          account: account,
+          type: type,
+        });
+      }
+    }
+
+    if (DEBUG) {
+      unknownAccountTypeTierTwoList.length = 3;
+    }
+
+    let unknownAccountTypeTierTwoNbr = 1;
+    for (const unknownAccountTypeTierTwo of unknownAccountTypeTierTwoList) {
+      // console.log('unknownAccountTypeTierTwo', unknownAccountTypeTierTwo);
+      const account = unknownAccountTypeTierTwo.account;
+      const type = unknownAccountTypeTierTwo.type;
+      console.log('distribution calculation STARTING', unknownAccountTypeTierTwoNbr, 'of', unknownAccountTypeTierTwoList.length, type, account);
+      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize,
+          timeChunkFn, knownAccountTypeMap, account,
+          amountSentByTimeChunkAndSrcDestTypeMap,
+          amountReceivedByTimeChunkAndSrcDestTypeMap,
+          whalewatch, DEBUG, VERBOSE,
+          knownAccountTypeNbr, knownAccountTypeList.length, 'unknown-tier-02');
+      // console.log('distributionOverTime', distributionOverTime);
+      console.log('distribution calculation FINISHED', unknownAccountTypeTierTwoNbr, 'of', unknownAccountTypeTierTwoList.length, type, account);
+      unknownAccountTypeTierTwoNbr++;
+    }
+
+
+
     console.log('post-exchange calculation STARTING');
     const postExchangeAccountTypeList = [];
     for (const [account, type] of postExchangeAccountTypeMap) {
       postExchangeAccountTypeList.push({account: account, type: type});
     }
 
-    postExchangeAccountTypeList.length = 0;
+    // postExchangeAccountTypeList.length = 0;
 
     let postExchangeAccountTypeNbr = 1;
     for (const postExchangeAccountType of postExchangeAccountTypeList) {
