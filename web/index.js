@@ -35,6 +35,7 @@ const loadBananoDistributionStats = async () => {
 
   // timeChunks.length = 8;
   directionSet.delete('received');
+  swimLaneSet.delete('distributed-to-post-exchange-tier-01');
 
   const swimLaneArray = Array.from(swimLaneSet);
   swimLaneArray.sort();
