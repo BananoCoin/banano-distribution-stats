@@ -208,45 +208,7 @@ const run = async () => {
       postExchangeAccountTypeNbr++;
     }
 
-
-
-    /*
-    const unknownAccountTypeTierTwoList = [];
-
-    for (const [account, type] of knownAccountTypeMap) {
-      // console.log('knownAccountTypeMap', account, type);
-      if (type == 'distributed-to-unknown-tier-01') {
-        unknownAccountTypeTierTwoList.push({
-          account: account,
-          type: type,
-        });
-      }
-    }
-
-    if (DEBUG) {
-      unknownAccountTypeTierTwoList.length = 3;
-    }
-
-    let unknownAccountTypeTierTwoNbr = 1;
-    for (const unknownAccountTypeTierTwo of unknownAccountTypeTierTwoList) {
-      // console.log('unknownAccountTypeTierTwo', unknownAccountTypeTierTwo);
-      const account = unknownAccountTypeTierTwo.account;
-      const type = unknownAccountTypeTierTwo.type;
-      console.log('distribution calculation STARTING', unknownAccountTypeTierTwoNbr, 'of', unknownAccountTypeTierTwoList.length, type, account);
-      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize,
-          timeChunkFn, knownAccountTypeMap, account,
-          amountSentByTimeChunkAndSrcDestTypeMap,
-          amountReceivedByTimeChunkAndSrcDestTypeMap,
-          whalewatch, DEBUG, VERBOSE,
-          knownAccountTypeNbr, knownAccountTypeList.length, 'unknown-tier-02');
-      // console.log('distributionOverTime', distributionOverTime);
-      console.log('distribution calculation FINISHED', unknownAccountTypeTierTwoNbr, 'of', unknownAccountTypeTierTwoList.length, type, account);
-      unknownAccountTypeTierTwoNbr++;
-    }
-    */
-
     console.log('distribution calculation FINISHED');
-    // console.log('amountSentByTimeChunkAndSrcDestTypeMap', amountSentByTimeChunkAndSrcDestTypeMap);
 
     const histogram = [];
 
@@ -259,20 +221,6 @@ const run = async () => {
             destType: destType,
             amount: amount.toFixed(2),
             direction: 'sent',
-          });
-        }
-      }
-    }
-
-    for (const [timeChunk, amountBySrcDestTypeMap] of amountReceivedByTimeChunkAndSrcDestTypeMap) {
-      for (const [srcType, amountByDestTypeMap] of amountBySrcDestTypeMap) {
-        for (const [destType, amount] of amountByDestTypeMap) {
-          histogram.push({
-            timeChunk: timeChunk,
-            srcType: srcType,
-            destType: destType,
-            amount: amount.toFixed(2),
-            direction: 'received',
           });
         }
       }
