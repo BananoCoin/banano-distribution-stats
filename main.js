@@ -178,7 +178,7 @@ const run = async () => {
           amountSentByTimeChunkAndSrcDestTypeMap,
           amountReceivedByTimeChunkAndSrcDestTypeMap,
           whalewatch, DEBUG, VERBOSE,
-          knownAccountTypeNbr, knownAccountTypeList.length, 'post-exchange-tier-01');
+          knownAccountTypeNbr, knownAccountTypeList.length, 'unknown-tier-01');
       // console.log('distributionOverTime', distributionOverTime);
       console.log('distribution calculation FINISHED', knownAccountTypeNbr, 'of', knownAccountTypeList.length, type, account);
       knownAccountTypeNbr++;
@@ -202,7 +202,7 @@ const run = async () => {
           amountSentByTimeChunkAndSrcDestTypeMap,
           amountReceivedByTimeChunkAndSrcDestTypeMap,
           whalewatch, DEBUG, VERBOSE,
-          postExchangeAccountTypeNbr, postExchangeAccountTypeList.length, 'unknown-tier-01');
+          postExchangeAccountTypeNbr, postExchangeAccountTypeList.length, 'post-exchange-tier-01');
       // console.log('distributionOverTime', distributionOverTime);
       console.log('post-exchange calculation FINISHED', postExchangeAccountTypeNbr, 'of', postExchangeAccountTypeList.length, type, account);
       postExchangeAccountTypeNbr++;
