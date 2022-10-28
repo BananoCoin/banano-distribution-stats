@@ -8,7 +8,7 @@ const index = require('./index.js');
 const DEBUG = true;
 const VERBOSE = true;
 
-const NON_APHANUMERIC_REGEX = new RegExp('[^a-zA-Z0-9]+', 'g');
+// const NON_APHANUMERIC_REGEX = new RegExp('[^a-zA-Z0-9]+', 'g');
 
 const run = async () => {
   console.log('banano-distribution-stats');
@@ -32,7 +32,7 @@ const run = async () => {
       return yearMonth;
     };
     const knownAccountTypeMap = new Map();
-
+    const exchangeAccounts = [];
     // console.log('knownAccountsUrl', knownAccountsUrl);
     if (!knownAccountsUrl.startsWith('http')) {
       knownAccountsUrl=new URL(`file://${path.resolve(knownAccountsUrl)}`).href;
@@ -74,7 +74,7 @@ const run = async () => {
     knownAccountsResponse.forEach((knownAccountElt) => {
       const account = knownAccountElt.address;
       const type = knownAccountElt.type;
-      const alias = knownAccountElt.alias.replaceAll(NON_APHANUMERIC_REGEX, ' ').toLowerCase().trim().replaceAll(' ', '-');
+      // const alias = knownAccountElt.alias.replaceAll(NON_APHANUMERIC_REGEX, ' ').toLowerCase().trim().replaceAll(' ', '-');
       // console.log('knownAccountElt', account, type, alias);
       // console.log(`alias:'${alias}'`);
       if (knownAccountTypeMap.has(account)) {
@@ -87,9 +87,10 @@ const run = async () => {
           break;
         case 'exchange':
           knownAccountTypeMap.set(account, 'exchange');
+          exchangeAccounts.push(account);
           break;
         case 'faucet':
-          knownAccountTypeMap.set(account, `distributed-to-${type}-${alias}`);
+          knownAccountTypeMap.set(account, `distributed-to-${type}`);
           break;
         case 'event':
         case 'burn':
@@ -141,6 +142,10 @@ const run = async () => {
       postExchangeAccountTypeMap.set('ban_13g6jmb7kpw8r19is3hnuduh99ng7f16k7adaiidou5ak9kif8orqrd34tbs', 'exchanged-emusk');
       postExchangeAccountTypeMap.set('ban_1q4xzd4cxpyw54638r5wyefsdwojp4pdpi744rnyrrbi6rpdgy1adahhi3kn', 'exchanged-emusk');
       postExchangeAccountTypeMap.set('ban_3xitg1oghw96h59cujfzhg8mh87o9sxp46nznugmgnt3cemik4keq7q6zcrs', 'exchanged-emusk');
+
+      for (const exchangeAccount of exchangeAccounts) {
+        postExchangeAccountTypeMap.set(exchangeAccount, 'exchange');
+      }
     }
 
 
@@ -178,11 +183,47 @@ const run = async () => {
           amountSentByTimeChunkAndSrcDestTypeMap,
           amountReceivedByTimeChunkAndSrcDestTypeMap,
           whalewatch, DEBUG, VERBOSE,
-          knownAccountTypeNbr, knownAccountTypeList.length, 'unknown-tier-01');
+          knownAccountTypeNbr, knownAccountTypeList.length, 'distributed-to-unknown-tier-01');
       // console.log('distributionOverTime', distributionOverTime);
       console.log('distribution calculation FINISHED', knownAccountTypeNbr, 'of', knownAccountTypeList.length, type, account);
       knownAccountTypeNbr++;
     }
+
+    console.log('tier 2 calculation STARTING');
+
+    const unknownAccountTypeTierTwoList = [];
+
+    for (const [account, type] of knownAccountTypeMap) {
+      // console.log('knownAccountTypeMap', account, type);
+      if (type == 'distributed-to-unknown-tier-01') {
+        unknownAccountTypeTierTwoList.push({
+          account: account,
+          type: type,
+        });
+      }
+    }
+
+    if (DEBUG) {
+      unknownAccountTypeTierTwoList.length = 3;
+    }
+
+    let unknownAccountTypeTierTwoNbr = 1;
+    for (const unknownAccountTypeTierTwo of unknownAccountTypeTierTwoList) {
+      // console.log('unknownAccountTypeTierTwo', unknownAccountTypeTierTwo);
+      const account = unknownAccountTypeTierTwo.account;
+      const type = unknownAccountTypeTierTwo.type;
+      console.log('distribution calculation STARTING', unknownAccountTypeTierTwoNbr, 'of', unknownAccountTypeTierTwoList.length, type, account);
+      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize,
+          timeChunkFn, knownAccountTypeMap, account,
+          amountSentByTimeChunkAndSrcDestTypeMap,
+          amountReceivedByTimeChunkAndSrcDestTypeMap,
+          whalewatch, DEBUG, VERBOSE,
+          knownAccountTypeNbr, knownAccountTypeList.length, 'exchanged-tier-01');
+      // console.log('distributionOverTime', distributionOverTime);
+      console.log('distribution calculation FINISHED', unknownAccountTypeTierTwoNbr, 'of', unknownAccountTypeTierTwoList.length, type, account);
+      unknownAccountTypeTierTwoNbr++;
+    }
+
 
     console.log('post-exchange calculation STARTING');
     const postExchangeAccountTypeList = [];
@@ -190,7 +231,7 @@ const run = async () => {
       postExchangeAccountTypeList.push({account: account, type: type});
     }
 
-    postExchangeAccountTypeList.length = 0;
+    // postExchangeAccountTypeList.length = 0;
 
     let postExchangeAccountTypeNbr = 1;
     for (const postExchangeAccountType of postExchangeAccountTypeList) {
@@ -202,7 +243,7 @@ const run = async () => {
           amountSentByTimeChunkAndSrcDestTypeMap,
           amountReceivedByTimeChunkAndSrcDestTypeMap,
           whalewatch, DEBUG, VERBOSE,
-          postExchangeAccountTypeNbr, postExchangeAccountTypeList.length, 'post-exchange-tier-01');
+          postExchangeAccountTypeNbr, postExchangeAccountTypeList.length, 'exchanged-tier-02');
       // console.log('distributionOverTime', distributionOverTime);
       console.log('post-exchange calculation FINISHED', postExchangeAccountTypeNbr, 'of', postExchangeAccountTypeList.length, type, account);
       postExchangeAccountTypeNbr++;
@@ -226,7 +267,7 @@ const run = async () => {
       }
     }
 
-    histogram.sort((a,b) => {
+    histogram.sort((a, b) => {
       const timeChunkC = b.timeChunk.localeCompare(a.timeChunk);
       /* istanbul ignore else */
       if (timeChunkC != 0) {
@@ -254,7 +295,7 @@ const run = async () => {
       }
       /* istanbul ignore next */
       return 0;
-    })
+    });
 
     const knownAccount = [];
     for (const [account, type] of knownAccountTypeMap) {

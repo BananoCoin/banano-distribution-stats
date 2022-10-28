@@ -35,7 +35,10 @@ const loadBananoDistributionStats = async () => {
 
   // timeChunks.length = 8;
   directionSet.delete('received');
-  swimLaneSet.delete('distributed-to-post-exchange-tier-01');
+  swimLaneSet.delete('exchanged-tier-01');
+  swimLaneSet.delete('exchange');
+  swimLaneSet.delete('exchanged-emusk');
+  swimLaneSet.delete('exchanged-tier-02');
 
   const swimLaneArray = Array.from(swimLaneSet);
   swimLaneArray.sort();
@@ -48,15 +51,16 @@ const loadBananoDistributionStats = async () => {
   const swimLanes = [
     'source',
     'distributed-to-burn',
-    'distributed-to-team-member',
-    'distributed-to-known',
   ];
 
   const bottomSwimLanes = [
+    'distributed-to-team-member',
+    'distributed-to-known',
     'distributed-to-unknown-tier-01',
-    'distributed-to-unknown-tier-02',
-    'exchange',
-    'emusk-hold',
+    // 'exchanged-tier-01',
+    // 'exchange',
+    // 'exchanged-emusk',
+    // 'exchanged-tier-02',
   ];
 
   for (swimLane of swimLaneArray) {
@@ -91,16 +95,6 @@ const loadBananoDistributionStats = async () => {
     if (stat.timeChunk !== '1970-01') {
       if (stat.amount > 0) {
         if (swimLanes.includes(stat.srcType) && swimLanes.includes(stat.destType)) {
-          // if (stat.direction == 'received') {
-          //   const prevTimeChunk = prev(stat.timeChunk);
-          //   if (prevTimeChunk !== undefined) {
-          //     stat.prevTimeChunk = prevTimeChunk;
-          //     stat.srcNode = `${stat.prevTimeChunk}-${stat.destType}(${stat.direction})`;
-          //     stat.destNode = `${stat.timeChunk}-${stat.srcType}(${stat.direction})`;
-          //     stat.color = 'pink';
-          //     window.bananoDistributionStats.push(stat);
-          //   }
-          // }
           if (stat.direction == 'sent') {
             const nextTimeChunk = next(stat.timeChunk);
             if (nextTimeChunk !== undefined) {
@@ -117,8 +111,8 @@ const loadBananoDistributionStats = async () => {
   });
 
   const sankeySvgElt = document.getElementById('sankeySvg');
-  const w = 9000;
-  const h = 9000;
+  const w = 10000;
+  const h = 5000;
   const y = 0;
   const x = 0;
   sankeySvgElt.setAttribute('width', '100rem');
@@ -185,32 +179,40 @@ const loadBananoDistributionStats = async () => {
     const srcTypeIx = swimLanes.indexOf(stat.srcType);
     const destTypeIx = swimLanes.indexOf(stat.destType);
 
-    if (stat.srcType.startsWith('source') &&
-        stat.destType.startsWith('source')) {
-    } else if (stat.direction.startsWith('received') &&
-        stat.srcType.startsWith('source')) {
-    } else if (stat.direction.startsWith('received') &&
-        stat.destType.startsWith('source')) {
-    } else if (stat.srcType.startsWith('distributed') &&
-        stat.destType.startsWith('source')) {
-    } else if (stat.srcType.startsWith('distributed') &&
-        stat.destType.startsWith('distributed')) {
-    } else if (stat.srcType.startsWith('exchange') &&
-        (!stat.destType.startsWith('exchanged'))) {
-    } else if (stat.srcType.startsWith('exchanged')) {
-    } else if (destTypeIx < srcTypeIx) {
+    if (stat.destType.startsWith('source')) {
+    // } else if (stat.srcType.startsWith('exchange') &&
+    //     (!stat.destType.startsWith('exchanged'))) {
+    // } else if (stat.srcNode == stat.destNode) {
+    // } else if (stat.srcType.startsWith('exchanged')) {
+    // } else if (destTypeIx < srcTypeIx) {
     } else {
       const link = {
         source: stat.srcNode,
         target: stat.destNode,
         value: stat.amount,
       };
+
+      const maxIx = 9;
+      let useLink = (destTypeIx <= maxIx) && (srcTypeIx <= maxIx);
+      if (stat.srcType.startsWith('distributed')) {
+        useLink = false;
+      }
+
+      const showLink = (destTypeIx >= srcTypeIx);
+
       if (stat.direction == 'sent') {
         if (stat.destType == 'exchange') {
           link.color = 'orange';
         }
-      }
-      if (stat.direction == 'sent') {
+        if (stat.destType == 'exchanged-tier-01') {
+          link.color = 'orange';
+        }
+        if (stat.destType == 'exchanged-emusk') {
+          link.color = 'green';
+        }
+        if (stat.destType == 'exchanged-tier-02') {
+          link.color = 'green';
+        }
         if (stat.srcType == 'source') {
           link.color = '#CCCC00';
         }
@@ -219,11 +221,15 @@ const loadBananoDistributionStats = async () => {
         }
 
         // if ((stat.srcType == 'source') || (stat.destType == 'exchange')) {
-        add(stat.nextTimeChunk, stat.destType, stat.amount);
+        if (nodeNameSet.has(link.source) && nodeNameSet.has(link.target)) {
+          if (useLink) {
+            if (showLink) {
+              sankey.links.push(link);
+            }
+            add(stat.nextTimeChunk, stat.destType, stat.amount);
+          }
+        }
         // }
-      }
-      if (nodeNameSet.has(link.source) && nodeNameSet.has(link.target)) {
-        sankey.links.push(link);
       }
     }
   });
@@ -268,7 +274,9 @@ const loadBananoDistributionStats = async () => {
         const nn1 = `${nextTimeChunk}-${swimLane}(sent)`;
         const a0 = get(timeChunk, swimLane);
         // console.log('nodeAmount', nodeAmount);
-        if (a0 > 0) {
+        if (a0 >= 0) {
+          // add 1 to value so the sankey lines up in swim lanes.
+          // otherwise it looks jankey.
           const link = {
             source: nn0,
             target: nn1,
@@ -294,6 +302,15 @@ const loadBananoDistributionStats = async () => {
           }
           if (swimLane == 'exchange') {
             link.color = 'orange';
+          }
+          if (swimLane == 'exchanged-tier-01') {
+            link.color = 'orange';
+          }
+          if (swimLane == 'exchanged-emusk') {
+            link.color = 'green';
+          }
+          if (swimLane == 'exchanged-tier-02') {
+            link.color = 'green';
           }
           if (nodeNameSet.has(link.source) && nodeNameSet.has(link.target)) {
             sankey.links.push(link);
