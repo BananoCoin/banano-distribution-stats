@@ -35,6 +35,10 @@ const loadBananoDistributionStats = async () => {
 
   // timeChunks.length = 8;
   directionSet.delete('received');
+  swimLaneSet.delete('exchanged-tier-01');
+  swimLaneSet.delete('exchange');
+  swimLaneSet.delete('exchanged-emusk');
+  swimLaneSet.delete('exchanged-tier-02');
 
   const swimLaneArray = Array.from(swimLaneSet);
   swimLaneArray.sort();
@@ -53,10 +57,10 @@ const loadBananoDistributionStats = async () => {
     'distributed-to-team-member',
     'distributed-to-known',
     'distributed-to-unknown-tier-01',
-    'exchanged-tier-01',
-    'exchange',
-    'exchanged-emusk',
-    'exchanged-tier-02',
+    // 'exchanged-tier-01',
+    // 'exchange',
+    // 'exchanged-emusk',
+    // 'exchanged-tier-02',
   ];
 
   for (swimLane of swimLaneArray) {
@@ -276,7 +280,7 @@ const loadBananoDistributionStats = async () => {
           const link = {
             source: nn0,
             target: nn1,
-            value: a0+1,
+            value: a0,
           };
           if (swimLane == 'distributed-to-team-member') {
             link.color = 'green';
