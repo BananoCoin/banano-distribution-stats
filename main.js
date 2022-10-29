@@ -32,7 +32,7 @@ const run = async () => {
       return yearMonth;
     };
     const knownAccountTypeMap = new Map();
-
+    const exchangeAccounts = [];
     // console.log('knownAccountsUrl', knownAccountsUrl);
     if (!knownAccountsUrl.startsWith('http')) {
       knownAccountsUrl=new URL(`file://${path.resolve(knownAccountsUrl)}`).href;
@@ -87,6 +87,7 @@ const run = async () => {
           break;
         case 'exchange':
           knownAccountTypeMap.set(account, 'exchange');
+          exchangeAccounts.push(account);
           break;
         case 'faucet':
           knownAccountTypeMap.set(account, `distributed-to-${type}`);
@@ -141,6 +142,10 @@ const run = async () => {
       postExchangeAccountTypeMap.set('ban_13g6jmb7kpw8r19is3hnuduh99ng7f16k7adaiidou5ak9kif8orqrd34tbs', 'exchanged-emusk');
       postExchangeAccountTypeMap.set('ban_1q4xzd4cxpyw54638r5wyefsdwojp4pdpi744rnyrrbi6rpdgy1adahhi3kn', 'exchanged-emusk');
       postExchangeAccountTypeMap.set('ban_3xitg1oghw96h59cujfzhg8mh87o9sxp46nznugmgnt3cemik4keq7q6zcrs', 'exchanged-emusk');
+
+      for(const exchangeAccount of exchangeAccounts) {
+        postExchangeAccountTypeMap.set(exchangeAccount,'exchange');
+      }
     }
 
 
@@ -178,7 +183,7 @@ const run = async () => {
           amountSentByTimeChunkAndSrcDestTypeMap,
           amountReceivedByTimeChunkAndSrcDestTypeMap,
           whalewatch, DEBUG, VERBOSE,
-          knownAccountTypeNbr, knownAccountTypeList.length, 'unknown-tier-01');
+          knownAccountTypeNbr, knownAccountTypeList.length, 'distributed-to-unknown-tier-01');
       // console.log('distributionOverTime', distributionOverTime);
       console.log('distribution calculation FINISHED', knownAccountTypeNbr, 'of', knownAccountTypeList.length, type, account);
       knownAccountTypeNbr++;
@@ -213,7 +218,7 @@ const run = async () => {
           amountSentByTimeChunkAndSrcDestTypeMap,
           amountReceivedByTimeChunkAndSrcDestTypeMap,
           whalewatch, DEBUG, VERBOSE,
-          knownAccountTypeNbr, knownAccountTypeList.length, 'unknown-tier-02');
+          knownAccountTypeNbr, knownAccountTypeList.length, 'exchanged-tier-01');
       // console.log('distributionOverTime', distributionOverTime);
       console.log('distribution calculation FINISHED', unknownAccountTypeTierTwoNbr, 'of', unknownAccountTypeTierTwoList.length, type, account);
       unknownAccountTypeTierTwoNbr++;
@@ -239,7 +244,7 @@ const run = async () => {
           amountSentByTimeChunkAndSrcDestTypeMap,
           amountReceivedByTimeChunkAndSrcDestTypeMap,
           whalewatch, DEBUG, VERBOSE,
-          postExchangeAccountTypeNbr, postExchangeAccountTypeList.length, 'post-exchange-tier-01');
+          postExchangeAccountTypeNbr, postExchangeAccountTypeList.length, 'exchanged-tier-02');
       // console.log('distributionOverTime', distributionOverTime);
       console.log('post-exchange calculation FINISHED', postExchangeAccountTypeNbr, 'of', postExchangeAccountTypeList.length, type, account);
       postExchangeAccountTypeNbr++;
