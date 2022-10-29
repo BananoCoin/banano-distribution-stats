@@ -74,7 +74,7 @@ const run = async () => {
     knownAccountsResponse.forEach((knownAccountElt) => {
       const account = knownAccountElt.address;
       const type = knownAccountElt.type;
-      const alias = knownAccountElt.alias.replaceAll(NON_APHANUMERIC_REGEX, ' ').toLowerCase().trim().replaceAll(' ', '-');
+      // const alias = knownAccountElt.alias.replaceAll(NON_APHANUMERIC_REGEX, ' ').toLowerCase().trim().replaceAll(' ', '-');
       // console.log('knownAccountElt', account, type, alias);
       // console.log(`alias:'${alias}'`);
       if (knownAccountTypeMap.has(account)) {
