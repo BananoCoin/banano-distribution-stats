@@ -8,7 +8,7 @@ const index = require('./index.js');
 const DEBUG = false;
 const VERBOSE = true;
 
-const NON_APHANUMERIC_REGEX = new RegExp('[^a-zA-Z0-9]+', 'g');
+// const NON_APHANUMERIC_REGEX = new RegExp('[^a-zA-Z0-9]+', 'g');
 
 const run = async () => {
   console.log('banano-distribution-stats');
@@ -143,8 +143,8 @@ const run = async () => {
       postExchangeAccountTypeMap.set('ban_1q4xzd4cxpyw54638r5wyefsdwojp4pdpi744rnyrrbi6rpdgy1adahhi3kn', 'exchanged-emusk');
       postExchangeAccountTypeMap.set('ban_3xitg1oghw96h59cujfzhg8mh87o9sxp46nznugmgnt3cemik4keq7q6zcrs', 'exchanged-emusk');
 
-      for(const exchangeAccount of exchangeAccounts) {
-        postExchangeAccountTypeMap.set(exchangeAccount,'exchange');
+      for (const exchangeAccount of exchangeAccounts) {
+        postExchangeAccountTypeMap.set(exchangeAccount, 'exchange');
       }
     }
 
@@ -225,7 +225,6 @@ const run = async () => {
     }
 
 
-
     console.log('post-exchange calculation STARTING');
     const postExchangeAccountTypeList = [];
     for (const [account, type] of postExchangeAccountTypeMap) {
@@ -268,7 +267,7 @@ const run = async () => {
       }
     }
 
-    histogram.sort((a,b) => {
+    histogram.sort((a, b) => {
       const timeChunkC = b.timeChunk.localeCompare(a.timeChunk);
       /* istanbul ignore else */
       if (timeChunkC != 0) {
@@ -296,7 +295,7 @@ const run = async () => {
       }
       /* istanbul ignore next */
       return 0;
-    })
+    });
 
     const knownAccount = [];
     for (const [account, type] of knownAccountTypeMap) {

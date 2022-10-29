@@ -190,11 +190,11 @@ const loadBananoDistributionStats = async () => {
 
       const maxIx = 9;
       let useLink = (destTypeIx <= maxIx) && (srcTypeIx <= maxIx);
-      if(stat.srcType.startsWith('distributed')) {
+      if (stat.srcType.startsWith('distributed')) {
         useLink = false;
       }
 
-      let showLink = (destTypeIx >= srcTypeIx);
+      const showLink = (destTypeIx >= srcTypeIx);
 
       if (stat.direction == 'sent') {
         if (stat.destType == 'exchange') {
@@ -219,7 +219,7 @@ const loadBananoDistributionStats = async () => {
         // if ((stat.srcType == 'source') || (stat.destType == 'exchange')) {
         if (nodeNameSet.has(link.source) && nodeNameSet.has(link.target)) {
           if (useLink) {
-            if(showLink) {
+            if (showLink) {
               sankey.links.push(link);
             }
             add(stat.nextTimeChunk, stat.destType, stat.amount);
