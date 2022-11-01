@@ -180,10 +180,9 @@ const loadBananoDistributionStats = async () => {
     const destTypeIx = swimLanes.indexOf(stat.destType);
 
     if (stat.destType.startsWith('source')) {
-    // } else if (stat.srcType.startsWith('exchange') &&
-    //     (!stat.destType.startsWith('exchanged'))) {
-    // } else if (stat.srcNode == stat.destNode) {
-    // } else if (stat.srcType.startsWith('exchanged')) {
+      // do not count funds sent back to the distribution accounts.
+    } else if (stat.srcType == stat.destType) {
+      // do not count funds sent within a layer to the same layer.
     // } else if (destTypeIx < srcTypeIx) {
     } else {
       const link = {
@@ -192,11 +191,7 @@ const loadBananoDistributionStats = async () => {
         value: stat.amount,
       };
 
-      const maxIx = 9;
-      let useLink = (destTypeIx <= maxIx) && (srcTypeIx <= maxIx);
-      if (stat.srcType.startsWith('distributed')) {
-        useLink = false;
-      }
+      const useLink = !stat.srcType.startsWith('distributed');
 
       const showLink = (destTypeIx >= srcTypeIx);
 
@@ -254,9 +249,9 @@ const loadBananoDistributionStats = async () => {
         let currentSupply = MAXIMUM_SUPPLY;
         for (const swimLane of swimLanes) {
           const a0 = get(nextTimeChunk, swimLane);
-          if (!bottomSwimLanes.includes(swimLane)) {
-            currentSupply -= a0;
-          }
+          // if (!bottomSwimLanes.includes(swimLane)) {
+          currentSupply -= a0;
+          // }
         }
 
         const a0 = get(timeChunk, 'source');
