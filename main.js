@@ -5,7 +5,7 @@ const path = require('path');
 const httpsRateLimit = require('https-rate-limit');
 const index = require('./index.js');
 
-const DEBUG = true;
+const DEBUG = false;
 const VERBOSE = true;
 
 const NON_APHANUMERIC_REGEX = new RegExp('[^a-zA-Z0-9]+', 'g');
@@ -116,10 +116,10 @@ const run = async () => {
     if (addHardcodedAccounts == 'true') {
       knownAccountTypeMap.set('ban_1boompow14irck1yauquqypt7afqrh8b6bbu5r93pc6hgbqs7z6o99frcuym', 'distributed-to-boompow');
       knownAccountTypeMap.set('ban_3fo1d1ng6mfqumfoojqby13nahaugqbe5n6n3trof4q8kg5amo9mribg4muo', 'distributed-to-fo1d1ng');
-      knownAccountTypeMap.set('ban_1d59mzcc7yyuixyzc7femupc76yjsuoko79mm7y8td461opcpgiphjxjcje7', 'source');
-      knownAccountTypeMap.set('ban_1bun4a6xbrawe1ugqspyx9zf7wy7kurrmsgr9sodmyatp74xdx6qwki4fwx8', 'source');
-      knownAccountTypeMap.set('ban_3eg7hsqtt84sr6fyfgpemazhqdj5gnir7q7gxrmt4mozndehnt6un73y51u9', 'source');
-      knownAccountTypeMap.set('ban_3bonus9fwjnwjoyawbdbokze51iucgqwtdyk6e4kqdu39rw8nyzmew5ptxoj', 'source');
+      knownAccountTypeMap.set('ban_1d59mzcc7yyuixyzc7femupc76yjsuoko79mm7y8td461opcpgiphjxjcje7', 'source-1d59');
+      knownAccountTypeMap.set('ban_1bun4a6xbrawe1ugqspyx9zf7wy7kurrmsgr9sodmyatp74xdx6qwki4fwx8', 'source-1bun');
+      knownAccountTypeMap.set('ban_3eg7hsqtt84sr6fyfgpemazhqdj5gnir7q7gxrmt4mozndehnt6un73y51u9', 'source-3eg7h');
+      knownAccountTypeMap.set('ban_3bonus9fwjnwjoyawbdbokze51iucgqwtdyk6e4kqdu39rw8nyzmew5ptxoj', 'source-3bonus');
 
       postExchangeAccountTypeMap.set('ban_1emusk6m8hypb46dbp6eaiu3j6xjwwwaqw98y6hqyje53ncjciyqzj3skt9n', 'exchanged-emusk');
       postExchangeAccountTypeMap.set('ban_1xs6m9ty5m9j33nhkz4eurwgmq5fsccb75x7jdtj3kg9nq53mwocec3wtm66', 'exchanged-emusk');
