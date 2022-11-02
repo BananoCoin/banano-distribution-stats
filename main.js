@@ -8,7 +8,7 @@ const index = require('./index.js');
 const DEBUG = true;
 const VERBOSE = true;
 
-// const NON_APHANUMERIC_REGEX = new RegExp('[^a-zA-Z0-9]+', 'g');
+const NON_APHANUMERIC_REGEX = new RegExp('[^a-zA-Z0-9]+', 'g');
 
 const run = async () => {
   console.log('banano-distribution-stats');
@@ -74,7 +74,7 @@ const run = async () => {
     knownAccountsResponse.forEach((knownAccountElt) => {
       const account = knownAccountElt.address;
       const type = knownAccountElt.type;
-      // const alias = knownAccountElt.alias.replaceAll(NON_APHANUMERIC_REGEX, ' ').toLowerCase().trim().replaceAll(' ', '-');
+      const alias = knownAccountElt.alias.replaceAll(NON_APHANUMERIC_REGEX, ' ').toLowerCase().trim().replaceAll(' ', '-');
       // console.log('knownAccountElt', account, type, alias);
       // console.log(`alias:'${alias}'`);
       if (knownAccountTypeMap.has(account)) {
@@ -83,7 +83,7 @@ const run = async () => {
       }
       switch (type) {
         case 'distribution':
-          knownAccountTypeMap.set(account, 'source');
+          knownAccountTypeMap.set(account, `source-${alias}`);
           break;
         case 'exchange':
           knownAccountTypeMap.set(account, 'exchange');
