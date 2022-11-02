@@ -7,8 +7,10 @@ const index = require('./index.js');
 
 const DEBUG = false;
 const VERBOSE = true;
+const TIER_TWO = false;
+const POST_EXCHANGE = false;
 
-const NON_APHANUMERIC_REGEX = new RegExp('[^a-zA-Z0-9]+', 'g');
+// const NON_APHANUMERIC_REGEX = new RegExp('[^a-zA-Z0-9]+', 'g');
 
 const run = async () => {
   console.log('banano-distribution-stats');
@@ -74,7 +76,7 @@ const run = async () => {
     knownAccountsResponse.forEach((knownAccountElt) => {
       const account = knownAccountElt.address;
       const type = knownAccountElt.type;
-      const alias = knownAccountElt.alias.replaceAll(NON_APHANUMERIC_REGEX, ' ').toLowerCase().trim().replaceAll(' ', '-');
+      // const alias = knownAccountElt.alias.replaceAll(NON_APHANUMERIC_REGEX, ' ').toLowerCase().trim().replaceAll(' ', '-');
       // console.log('knownAccountElt', account, type, alias);
       // console.log(`alias:'${alias}'`);
       if (knownAccountTypeMap.has(account)) {
@@ -83,7 +85,7 @@ const run = async () => {
       }
       switch (type) {
         case 'distribution':
-          knownAccountTypeMap.set(account, `source-${alias}`);
+          knownAccountTypeMap.set(account, `source`);
           break;
         case 'exchange':
           knownAccountTypeMap.set(account, 'exchange');
@@ -116,10 +118,11 @@ const run = async () => {
     if (addHardcodedAccounts == 'true') {
       knownAccountTypeMap.set('ban_1boompow14irck1yauquqypt7afqrh8b6bbu5r93pc6hgbqs7z6o99frcuym', 'distributed-to-boompow');
       knownAccountTypeMap.set('ban_3fo1d1ng6mfqumfoojqby13nahaugqbe5n6n3trof4q8kg5amo9mribg4muo', 'distributed-to-fo1d1ng');
-      knownAccountTypeMap.set('ban_1d59mzcc7yyuixyzc7femupc76yjsuoko79mm7y8td461opcpgiphjxjcje7', 'source-1d59');
-      knownAccountTypeMap.set('ban_1bun4a6xbrawe1ugqspyx9zf7wy7kurrmsgr9sodmyatp74xdx6qwki4fwx8', 'source-1bun');
-      knownAccountTypeMap.set('ban_3eg7hsqtt84sr6fyfgpemazhqdj5gnir7q7gxrmt4mozndehnt6un73y51u9', 'source-3eg7h');
-      knownAccountTypeMap.set('ban_3bonus9fwjnwjoyawbdbokze51iucgqwtdyk6e4kqdu39rw8nyzmew5ptxoj', 'source-3bonus');
+      knownAccountTypeMap.set('ban_1d59mzcc7yyuixyzc7femupc76yjsuoko79mm7y8td461opcpgiphjxjcje7', 'source');
+      knownAccountTypeMap.set('ban_1bun4a6xbrawe1ugqspyx9zf7wy7kurrmsgr9sodmyatp74xdx6qwki4fwx8', 'source');
+      knownAccountTypeMap.set('ban_3eg7hsqtt84sr6fyfgpemazhqdj5gnir7q7gxrmt4mozndehnt6un73y51u9', 'source');
+      knownAccountTypeMap.set('ban_3bonus9fwjnwjoyawbdbokze51iucgqwtdyk6e4kqdu39rw8nyzmew5ptxoj', 'source');
+      knownAccountTypeMap.set('ban_1bananobh5rat99qfgt1ptpieie5swmoth87thi74qgbfrij7dcgjiij94xr', 'source');
 
       postExchangeAccountTypeMap.set('ban_1emusk6m8hypb46dbp6eaiu3j6xjwwwaqw98y6hqyje53ncjciyqzj3skt9n', 'exchanged-emusk');
       postExchangeAccountTypeMap.set('ban_1xs6m9ty5m9j33nhkz4eurwgmq5fsccb75x7jdtj3kg9nq53mwocec3wtm66', 'exchanged-emusk');
@@ -172,12 +175,12 @@ const run = async () => {
     const amountReceivedByTimeChunkAndSrcDestTypeMap = new Map();
     const whalewatch = [];
 
-    console.log('distribution calculation STARTING');
+    console.log('tier-01 distribution calculation STARTING');
     let knownAccountTypeNbr = 1;
     for (const knownAccountType of knownAccountTypeList) {
       const account = knownAccountType.account;
       const type = knownAccountType.type;
-      console.log('distribution calculation STARTING', knownAccountTypeNbr, 'of', knownAccountTypeList.length, type, account);
+      console.log('tier-01 distribution calculation STARTING', knownAccountTypeNbr, 'of', knownAccountTypeList.length, type, account);
       await index.getDistributionOverTime(httpsRateLimit, historyChunkSize,
           timeChunkFn, knownAccountTypeMap, account,
           amountSentByTimeChunkAndSrcDestTypeMap,
@@ -185,68 +188,71 @@ const run = async () => {
           whalewatch, DEBUG, VERBOSE,
           knownAccountTypeNbr, knownAccountTypeList.length, 'distributed-to-unknown-tier-01');
       // console.log('distributionOverTime', distributionOverTime);
-      console.log('distribution calculation FINISHED', knownAccountTypeNbr, 'of', knownAccountTypeList.length, type, account);
+      console.log('tier-01 distribution calculation FINISHED', knownAccountTypeNbr, 'of', knownAccountTypeList.length, type, account);
       knownAccountTypeNbr++;
     }
 
-    console.log('tier 2 calculation STARTING');
+    if (TIER_TWO) {
+      console.log('tier-02 calculation STARTING');
 
-    const unknownAccountTypeTierTwoList = [];
+      const unknownAccountTypeTierTwoList = [];
 
-    for (const [account, type] of knownAccountTypeMap) {
-      // console.log('knownAccountTypeMap', account, type);
-      if (type == 'distributed-to-unknown-tier-01') {
-        unknownAccountTypeTierTwoList.push({
-          account: account,
-          type: type,
-        });
+      for (const [account, type] of knownAccountTypeMap) {
+        // console.log('knownAccountTypeMap', account, type);
+        if (type == 'distributed-to-unknown-tier-01') {
+          unknownAccountTypeTierTwoList.push({
+            account: account,
+            type: type,
+          });
+        }
+      }
+
+      if (DEBUG) {
+        unknownAccountTypeTierTwoList.length = 3;
+      }
+
+      let unknownAccountTypeTierTwoNbr = 1;
+      for (const unknownAccountTypeTierTwo of unknownAccountTypeTierTwoList) {
+        // console.log('unknownAccountTypeTierTwo', unknownAccountTypeTierTwo);
+        const account = unknownAccountTypeTierTwo.account;
+        const type = unknownAccountTypeTierTwo.type;
+        console.log('tier-02 distribution calculation STARTING', unknownAccountTypeTierTwoNbr, 'of', unknownAccountTypeTierTwoList.length, type, account);
+        await index.getDistributionOverTime(httpsRateLimit, historyChunkSize,
+            timeChunkFn, knownAccountTypeMap, account,
+            amountSentByTimeChunkAndSrcDestTypeMap,
+            amountReceivedByTimeChunkAndSrcDestTypeMap,
+            whalewatch, DEBUG, VERBOSE,
+            knownAccountTypeNbr, knownAccountTypeList.length, 'exchanged-tier-01');
+        // console.log('distributionOverTime', distributionOverTime);
+        console.log('tier-02 distribution calculation FINISHED', unknownAccountTypeTierTwoNbr, 'of', unknownAccountTypeTierTwoList.length, type, account);
+        unknownAccountTypeTierTwoNbr++;
       }
     }
 
-    if (DEBUG) {
-      unknownAccountTypeTierTwoList.length = 3;
-    }
+    if (POST_EXCHANGE) {
+      console.log('post-exchange calculation STARTING');
+      const postExchangeAccountTypeList = [];
+      for (const [account, type] of postExchangeAccountTypeMap) {
+        postExchangeAccountTypeList.push({account: account, type: type});
+      }
 
-    let unknownAccountTypeTierTwoNbr = 1;
-    for (const unknownAccountTypeTierTwo of unknownAccountTypeTierTwoList) {
-      // console.log('unknownAccountTypeTierTwo', unknownAccountTypeTierTwo);
-      const account = unknownAccountTypeTierTwo.account;
-      const type = unknownAccountTypeTierTwo.type;
-      console.log('distribution calculation STARTING', unknownAccountTypeTierTwoNbr, 'of', unknownAccountTypeTierTwoList.length, type, account);
-      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize,
-          timeChunkFn, knownAccountTypeMap, account,
-          amountSentByTimeChunkAndSrcDestTypeMap,
-          amountReceivedByTimeChunkAndSrcDestTypeMap,
-          whalewatch, DEBUG, VERBOSE,
-          knownAccountTypeNbr, knownAccountTypeList.length, 'exchanged-tier-01');
-      // console.log('distributionOverTime', distributionOverTime);
-      console.log('distribution calculation FINISHED', unknownAccountTypeTierTwoNbr, 'of', unknownAccountTypeTierTwoList.length, type, account);
-      unknownAccountTypeTierTwoNbr++;
-    }
+      // postExchangeAccountTypeList.length = 0;
 
-
-    console.log('post-exchange calculation STARTING');
-    const postExchangeAccountTypeList = [];
-    for (const [account, type] of postExchangeAccountTypeMap) {
-      postExchangeAccountTypeList.push({account: account, type: type});
-    }
-
-    // postExchangeAccountTypeList.length = 0;
-
-    let postExchangeAccountTypeNbr = 1;
-    for (const postExchangeAccountType of postExchangeAccountTypeList) {
-      const account = postExchangeAccountType.account;
-      const type = postExchangeAccountType.type;
-      console.log('post-exchange calculation STARTING', postExchangeAccountTypeNbr, 'of', postExchangeAccountTypeList.length, type, account);
-      await index.getDistributionOverTime(httpsRateLimit, historyChunkSize,
-          timeChunkFn, postExchangeAccountTypeMap, account,
-          amountSentByTimeChunkAndSrcDestTypeMap,
-          amountReceivedByTimeChunkAndSrcDestTypeMap,
-          whalewatch, DEBUG, VERBOSE,
-          postExchangeAccountTypeNbr, postExchangeAccountTypeList.length, 'exchanged-tier-02');
-      // console.log('distributionOverTime', distributionOverTime);
-      console.log('post-exchange calculation FINISHED', postExchangeAccountTypeNbr, 'of', postExchangeAccountTypeList.length, type, account);
-      postExchangeAccountTypeNbr++;
+      let postExchangeAccountTypeNbr = 1;
+      for (const postExchangeAccountType of postExchangeAccountTypeList) {
+        const account = postExchangeAccountType.account;
+        const type = postExchangeAccountType.type;
+        console.log('post-exchange calculation STARTING', postExchangeAccountTypeNbr, 'of', postExchangeAccountTypeList.length, type, account);
+        await index.getDistributionOverTime(httpsRateLimit, historyChunkSize,
+            timeChunkFn, postExchangeAccountTypeMap, account,
+            amountSentByTimeChunkAndSrcDestTypeMap,
+            amountReceivedByTimeChunkAndSrcDestTypeMap,
+            whalewatch, DEBUG, VERBOSE,
+            postExchangeAccountTypeNbr, postExchangeAccountTypeList.length, 'exchanged-tier-02');
+        // console.log('distributionOverTime', distributionOverTime);
+        console.log('post-exchange calculation FINISHED', postExchangeAccountTypeNbr, 'of', postExchangeAccountTypeList.length, type, account);
+        postExchangeAccountTypeNbr++;
+      }
     }
 
     console.log('distribution calculation FINISHED');
