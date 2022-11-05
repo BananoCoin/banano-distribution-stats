@@ -24,14 +24,14 @@
     "timeChunk": "2022-11",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "508.27",
+    "amount": "615.28",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-11",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-faucet",
-    "amount": "3574.35",
+    "amount": "5979.68",
     "direction": "sent"
   },
   {
