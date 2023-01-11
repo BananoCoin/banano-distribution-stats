@@ -101,7 +101,7 @@ const loadBananoDistributionStats = async () => {
               stat.nextTimeChunk = nextTimeChunk;
               stat.srcNode = `${stat.timeChunk}-${stat.srcType}(${stat.direction})`;
               stat.destNode = `${stat.nextTimeChunk}-${stat.destType}(${stat.direction})`;
-              stat.color = 'lightblue';
+              stat.color = 'lightgray';
               window.bananoDistributionStats.push(stat);
             }
           }
@@ -196,6 +196,9 @@ const loadBananoDistributionStats = async () => {
       const showLink = (destTypeIx >= srcTypeIx);
 
       if (stat.direction == 'sent') {
+        if (stat.destType.startsWith('distributed')) {
+          link.color = 'orange';
+        }
         if (stat.destType == 'exchange') {
           link.color = 'orange';
         }
