@@ -196,9 +196,6 @@ const loadBananoDistributionStats = async () => {
       const showLink = (destTypeIx >= srcTypeIx);
 
       if (stat.direction == 'sent') {
-        if (stat.destType.startsWith('distributed')) {
-          link.color = 'orange';
-        }
         if (stat.destType == 'exchange') {
           link.color = 'orange';
         }
@@ -286,7 +283,7 @@ const loadBananoDistributionStats = async () => {
           if (swimLane == 'distributed-to-bots') {
             link.color = 'gray';
           }
-          if (swimLane == 'distributed-to-unknown') {
+          if (swimLane == 'distributed-to-unknown-tier-01') {
             link.color = 'gray';
           }
           if (swimLane == 'distributed-to-known') {
