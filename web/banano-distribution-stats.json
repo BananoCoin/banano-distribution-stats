@@ -1,51 +1,618 @@
 [
   {
+    "timeChunk": "2023-02",
+    "srcType": "source",
+    "destType": "source",
+    "amount": "190000.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "source",
+    "destType": "distributed-to-unknown-tier-01",
+    "amount": "300000.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "119000.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "source",
+    "destType": "distributed-to-known",
+    "amount": "948312.74",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "source",
+    "destType": "distributed-to-fo1d1ng",
+    "amount": "2500000.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "source",
+    "destType": "distributed-to-faucet",
+    "amount": "69000.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "407862.02",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "exchange",
+    "destType": "distributed-to-unknown-tier-01",
+    "amount": "14758376.11",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "exchange",
+    "destType": "distributed-to-known",
+    "amount": "9466.73",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "exchange",
+    "destType": "distributed-to-faucet",
+    "amount": "11323.28",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown-tier-01",
+    "amount": "69025.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-team-member",
+    "amount": "106540.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-faucet",
+    "amount": "1000.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-known",
+    "destType": "distributed-to-unknown-tier-01",
+    "amount": "1721947.39",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-known",
+    "destType": "distributed-to-known",
+    "amount": "46982.79",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-known",
+    "destType": "distributed-to-fo1d1ng",
+    "amount": "0.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-known",
+    "destType": "distributed-to-faucet",
+    "amount": "0.40",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-fo1d1ng",
+    "destType": "distributed-to-unknown-tier-01",
+    "amount": "3419560.33",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-fo1d1ng",
+    "destType": "distributed-to-team-member",
+    "amount": "964.56",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-fo1d1ng",
+    "destType": "distributed-to-known",
+    "amount": "9826.39",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-fo1d1ng",
+    "destType": "distributed-to-faucet",
+    "amount": "86.58",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-faucet",
+    "destType": "source",
+    "amount": "0.39",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-faucet",
+    "destType": "distributed-to-unknown-tier-01",
+    "amount": "216477.48",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-faucet",
+    "destType": "distributed-to-team-member",
+    "amount": "1.04",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-faucet",
+    "destType": "distributed-to-known",
+    "amount": "12978.09",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-faucet",
+    "destType": "distributed-to-fo1d1ng",
+    "amount": "11.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-faucet",
+    "destType": "distributed-to-faucet",
+    "amount": "55301.74",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-faucet",
+    "destType": "distributed-to-burn",
+    "amount": "1.10",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-event",
+    "destType": "distributed-to-unknown-tier-01",
+    "amount": "998.73",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-boompow",
+    "destType": "distributed-to-unknown-tier-01",
+    "amount": "117123.15",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-02",
+    "srcType": "distributed-to-boompow",
+    "destType": "distributed-to-known",
+    "amount": "2875.21",
+    "direction": "sent"
+  },
+  {
     "timeChunk": "2023-01",
     "srcType": "source",
     "destType": "source",
-    "amount": "2800000.00",
+    "amount": "9660954.43",
     "direction": "sent"
   },
   {
     "timeChunk": "2023-01",
     "srcType": "source",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "4371000.00",
+    "amount": "5413000.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "source",
+    "destType": "distributed-to-team-member",
+    "amount": "1404621.00",
     "direction": "sent"
   },
   {
     "timeChunk": "2023-01",
     "srcType": "source",
     "destType": "distributed-to-known",
-    "amount": "192000.00",
+    "amount": "5362335.98",
     "direction": "sent"
   },
   {
     "timeChunk": "2023-01",
     "srcType": "source",
     "destType": "distributed-to-fo1d1ng",
-    "amount": "5000000.00",
+    "amount": "10000000.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "source",
+    "destType": "distributed-to-faucet",
+    "amount": "4000.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "source",
+    "destType": "distributed-to-event",
+    "amount": "119000.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "exchange",
+    "destType": "exchange",
+    "amount": "63962358.85",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "exchange",
+    "destType": "distributed-to-unknown-tier-01",
+    "amount": "353039331.68",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "exchange",
+    "destType": "distributed-to-team-member",
+    "amount": "84.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "exchange",
+    "destType": "distributed-to-known",
+    "amount": "657544.57",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "exchange",
+    "destType": "distributed-to-fo1d1ng",
+    "amount": "42.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "exchange",
+    "destType": "distributed-to-faucet",
+    "amount": "200611.39",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "exchange",
+    "destType": "distributed-to-event",
+    "amount": "51581.33",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "source",
+    "amount": "10000.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-unknown-tier-01",
+    "amount": "2228251.25",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-team-member",
+    "amount": "48.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-known",
+    "amount": "88500.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-team-member",
+    "destType": "distributed-to-faucet",
+    "amount": "107544.69",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-known",
+    "destType": "source",
+    "amount": "0.21",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-known",
+    "destType": "exchange",
+    "amount": "1902925.24",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-known",
+    "destType": "distributed-to-unknown-tier-01",
+    "amount": "34078115.28",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-known",
+    "destType": "distributed-to-team-member",
+    "amount": "1181.32",
     "direction": "sent"
   },
   {
     "timeChunk": "2023-01",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-known",
-    "amount": "15000.00",
+    "amount": "1434924.20",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-known",
+    "destType": "distributed-to-fo1d1ng",
+    "amount": "0.29",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-known",
+    "destType": "distributed-to-faucet",
+    "amount": "15126.29",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-known",
+    "destType": "distributed-to-event",
+    "amount": "713.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-known",
+    "destType": "distributed-to-burn",
+    "amount": "10.59",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-fo1d1ng",
+    "destType": "source",
+    "amount": "730.54",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-fo1d1ng",
+    "destType": "exchange",
+    "amount": "2.04",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-fo1d1ng",
+    "destType": "distributed-to-unknown-tier-01",
+    "amount": "42780220.30",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-fo1d1ng",
+    "destType": "distributed-to-team-member",
+    "amount": "667.22",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-fo1d1ng",
+    "destType": "distributed-to-known",
+    "amount": "163453.47",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-fo1d1ng",
+    "destType": "distributed-to-fo1d1ng",
+    "amount": "133.53",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-fo1d1ng",
+    "destType": "distributed-to-faucet",
+    "amount": "361.47",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-fo1d1ng",
+    "destType": "distributed-to-event",
+    "amount": "334.79",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-faucet",
+    "destType": "source",
+    "amount": "3.57",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-faucet",
+    "destType": "exchange",
+    "amount": "1.94",
     "direction": "sent"
   },
   {
     "timeChunk": "2023-01",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "49.50",
+    "amount": "3162845.14",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-faucet",
+    "destType": "distributed-to-team-member",
+    "amount": "327.21",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-faucet",
+    "destType": "distributed-to-known",
+    "amount": "93640.97",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-faucet",
+    "destType": "distributed-to-fo1d1ng",
+    "amount": "2.81",
     "direction": "sent"
   },
   {
     "timeChunk": "2023-01",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-faucet",
-    "amount": "11200.00",
+    "amount": "834496.14",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-faucet",
+    "destType": "distributed-to-event",
+    "amount": "4.57",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-faucet",
+    "destType": "distributed-to-burn",
+    "amount": "49.98",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-event",
+    "destType": "source",
+    "amount": "672.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-event",
+    "destType": "exchange",
+    "amount": "250.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-event",
+    "destType": "distributed-to-unknown-tier-01",
+    "amount": "2190082.23",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-event",
+    "destType": "distributed-to-team-member",
+    "amount": "160.10",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-event",
+    "destType": "distributed-to-known",
+    "amount": "679631.50",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-event",
+    "destType": "distributed-to-fo1d1ng",
+    "amount": "208.10",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-event",
+    "destType": "distributed-to-faucet",
+    "amount": "34110.94",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-event",
+    "destType": "distributed-to-event",
+    "amount": "256.72",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-boompow",
+    "destType": "distributed-to-unknown-tier-01",
+    "amount": "1701098.73",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-boompow",
+    "destType": "distributed-to-team-member",
+    "amount": "17.82",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-boompow",
+    "destType": "distributed-to-known",
+    "amount": "33872.62",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2023-01",
+    "srcType": "distributed-to-boompow",
+    "destType": "distributed-to-event",
+    "amount": "1.25",
     "direction": "sent"
   },
   {
@@ -136,14 +703,14 @@
     "timeChunk": "2022-12",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "4936.96",
+    "amount": "4935.43",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-12",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "15285.47",
+    "amount": "15287.00",
     "direction": "sent"
   },
   {
@@ -157,14 +724,14 @@
     "timeChunk": "2022-12",
     "srcType": "distributed-to-event",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "290.00",
+    "amount": "28.00",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-12",
     "srcType": "distributed-to-event",
     "destType": "distributed-to-known",
-    "amount": "6561.00",
+    "amount": "6823.00",
     "direction": "sent"
   },
   {
@@ -255,14 +822,14 @@
     "timeChunk": "2022-11",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "4595.03",
+    "amount": "4590.02",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-11",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "17336.10",
+    "amount": "17341.12",
     "direction": "sent"
   },
   {
@@ -276,14 +843,14 @@
     "timeChunk": "2022-11",
     "srcType": "distributed-to-event",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "1111.51",
+    "amount": "1070.51",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-11",
     "srcType": "distributed-to-event",
     "destType": "distributed-to-known",
-    "amount": "122.00",
+    "amount": "163.00",
     "direction": "sent"
   },
   {
@@ -360,14 +927,14 @@
     "timeChunk": "2022-10",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "16636.77",
+    "amount": "16633.75",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-10",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "16692.19",
+    "amount": "16695.21",
     "direction": "sent"
   },
   {
@@ -472,14 +1039,14 @@
     "timeChunk": "2022-09",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "49106.24",
+    "amount": "48890.74",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-09",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "16369.49",
+    "amount": "16584.99",
     "direction": "sent"
   },
   {
@@ -500,14 +1067,14 @@
     "timeChunk": "2022-09",
     "srcType": "distributed-to-event",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "4709.01",
+    "amount": "4061.75",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-09",
     "srcType": "distributed-to-event",
     "destType": "distributed-to-known",
-    "amount": "93.75",
+    "amount": "741.01",
     "direction": "sent"
   },
   {
@@ -612,7 +1179,7 @@
     "timeChunk": "2022-08",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "19186.31",
+    "amount": "19232.33",
     "direction": "sent"
   },
   {
@@ -633,14 +1200,14 @@
     "timeChunk": "2022-08",
     "srcType": "distributed-to-fo1d1ng",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "1162704.29",
+    "amount": "1161132.81",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-08",
     "srcType": "distributed-to-fo1d1ng",
     "destType": "distributed-to-known",
-    "amount": "6007.40",
+    "amount": "7578.88",
     "direction": "sent"
   },
   {
@@ -668,14 +1235,14 @@
     "timeChunk": "2022-08",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "132492.29",
+    "amount": "131804.72",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-08",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "29269.33",
+    "amount": "29956.43",
     "direction": "sent"
   },
   {
@@ -689,7 +1256,7 @@
     "timeChunk": "2022-08",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-faucet",
-    "amount": "86326.94",
+    "amount": "86327.40",
     "direction": "sent"
   },
   {
@@ -703,14 +1270,14 @@
     "timeChunk": "2022-08",
     "srcType": "distributed-to-event",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "1144.95",
+    "amount": "1140.75",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-08",
     "srcType": "distributed-to-event",
     "destType": "distributed-to-known",
-    "amount": "8.40",
+    "amount": "12.60",
     "direction": "sent"
   },
   {
@@ -724,7 +1291,7 @@
     "timeChunk": "2022-08",
     "srcType": "distributed-to-boompow",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "287521.50",
+    "amount": "278399.04",
     "direction": "sent"
   },
   {
@@ -738,7 +1305,7 @@
     "timeChunk": "2022-08",
     "srcType": "distributed-to-boompow",
     "destType": "distributed-to-known",
-    "amount": "7460.18",
+    "amount": "16582.64",
     "direction": "sent"
   },
   {
@@ -850,35 +1417,35 @@
     "timeChunk": "2022-07",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "2304699.27",
+    "amount": "2304990.21",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-07",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-known",
-    "amount": "524701.49",
+    "amount": "524818.73",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-07",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-faucet",
-    "amount": "0.51",
+    "amount": "4.72",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-07",
     "srcType": "distributed-to-fo1d1ng",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "2161132.61",
+    "amount": "2159551.68",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-07",
     "srcType": "distributed-to-fo1d1ng",
     "destType": "distributed-to-known",
-    "amount": "10577.44",
+    "amount": "12158.37",
     "direction": "sent"
   },
   {
@@ -906,14 +1473,14 @@
     "timeChunk": "2022-07",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "212645.62",
+    "amount": "210521.72",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-07",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "14300.90",
+    "amount": "16424.80",
     "direction": "sent"
   },
   {
@@ -934,7 +1501,14 @@
     "timeChunk": "2022-07",
     "srcType": "distributed-to-boompow",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "159999.31",
+    "amount": "159477.15",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2022-07",
+    "srcType": "distributed-to-boompow",
+    "destType": "distributed-to-known",
+    "amount": "522.16",
     "direction": "sent"
   },
   {
@@ -1046,28 +1620,35 @@
     "timeChunk": "2022-06",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "2688680.87",
+    "amount": "2689677.54",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-06",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-known",
-    "amount": "733785.04",
+    "amount": "733904.31",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-06",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-faucet",
-    "amount": "3993.17",
+    "amount": "5962.17",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "distributed-to-known",
+    "destType": "distributed-to-burn",
+    "amount": "0.01",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-06",
     "srcType": "distributed-to-fo1d1ng",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "4185707.05",
+    "amount": "4183906.82",
     "direction": "sent"
   },
   {
@@ -1081,7 +1662,7 @@
     "timeChunk": "2022-06",
     "srcType": "distributed-to-fo1d1ng",
     "destType": "distributed-to-known",
-    "amount": "11623.28",
+    "amount": "13423.51",
     "direction": "sent"
   },
   {
@@ -1109,14 +1690,14 @@
     "timeChunk": "2022-06",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "617003.94",
+    "amount": "615550.82",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-06",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "33266.25",
+    "amount": "34719.37",
     "direction": "sent"
   },
   {
@@ -1151,7 +1732,14 @@
     "timeChunk": "2022-06",
     "srcType": "distributed-to-boompow",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "289998.01",
+    "amount": "289616.00",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2022-06",
+    "srcType": "distributed-to-boompow",
+    "destType": "distributed-to-known",
+    "amount": "382.01",
     "direction": "sent"
   },
   {
@@ -1270,21 +1858,21 @@
     "timeChunk": "2022-05",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "4490933.32",
+    "amount": "4491858.97",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-05",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-known",
-    "amount": "263200.74",
+    "amount": "263315.83",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-05",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-faucet",
-    "amount": "38.24",
+    "amount": "44.24",
     "direction": "sent"
   },
   {
@@ -1298,7 +1886,7 @@
     "timeChunk": "2022-05",
     "srcType": "distributed-to-fo1d1ng",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "5116420.02",
+    "amount": "5116011.46",
     "direction": "sent"
   },
   {
@@ -1312,7 +1900,7 @@
     "timeChunk": "2022-05",
     "srcType": "distributed-to-fo1d1ng",
     "destType": "distributed-to-known",
-    "amount": "18457.58",
+    "amount": "18866.14",
     "direction": "sent"
   },
   {
@@ -1340,14 +1928,14 @@
     "timeChunk": "2022-05",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "479903.29",
+    "amount": "479588.91",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-05",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "85257.03",
+    "amount": "85571.41",
     "direction": "sent"
   },
   {
@@ -1382,21 +1970,28 @@
     "timeChunk": "2022-05",
     "srcType": "distributed-to-event",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "329708.10",
+    "amount": "321422.10",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-05",
     "srcType": "distributed-to-event",
     "destType": "distributed-to-known",
-    "amount": "19334.71",
+    "amount": "27620.71",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-05",
     "srcType": "distributed-to-boompow",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "309997.97",
+    "amount": "309903.50",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2022-05",
+    "srcType": "distributed-to-boompow",
+    "destType": "distributed-to-known",
+    "amount": "94.47",
     "direction": "sent"
   },
   {
@@ -1466,14 +2061,14 @@
     "timeChunk": "2022-04",
     "srcType": "exchange",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "55801887.11",
+    "amount": "55801886.95",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-04",
     "srcType": "exchange",
     "destType": "distributed-to-known",
-    "amount": "149667.67",
+    "amount": "149667.83",
     "direction": "sent"
   },
   {
@@ -1515,7 +2110,7 @@
     "timeChunk": "2022-04",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "3678119.14",
+    "amount": "3678158.87",
     "direction": "sent"
   },
   {
@@ -1529,7 +2124,7 @@
     "timeChunk": "2022-04",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-known",
-    "amount": "248745.96",
+    "amount": "248828.00",
     "direction": "sent"
   },
   {
@@ -1599,7 +2194,7 @@
     "timeChunk": "2022-04",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "572846.30",
+    "amount": "572846.24",
     "direction": "sent"
   },
   {
@@ -1613,7 +2208,7 @@
     "timeChunk": "2022-04",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "47033.76",
+    "amount": "47033.82",
     "direction": "sent"
   },
   {
@@ -1648,7 +2243,7 @@
     "timeChunk": "2022-04",
     "srcType": "distributed-to-event",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "88180.78",
+    "amount": "88111.78",
     "direction": "sent"
   },
   {
@@ -1662,7 +2257,7 @@
     "timeChunk": "2022-04",
     "srcType": "distributed-to-event",
     "destType": "distributed-to-known",
-    "amount": "81687.50",
+    "amount": "81756.50",
     "direction": "sent"
   },
   {
@@ -1823,7 +2418,7 @@
     "timeChunk": "2022-03",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "1649531.87",
+    "amount": "1650951.87",
     "direction": "sent"
   },
   {
@@ -1900,14 +2495,14 @@
     "timeChunk": "2022-03",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "605604.89",
+    "amount": "605604.60",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-03",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "40491.80",
+    "amount": "40492.09",
     "direction": "sent"
   },
   {
@@ -1949,7 +2544,7 @@
     "timeChunk": "2022-03",
     "srcType": "distributed-to-event",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "442785.41",
+    "amount": "442783.51",
     "direction": "sent"
   },
   {
@@ -1963,7 +2558,7 @@
     "timeChunk": "2022-03",
     "srcType": "distributed-to-event",
     "destType": "distributed-to-known",
-    "amount": "3324.83",
+    "amount": "3326.73",
     "direction": "sent"
   },
   {
@@ -2117,7 +2712,7 @@
     "timeChunk": "2022-02",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "2231434.61",
+    "amount": "2231453.03",
     "direction": "sent"
   },
   {
@@ -2139,6 +2734,13 @@
     "srcType": "distributed-to-known",
     "destType": "distributed-to-faucet",
     "amount": "99.71",
+    "direction": "sent"
+  },
+  {
+    "timeChunk": "2022-02",
+    "srcType": "distributed-to-known",
+    "destType": "distributed-to-event",
+    "amount": "8.00",
     "direction": "sent"
   },
   {
@@ -2243,14 +2845,14 @@
     "timeChunk": "2022-02",
     "srcType": "distributed-to-event",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "9151.12",
+    "amount": "9139.72",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-02",
     "srcType": "distributed-to-event",
     "destType": "distributed-to-known",
-    "amount": "244.25",
+    "amount": "255.65",
     "direction": "sent"
   },
   {
@@ -2390,7 +2992,7 @@
     "timeChunk": "2022-01",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "2561433.83",
+    "amount": "2561434.83",
     "direction": "sent"
   },
   {
@@ -2467,14 +3069,14 @@
     "timeChunk": "2022-01",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "478406.76",
+    "amount": "478406.68",
     "direction": "sent"
   },
   {
     "timeChunk": "2022-01",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "61485.35",
+    "amount": "61485.43",
     "direction": "sent"
   },
   {
@@ -2628,7 +3230,7 @@
     "timeChunk": "2021-12",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "2634561.27",
+    "amount": "2634537.24",
     "direction": "sent"
   },
   {
@@ -2642,14 +3244,14 @@
     "timeChunk": "2021-12",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-known",
-    "amount": "352785.71",
+    "amount": "352809.84",
     "direction": "sent"
   },
   {
     "timeChunk": "2021-12",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-faucet",
-    "amount": "2.67",
+    "amount": "2.77",
     "direction": "sent"
   },
   {
@@ -2712,7 +3314,7 @@
     "timeChunk": "2021-12",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "517685.63",
+    "amount": "517685.43",
     "direction": "sent"
   },
   {
@@ -2726,7 +3328,7 @@
     "timeChunk": "2021-12",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "56318.79",
+    "amount": "56318.99",
     "direction": "sent"
   },
   {
@@ -2908,7 +3510,7 @@
     "timeChunk": "2021-11",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "5012430.06",
+    "amount": "5016450.39",
     "direction": "sent"
   },
   {
@@ -3006,7 +3608,7 @@
     "timeChunk": "2021-11",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "489413.85",
+    "amount": "489401.82",
     "direction": "sent"
   },
   {
@@ -3020,7 +3622,7 @@
     "timeChunk": "2021-11",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "6323.25",
+    "amount": "6335.28",
     "direction": "sent"
   },
   {
@@ -3181,7 +3783,7 @@
     "timeChunk": "2021-10",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "7837457.79",
+    "amount": "7837485.01",
     "direction": "sent"
   },
   {
@@ -3244,7 +3846,7 @@
     "timeChunk": "2021-10",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "436462.72",
+    "amount": "436454.61",
     "direction": "sent"
   },
   {
@@ -3258,7 +3860,7 @@
     "timeChunk": "2021-10",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "10576.54",
+    "amount": "10584.65",
     "direction": "sent"
   },
   {
@@ -3433,14 +4035,14 @@
     "timeChunk": "2021-09",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "5918722.71",
+    "amount": "5918870.82",
     "direction": "sent"
   },
   {
     "timeChunk": "2021-09",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-known",
-    "amount": "483949.59",
+    "amount": "483950.59",
     "direction": "sent"
   },
   {
@@ -3503,7 +4105,7 @@
     "timeChunk": "2021-09",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "451651.15",
+    "amount": "451650.53",
     "direction": "sent"
   },
   {
@@ -3517,7 +4119,7 @@
     "timeChunk": "2021-09",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "9157.55",
+    "amount": "9158.17",
     "direction": "sent"
   },
   {
@@ -3650,7 +4252,7 @@
     "timeChunk": "2021-08",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "6408494.10",
+    "amount": "6408498.90",
     "direction": "sent"
   },
   {
@@ -3713,7 +4315,7 @@
     "timeChunk": "2021-08",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "934498.72",
+    "amount": "934498.65",
     "direction": "sent"
   },
   {
@@ -3727,7 +4329,7 @@
     "timeChunk": "2021-08",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "13475.04",
+    "amount": "13475.11",
     "direction": "sent"
   },
   {
@@ -3881,7 +4483,7 @@
     "timeChunk": "2021-07",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "9242235.05",
+    "amount": "9242236.35",
     "direction": "sent"
   },
   {
@@ -4063,7 +4665,7 @@
     "timeChunk": "2021-06",
     "srcType": "exchange",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "165042424.23",
+    "amount": "165042469.67",
     "direction": "sent"
   },
   {
@@ -4077,7 +4679,7 @@
     "timeChunk": "2021-06",
     "srcType": "exchange",
     "destType": "distributed-to-known",
-    "amount": "564847.30",
+    "amount": "564801.87",
     "direction": "sent"
   },
   {
@@ -4147,7 +4749,7 @@
     "timeChunk": "2021-06",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "14451152.82",
+    "amount": "14451162.82",
     "direction": "sent"
   },
   {
@@ -4175,7 +4777,7 @@
     "timeChunk": "2021-06",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-faucet",
-    "amount": "5.14",
+    "amount": "50.14",
     "direction": "sent"
   },
   {
@@ -4245,7 +4847,7 @@
     "timeChunk": "2021-06",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "187458.57",
+    "amount": "187452.24",
     "direction": "sent"
   },
   {
@@ -4259,7 +4861,7 @@
     "timeChunk": "2021-06",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "3455.39",
+    "amount": "3461.72",
     "direction": "sent"
   },
   {
@@ -4532,7 +5134,7 @@
     "timeChunk": "2021-05",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "543799.58",
+    "amount": "543799.40",
     "direction": "sent"
   },
   {
@@ -4546,7 +5148,7 @@
     "timeChunk": "2021-05",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "7059.79",
+    "amount": "7059.97",
     "direction": "sent"
   },
   {
@@ -4658,7 +5260,7 @@
     "timeChunk": "2021-04",
     "srcType": "exchange",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "113653820.56",
+    "amount": "113694369.38",
     "direction": "sent"
   },
   {
@@ -4672,7 +5274,7 @@
     "timeChunk": "2021-04",
     "srcType": "exchange",
     "destType": "distributed-to-known",
-    "amount": "438404.15",
+    "amount": "397855.33",
     "direction": "sent"
   },
   {
@@ -5309,14 +5911,14 @@
     "timeChunk": "2021-02",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "198648.57",
+    "amount": "198648.46",
     "direction": "sent"
   },
   {
     "timeChunk": "2021-02",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "70662.32",
+    "amount": "70662.43",
     "direction": "sent"
   },
   {
@@ -5988,14 +6590,14 @@
     "timeChunk": "2020-10",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "96036.57",
+    "amount": "96036.52",
     "direction": "sent"
   },
   {
     "timeChunk": "2020-10",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "959984.15",
+    "amount": "959984.20",
     "direction": "sent"
   },
   {
@@ -6947,7 +7549,7 @@
     "timeChunk": "2020-04",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "7491724.50",
+    "amount": "7491622.50",
     "direction": "sent"
   },
   {
@@ -6961,7 +7563,7 @@
     "timeChunk": "2020-04",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "295179.70",
+    "amount": "295281.70",
     "direction": "sent"
   },
   {
@@ -8074,7 +8676,7 @@
     "timeChunk": "2019-09",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "20560729.04",
+    "amount": "20569855.96",
     "direction": "sent"
   },
   {
@@ -8508,7 +9110,7 @@
     "timeChunk": "2019-07",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "30838088.23",
+    "amount": "30838000.23",
     "direction": "sent"
   },
   {
@@ -8522,7 +9124,7 @@
     "timeChunk": "2019-07",
     "srcType": "distributed-to-faucet",
     "destType": "distributed-to-known",
-    "amount": "1940992.49",
+    "amount": "1941080.49",
     "direction": "sent"
   },
   {
@@ -9096,14 +9698,14 @@
     "timeChunk": "2019-04",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "21698735.08",
+    "amount": "21698734.08",
     "direction": "sent"
   },
   {
     "timeChunk": "2019-04",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-known",
-    "amount": "214916.11",
+    "amount": "214917.11",
     "direction": "sent"
   },
   {
@@ -10055,7 +10657,7 @@
     "timeChunk": "2018-10",
     "srcType": "distributed-to-known",
     "destType": "distributed-to-unknown-tier-01",
-    "amount": "23772064.21",
+    "amount": "23798702.32",
     "direction": "sent"
   },
   {
