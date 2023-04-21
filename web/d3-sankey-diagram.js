@@ -20826,12 +20826,14 @@
 	  function selectLink (d) {
 	    d3Selection.event.stopPropagation()
 	    var el = d3Selection.select(this).node()
+		d.el = el;
 	    listeners.call('selectLink', el, d)
 	  }
 
 	  function selectNode (d) {
 	    d3Selection.event.stopPropagation()
 	    var el = d3Selection.select(this).node()
+		d.el = el;
 	    listeners.call('selectNode', el, d)
 	  }
 

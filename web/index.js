@@ -332,6 +332,11 @@ const loadBananoDistributionStats = async () => {
         return d.color;
       });
 
+  diagram.on('selectLink', (a) => {
+    console.log(a.el.lastChild);
+    linktext.innerHTML = a.el.lastChild.innerHTML;
+  });
+
   layout.ordering(sankey.order);
 
   d3.select('#sankey svg')
