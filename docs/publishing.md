@@ -6,7 +6,6 @@
 
     npm run preflight;
 
-## commit here
     git commit -a -m 'updating dependencies';
 
     npm version patch;
