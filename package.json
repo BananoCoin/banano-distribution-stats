@@ -21,21 +21,21 @@
     "start": "node main.js"
   },
   "dependencies": {
-    "@bananocoin/bananojs": "^2.10.1",
-    "https-rate-limit": "^1.0.10",
+    "@bananocoin/bananojs": "^2.10.7",
+    "https-rate-limit": "^1.0.12",
     "levelup": "^5.1.1",
     "rocksdb": "^5.2.1"
   },
   "preferGlobal": true,
   "devDependencies": {
-    "chai": "^4.3.10",
-    "eslint": "^8.51.0",
+    "chai": "^4.4.1",
+    "eslint": "^8.57.0",
     "eslint-config-google": "^0.14.0",
-    "jsdoc-to-markdown": "^8.0.0",
+    "jsdoc-to-markdown": "^8.0.1",
     "memdown": "^6.1.1",
-    "mocha": "^10.2.0",
-    "npm-check-updates": "^16.14.5",
+    "mocha": "^10.3.0",
+    "npm-check-updates": "^16.14.15",
     "nyc": "^15.1.0",
-    "prettier": "^3.0.3"
+    "prettier": "^3.2.5"
   }
 }
